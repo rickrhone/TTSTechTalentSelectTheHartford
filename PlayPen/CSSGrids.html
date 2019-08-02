@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CSS Grides</title>
+
+        <style>
+            .gridContainer {
+                display: grid;
+                /* must specifiy the template either row or column and the percentage adding to 100% */
+                grid-template-columns: 70% 30%;
+
+                /* column-gap: 1em;
+                row-gap: 1em; */
+                /* sets both the  */
+                gap: 1em;
+            }
+
+            /* color the grid */
+            .gridContainer div {
+                background: #eee;
+                padding: 1em;
+            }
+
+            /* Every other div has a different color */
+            .gridContainer div:nth-child(odd) {
+                background: #ddd;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <!-- main  grid container -->
+        <div class="gridContainer">
+            <!-- main column -->
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus asperiores aut,
+                distinctio iste cupiditate commodi. Tempora, quod. Beatae ab eligendi aliquam nihil consequuntur commodi
+                iure, eum accusantium magnam enim eaque modi quos in odio id totam cum libero exercitationem illo ipsum
+                quaerat! Reiciendis doloribus reprehenderit iusto. Voluptatem tenetur iusto optio minus ab sequi vel
+                maiores delectus voluptatum velit, quisquam, placeat deleniti dignissimos nostrum quod possimus nihil
+                omnis quos voluptatibus sunt perferendis. At quibusdam labore, a architecto consequatur debitis enim.
+            </div>
+
+            <!-- side bar-->
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestiae, tenetur voluptatibus, ex
+                dolorum quisquam fugit voluptate ea magni doloribus laudantium maiores sapiente hic cum numquam
+                praesentium debitis nemo nostrum.
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus asperiores aut,
+                distinctio iste cupiditate commodi. Tempora, quod. Beatae ab eligendi aliquam nihil consequuntur commodi
+                iure, eum accusantium magnam enim eaque modi quos in odio id totam cum libero exercitationem illo ipsum
+                quaerat! Reiciendis doloribus reprehenderit iusto. Voluptatem tenetur iusto optio minus ab sequi vel
+                maiores delectus voluptatum velit, quisquam, placeat deleniti dignissimos nostrum quod possimus nihil
+                omnis quos voluptatibus sunt perferendis. At quibusdam labore, a architecto consequatur debitis enim.
+            </div>
+
+            <!-- side bar-->
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestiae, tenetur voluptatibus, ex
+                dolorum quisquam fugit voluptate ea magni doloribus laudantium maiores sapiente hic cum numquam
+                praesentium debitis nemo nostrum.
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
