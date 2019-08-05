@@ -7,6 +7,8 @@ h1 {
 
 }
 
+
+
 input,
 button {
     min-width: 90px;
@@ -23,3 +25,4 @@ button {
 input {
     margin-bottom: 1em;
 }
+
