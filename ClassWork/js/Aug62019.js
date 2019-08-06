@@ -1,3 +1,5 @@
+//Aug 6, 2019 Labs
+
 // ******************** Ricardo R. LAB 1 - Arrays ***************************
 
 console.log("Ricardo Rhone Lab 1 (Arrays) - 8/6/2019")
