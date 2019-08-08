@@ -1,6 +1,6 @@
 // Ricardo R. Aug 8, 2019 InClass Labs
 
-// ****************************** LAB 1 - Debug the Following COde **********************************************
+// ****************************** LAB 1 - Debug the Following Code **********************************************
 var littleOne = [];
 var howTheyMarch = ["one by one", "two by two", "three by three", "four by four", "five by five", "six by six", "seven by seven", "eight by eight", "nine by nine", "ten by ten"];
 
@@ -35,3 +35,37 @@ function howManyByHowMany(number) { // 3. number is an unused paramater
     // debugger // 5. not required
     console.log(march + hurrah + march + hurrah + march);
 }
+
+// ****************************** LAB 2 - Selecting Nodes **********************************************
+
+// 1. Get the header element
+let headerElement = document.getElementsByTagName('header');
+console.log("The number of header elements in this document is: " + headerElement.length); // logs 1 because there is only 1 header in the html document
+
+// 2. Get all the section elements
+let sectionElements = document.getElementsByTagName('section');
+console.log("The number of sections elements in this document is: " + sectionElements.length); // logs 3 because there are 3 section elements in the html document
+
+// 3. Get the section element with class="current"
+let sectionCurrent = document.getElementsByClassName('current');
+console.log("The number of sections elements in this document whith class name current is: " + sectionCurrent.length); // logs 1 because there is only 1 section elements in the html document with a class name of current
+
+// 4. Get the section that comes after the current section
+let currentSection = document.querySelector('section.current'); //selects the section with class name current
+let nextSection = currentSection.nextElementSibling; // moves to the next section after the section with class name current
+console.log("The section after the current section is:");
+console.log(nextSection); // returns section 3 as it is the section after the section with class name current
+
+// 5. Get the h2 node from the section before the 'current' section
+let currentSection2 = document.querySelector('section.current'); //selects the section with class name current
+let previousSection = currentSection2.previousElementSibling; // moves to the previous section before the section with class name current
+let h2Node = previousSection.querySelector('h2'); // selectes the h2 section
+console.log(h2Node); // logs the h2 section 
+
+// 6. Get the div that contains the section that has a h2 with a class of 'highlight'
+let highlightClass = document.querySelector('section h2.highlight'); // selects the section with the highlight class
+var parentDiv = highlightClass.parentElement.parentElement; // returns the parent of the section containing the class highlight whic is the div
+console.log(parentDiv); // logs the div containing the section with the h2 tag with class highlight
+
+// 7. Get all the sections that contain a H2 (using a single statement);
+console.log(document.querySelectorAll('section > h2'));
