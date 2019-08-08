@@ -68,4 +68,44 @@ var parentDiv = highlightClass.parentElement.parentElement; // returns the paren
 console.log(parentDiv); // logs the div containing the section with the h2 tag with class highlight
 
 // 7. Get all the sections that contain a H2 (using a single statement);
-console.log(document.querySelectorAll('section > h2'));
+console.log(Array.from(document.querySelectorAll('section > h2')).map(el => el.parentNode));
+
+
+// ****************************** LAB 3 - Editing the DOM **********************************************
+
+// 1. Update the 'Coffee' item to say 'Fair Trade Coffee'
+let UL = document.querySelector('#list li:nth-of-type(2)'); //selects the second Li 
+UL.innerHTML = 'Fair Trade Coffee'; // replaces the second Coffee with Fair Trade Coffee
+
+// 2. Remove 'Twinkies' from the list
+let Twinkies = document.querySelector('#list li:last-of-type'); //selects the last Li 
+Twinkies.remove(); // removes Twinkies
+
+// 3. Add an item 'Cheese Whiz'
+let newLi = document.createElement('li') // creates a new list item
+newLi.innerHTML = "Cheese Whiz"; // assigns Cheese Whiz to it
+let List = document.querySelector('#list'); // selects the ul
+List.appendChild(newLi); //appends the new li to the ul
+
+// 4. Clear the list and programmatically add items from the array ['protein powder', 'muscle milk', 'power bars']
+
+//clearing the current list 
+let currentListLength = document.querySelectorAll('#list Li').length;
+for (let i = 0; i < currentListLength; i++) {
+    document.querySelector('#list li').remove();
+}
+
+let array = ['protein powder', 'muscle milk', 'power bars']; // new list of items
+
+// adding the new list of items to the shopping list
+for (let i = 0; i < array.length; i++) {
+    let newLi = document.createElement('li') // creates a new list item
+    newLi.innerHTML = array[i]; // assigns an array element to it
+    let List = document.querySelector('#list'); // selects the ul
+    List.appendChild(newLi); //appends the new li to the ul
+}
+
+// 5. Add the class 'important' to the muscle milk item.
+let MM = document.querySelector('#list li:nth-of-type(2)'); //selects the second Li = musicle milk
+MM.className = 'important'; // sets the class name to important
+console.log(MM.className); // verifies that the class name was set to important 
