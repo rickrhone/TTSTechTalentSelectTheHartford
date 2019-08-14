@@ -106,3 +106,21 @@ console.log(newArr3);
 /********* Excercise 4 - Create arrays with elements: ********/
 
 // 1 - 20
+var Array_1to20 = _.range(1, 21, 1);
+console.log("Array_1to20: " + Array_1to20);
+
+// 50 - 100
+var Array_50to100 = _.range(50, 101, 1);
+console.log("Array_50to100: " + Array_50to100);
+
+// 1 - 100, only even
+var Array_1to100_onlyEven = _.range(2, 101, 2);
+console.log("Array_1to100_onlyEven: " + Array_1to100_onlyEven);
+
+// 1 - 100, only odd
+var Array_1to100_onlyOdd = _.range(1, 101, 2);
+console.log("Array_1to100_onlyOdd: " + Array_1to100_onlyOdd);
+
+// 1-500, only multiples of 20
+var Array_1to500_onlyMultiplesOf_20 = _.range(20, 501, 20);
+console.log("Array_1to500_onlyMultiplesOf_20: " + Array_1to500_onlyMultiplesOf_20);
