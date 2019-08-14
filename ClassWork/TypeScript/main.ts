@@ -1,5 +1,15 @@
+// variables are declared with the type after the colon
+
+// String
 var message: string = "from typeScript 'main.ts'";
 console.log(message);
+
+// Boolean
+{
+  let isDone: boolean = false;
+}
+
+// Numbers
 {
   let isDone: boolean = false;
   let decimal: number = 6.0;
