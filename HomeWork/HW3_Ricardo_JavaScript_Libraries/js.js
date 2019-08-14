@@ -34,7 +34,7 @@ var arrObj = [{
     }
 ];
 
-//Excercise 1 - break the array up into smaller arrays 
+/********* Excercise 1 - break the array up into smaller arrays ********/
 $(document).ready(function () {
     chunkTest();
 });
@@ -49,22 +49,60 @@ function chunkTest() {
     _.forEach(newArr, function (value) { //console logs all 4 Arrays 
         console.log(value);
 
-        //Excercise 2 - add the code to view the individual entries of the newly formed arrays.
+        /********* Excercise 2 - add the code to view the individual entries of the newly formed arrays. ********/
         _.forEach(value, function (item) { //logs each of items in the 4 Arrays
             console.log(item);
         })
     });
 }
 
-//Excercise 3 - Using the _.range() method, create several new arrays and print out their individual elements.
-//Then break them up with the _.chunk() function to create new arrays.
+/********* Excercise 3 - Using the _.range() method, create several new arrays and print out their individual elements.
+ * Then break them up with the _.chunk() function to create new arrays. ********/
 
-//New Array 1
+// New Array 1
 var newArray1 = _.range(5, 11, 1); //Array of size 6 containing 5 to 10
 console.log(newArray1);
-//New Array 2
+// Printing out the Individual Elements 
+var itemNum = 0;
+_.forEach(newArray1, function (item) {
+    ++itemNum
+    console.log("item " + itemNum + ": " + item);
+})
+// Breaking up the array with the _.chunk() function to create new arrays.
+var newArr1 = _.chunk(newArray1, 3);
+console.log("_.chunk() applied to new Array");
+console.log(newArr1);
+
+
+// New Array 2
 var newArray2 = _.range(10, 101, 10); //Array of size 10 containing 10 to 100 in increments of 10
 console.log(newArray2);
-//New Array 3
+// Printing out the Individual Elements 
+var itemNum = 0;
+_.forEach(newArray2, function (item) {
+    ++itemNum
+    console.log("item " + itemNum + ": " + item);
+})
+// Breaking up the array with the _.chunk() function to create new arrays.
+var newArr2 = _.chunk(newArray2, 5);
+console.log("_.chunk() applied to new Array");
+console.log(newArr2);
+
+
+// New Array 3
 var newArray3 = _.range(-2, -11, -2); //Array of size 5 containing -2 to -2 in increments of -2
 console.log(newArray3);
+// Printing out the Individual Elements 
+var itemNum = 0;
+_.forEach(newArray3, function (item) {
+    ++itemNum
+    console.log("item " + itemNum + ": " + item);
+})
+// Breaking up the array with the _.chunk() function to create new arrays.
+var newArr3 = _.chunk(newArray3, 2);
+console.log("_.chunk() applied to new Array");
+console.log(newArr3);
+
+/********* Excercise 4 - Create arrays with elements: ********/
+
+// 1 - 20
