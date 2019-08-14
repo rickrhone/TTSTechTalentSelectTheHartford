@@ -60,8 +60,11 @@ function chunkTest() {
 //Then break them up with the _.chunk() function to create new arrays.
 
 //New Array 1
-var newArray1 = _.range(5, 11, 1); //Array of size 5 containing 5 to 10
+var newArray1 = _.range(5, 11, 1); //Array of size 6 containing 5 to 10
 console.log(newArray1);
 //New Array 2
-var newArray2 = _.range(0, 101, 10); //Array of size 10 containing 10 to 100 in increments of 10
+var newArray2 = _.range(10, 101, 10); //Array of size 10 containing 10 to 100 in increments of 10
 console.log(newArray2);
+//New Array 3
+var newArray3 = _.range(-2, -11, -2); //Array of size 5 containing -2 to -2 in increments of -2
+console.log(newArray3);
