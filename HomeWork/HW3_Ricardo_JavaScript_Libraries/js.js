@@ -31,10 +31,61 @@ var arrObj = [{
         "id": 5,
         "name": "Ed Cage",
         "state": "NC"
+    },
+    {
+        "id": 6,
+        "name": "Will Turner",
+        "state": "KS"
+    },
+    {
+        "id": 7,
+        "name": "Dawn Williams",
+        "state": "NC"
+    },
+    {
+        "id": 8,
+        "name": "Sean Cunningham",
+        "state": "NC"
+    },
+    {
+        "id": 9,
+        "name": "Ted Hardy",
+        "state": "TX"
+    },
+    {
+        "id": 10,
+        "name": "Bruce Matthis",
+        "state": "FL"
+    },
+    {
+        "id": 11,
+        "name": "Billy Smith",
+        "state": "FL"
+    },
+    {
+        "id": 12,
+        "name": "Clara Jarvis",
+        "state": "TX"
+    },
+    {
+        "id": 13,
+        "name": "Cindy Fisher",
+        "state": "CO"
+    },
+    {
+        "id": 14,
+        "name": "Gino Donovan",
+        "state": "CO"
+    },
+    {
+        "id": 15,
+        "name": "Nancy Curtis",
+        "state": "NC"
     }
+
 ];
 
-/********* Excercise 1 - break the array up into smaller arrays ********/
+/********* Exercise 1 - break the array up into smaller arrays ********/
 $(document).ready(function () {
     chunkTest();
 });
@@ -49,14 +100,14 @@ function chunkTest() {
     _.forEach(newArr, function (value) { //console logs all 4 Arrays 
         console.log(value);
 
-        /********* Excercise 2 - add the code to view the individual entries of the newly formed arrays. ********/
+        /********* Exercise 2 - add the code to view the individual entries of the newly formed arrays. ********/
         _.forEach(value, function (item) { //logs each of items in the 4 Arrays
             console.log(item);
         })
     });
 }
 
-/********* Excercise 3 - Using the _.range() method, create several new arrays and print out their individual elements.
+/********* Exercise 3 - Using the _.range() method, create several new arrays and print out their individual elements.
  * Then break them up with the _.chunk() function to create new arrays. ********/
 
 // New Array 1
@@ -103,7 +154,7 @@ var newArr3 = _.chunk(newArray3, 2);
 console.log("_.chunk() applied to new Array");
 console.log(newArr3);
 
-/********* Excercise 4 - Create arrays with elements: ********/
+/********* Exercise 4 - Create arrays with elements: ********/
 
 // 1 - 20
 var Array_1to20 = _.range(1, 21, 1);
@@ -124,3 +175,10 @@ console.log("Array_1to100_onlyOdd: " + Array_1to100_onlyOdd);
 // 1-500, only multiples of 20
 var Array_1to500_onlyMultiplesOf_20 = _.range(20, 501, 20);
 console.log("Array_1to500_onlyMultiplesOf_20: " + Array_1to500_onlyMultiplesOf_20);
+
+/********* Exercise 5 - Using the documentation for the _.filter() function, create a statement that prints the number of
+residents in Colorado. ********/
+
+console.log("The number of residents in Colorado is: " + _.filter(arrObj, {
+    "state": "CO"
+}).length);
