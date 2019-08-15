@@ -59,6 +59,11 @@ var Employee = /** @class */ (function () {
         }
         return this.CertsAndDegress.toString();
     };
+    /* Create a method in the class that takes an option parameter and returns an Employee (Person) based on
+     * the options given. */
+    Employee.prototype.interfaceMethod = function (employeeOption) {
+        return new Employee(employeeOption.firstName, employeeOption.lastName, employeeOption.age, employeeOption.phoneNumber, employeeOption.state, employeeOption.zipCode, employeeOption.occupation, employeeOption.hourlyWage, employeeOption.certsAndDegrees, employeeOption.numberOfHours);
+    };
     return Employee;
 }());
 // Creating Employees
@@ -81,9 +86,24 @@ document.getElementById("div5").innerHTML = Employee4.getFullName();
 document.getElementById("div6").innerHTML = Employee4.WeeklyWage();
 // Employee 5
 var Employee5 = new Employee("Justice", "Malone", 44, "911-333-5033", "NH", "70700", "Engineer", 45, [], 50);
-// display employee4 full name in Div 5 of the HTML page and Weekly wage in Div 6
+// display employee5 certs and degrees in Div 7 of the HTML page
 document.getElementById("div7").innerHTML = Employee5.addCerts([
     "B.S. in Electrical Engineering",
     " PMP Cert",
     " M.S. Engineering Science"
 ]);
+// Employee 6
+var employee6Interface = { firstName: "Carl", lastName: "Maguire" };
+var Employee6 = Employee5.interfaceMethod(employee6Interface);
+// display employee6 first and last name in div 8 of the HTML page
+document.getElementById("div8").innerHTML = Employee6.getFullName();
+// Employee 7
+var employee7Interface = {
+    firstName: "Amy",
+    lastName: "Jenkins",
+    state: "MA",
+    zipCode: "67473"
+};
+var Employee7 = Employee5.interfaceMethod(employee7Interface);
+// display employee7 location in div 9 of the HTML page
+document.getElementById("div9").innerHTML = Employee7.getLocation();
