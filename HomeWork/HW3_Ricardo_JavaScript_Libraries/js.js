@@ -186,10 +186,7 @@ console.log("The number of residents in Colorado is: " + _.filter(arrObj, {
 /********* Exercise 6 - Using the documentation for the _.countBy() function create statements that print out the number
 of residents in each state. ********/
 
-var numOfResidentInEachState = _.countBy(arrObj, "state");
-console.log(numOfResidentInEachState);
-
-_.forEach(numOfResidentInEachState, function (item) {
-
-    console.log(item);
+var numOfResidentInEachState = _.countBy(arrObj, "state")
+_.forEach(numOfResidentInEachState, function (value, key) {
+    console.log(key, value);
 })
