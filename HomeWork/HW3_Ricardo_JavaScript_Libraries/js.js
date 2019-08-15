@@ -190,3 +190,57 @@ var numOfResidentInEachState = _.countBy(arrObj, "state")
 _.forEach(numOfResidentInEachState, function (value, key) {
     console.log(key, value);
 })
+
+/********* Exercise 7 - Using the _.filter() function and any necessary string methods, ﬁnd and display all the people 
+ who have a last name of 7 more letters. ********/
+
+// filter out all the names in the arrObj
+var peopleWithNames = _.filter(arrObj, function (key, value) {
+    if (value == "name") {
+        var lastName = key.slice(key.indexof(" ") + 1, key.length); //filter out the last name from the full name
+        if (lastName.length > 7) {
+            return lastName; //returns the last name if it is greater than 7
+        }
+    }
+});
+console.log(peopleWithNames);
+
+
+//     function (name) {
+//     var lastName = name.slice(name.indexof(" ") + 1, name.length); //filter out the last name from the full name
+//     if (lastName.length > 7) {
+//         return lastName; //returns the last name if it is greater than 7
+//     }
+// });
+// console.log(peopleWithLastName7orMore);
+
+
+// console.log(peopleWithLastName7orMore);
+
+
+// filter out all the names in the arrObj
+// var peopleWithLastName7orMore = _.filter(arrObj, function (name) {
+//     var lastName = name.slice(name.indexof(" ") + 1, name.length); //filter out the last name from the full name
+//     if (lastName.length > 7) {
+//         return lastName; //returns the last name if it is greater than 7
+//     }
+// });
+// console.log(peopleWithLastName7orMore);
+
+
+
+// var arrObj = [{
+//     "id": 1,
+//     "name": "Tom Henry",
+//     "state": "TX"
+// },
+
+/********* Exercise 8 - Use the foreach loop and appropriate string function to print the state in all lower case. 
+Then alter the function to print it capitalized.  ********/
+console.log(
+    _.forEach(arrObj, function (value, key) {
+        if (key == "state") {
+            value.toLowerCase();
+        }
+
+    }));
