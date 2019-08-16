@@ -1,0 +1,15 @@
+#menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  height: 30px;
+}
+
+#btn2 {
+  margin-left: 10px;
+}
+
+#btn3 {
+  margin-left: 10px;
+}
