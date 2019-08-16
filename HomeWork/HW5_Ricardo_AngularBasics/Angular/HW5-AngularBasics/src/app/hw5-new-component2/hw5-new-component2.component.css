@@ -5,3 +5,11 @@
   text-align: center;
   background-color: blueviolet;
 }
+
+#directInjectionDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: beige;
+}
