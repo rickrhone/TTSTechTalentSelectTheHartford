@@ -11,11 +11,16 @@ import { Person } from "../Person";
 export class HW5NewComponent2Component implements OnInit {
   person1: Person;
   person2: Person;
-
+  person3: Person;
   constructor(private personservice: PersonService) {}
 
   ngOnInit() {
     this.person1 = this.personservice.getPerson1();
     this.person2 = this.personservice.getPerson2();
+    this.getPerson3();
+  }
+
+  getPerson3() {
+    this.personservice.getPerson3().subscribe(p => (this.person3 = p));
   }
 }

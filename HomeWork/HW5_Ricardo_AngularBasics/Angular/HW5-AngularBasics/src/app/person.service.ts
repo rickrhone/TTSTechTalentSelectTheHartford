@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Person } from "./Person";
-import { Observable } from "rxjs";
+import { Observable, of } from "rxjs";
 
 @Injectable({
   providedIn: "root"
@@ -27,6 +27,6 @@ export class PersonService {
 
   //Change the service call to return an Obervable rather than a Person object
   getPerson3(): Observable<Person> {
-    return of(PEOPLE);
+    return of(this.person3);
   }
 }
