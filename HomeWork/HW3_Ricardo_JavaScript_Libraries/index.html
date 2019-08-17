@@ -10,53 +10,75 @@
         <title>HW3_JavaScript_Libraries</title>
         <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css" />
         <link rel="stylesheet" href="HW3style.css" />
+        <style>
+            .la {
+                text-align: left;
+            }
+        </style>
     </head>
 
     <body>
-        <h1 id="para">Lodash, Moment, Math, DataTable, Chart, React and Vue Libraries Homework</h1>
+        <div id="heading">
+            <h1> Lodash, Moment, Math, DataTable, Chart, React and Vue Libraries Homework</h1>
+        </div>
 
-        <!-- DATA TABLE SECTION OF THE HOMEWORK -->
-        <!-- In the body of the page, create the following table: -->
-        <table id="person_table">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Cell Phone</th>
-                    <th>Zip Code</th>
-                    <th>State</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>111</td>
-                    <td>Brian</td>
-                    <td>Smith</td>
-                    <td>980-996-9650</td>
-                    <td>28025</td>
-                    <td>NC</td>
-                </tr>
-                <tr>
-                    <td>123</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>720-859-6284</td>
-                    <td>50566</td>
-                    <td>CO</td>
-                </tr>
-                <tr>
-                    <td>321</td>
-                    <td>Cindy</td>
-                    <td>Williamson</td>
-                    <td>214-933-3218</td>
-                    <td>41482</td>
-                    <td>TX</td>
-                </tr>
-            </tbody>
-        </table>
+        <h1> DataTable 1 -pre-populated data</h1>
+        <div>
+            <!-- DATA TABLE SECTION OF THE HOMEWORK -->
+            <!-- In the body of the page, create the following table: -->
+            <table id="person_table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Cell Phone</th>
+                        <th>Zip Code</th>
+                        <th>State</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>111</td>
+                        <td>Brian</td>
+                        <td>Smith</td>
+                        <td>980-996-9650</td>
+                        <td>28025</td>
+                        <td>NC</td>
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>720-859-6284</td>
+                        <td>50566</td>
+                        <td>CO</td>
+                    </tr>
+                    <tr>
+                        <td>321</td>
+                        <td>Cindy</td>
+                        <td>Williamson</td>
+                        <td>214-933-3218</td>
+                        <td>41482</td>
+                        <td>TX</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
+        <!-- Create a new page with an empty table: -->
+        <h1> DataTable 2 - populated from simulated JSON data</h1>
 
+        <div>
+            <table id="base_table">
+                <thead>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
 
         <!-- Linking JavaScript Libraries  -->
         <script src="jquery-3.4.1.min.js"></script>
@@ -65,8 +87,9 @@
         <script src="math.min.js"></script>
         <script>
             $(document).ready(function () {
+
+                // DATA TABLE 1
                 // create the basic statement in the jQuery block that turns that into a data table
-                // jquery code
                 $('#person_table').DataTable({
 
                     //Using the columns option add a class to the cells that will center-align them.
@@ -74,6 +97,64 @@
                     //     className: "centerCols"
                     // }]
                 });
+
+
+                // DATA TABLE 2
+                // Next create a JavaScript array in the script block to represent some JSON data:
+                var objs = [{
+                        "name": "Jerry Nixon",
+                        "position": "System Architect",
+                        "salary": "$95,000",
+                        "start_date": "2010/03/19",
+                        "office": "Scottsdale"
+                    },
+                    {
+                        "name": "George Parker",
+                        "position": "Director",
+                        "salary": "$123,000",
+                        "start_date": "2002/01/19",
+                        "office": "Phoenix"
+                    },
+                    {
+                        "name": "Cindy Stackhouse",
+                        "position": "Development Manager",
+                        "salary": "$93,000",
+                        "start_date": "2016/04/25",
+                        "office": "Dallas"
+                    }
+                ];
+
+                // In the DataTable call, use the data option to load the data from the variable. Note that when
+                // loading this way you'll have to specify the property name to get the data from,
+                $('#base_table').DataTable({
+
+                    "data": objs,
+                    columns: [{
+                        // Add additional settings in each column to specify a title.
+                        title: 'Name',
+                        data: 'name',
+                        //left align the columns with my own class called la
+                        className: 'la'
+                    }, {
+                        title: 'Position',
+                        data: 'position',
+                        className: 'la'
+                    }, {
+                        title: 'Salary',
+                        data: 'salary',
+                        className: 'la'
+                    }, {
+                        title: 'Start Date',
+                        data: 'start_date',
+                        className: 'la'
+                    }, {
+                        title: 'Office',
+                        data: 'office',
+                        className: 'la'
+                    }]
+
+                });
+
             });
         </script>
         <script type="text/javascript" src="DataTables/datatables.min.js"></script>
