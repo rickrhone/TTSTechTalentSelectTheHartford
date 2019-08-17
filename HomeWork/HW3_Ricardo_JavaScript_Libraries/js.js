@@ -1,5 +1,7 @@
 // Ricardo Rhone TTS Homework 3 - Aug 14, 2019 
 
+/* ***************************** Lodash Section ****************************** */
+console.log("\n*************** LODASH SECTION ***************");
 // Values used for testing 
 var arr = [1, 4, 5, 12, 55, 24, 69, 13, 5, 8, 12];
 var theObj = {
@@ -96,7 +98,7 @@ function chunkTest() {
     //If array can't be split evenly, the final chunk will be the remaining elements.
     var newArr = _.chunk(arr, 3);
     console.log(newArr); //3 Arrays of size 3 and the 4th Array of size 2
-    console.log("\nExercise 2 - printing the individual elements of the array");
+    console.log("\nExercise 2 - printing the individual elements of the chunked arrays");
     _.forEach(newArr, function (value) { //console logs all 4 Arrays 
         console.log(value);
 
@@ -224,3 +226,60 @@ _.forEach(arrObj, function (obj) {
     }
     console.log(ArrayofSatestoUpper); //prints the upperCase state
 });
+
+/* ***************************** Moment Section ****************************** */
+
+/* Download the the moment.js file or reference it in your chosen fashion. Use the moment() method
+to create a new date; also create several other dates by parsing vaious strings as shown in the code
+below. */
+
+console.log("\n*************** MOMENT SECTION ***************");
+var mom = moment();
+var bad = moment("no date"); //throws the expected warning - Deprecation warining. returns NaN because the format is not recognized
+var momISO = moment("2019-02-08 09:30");
+var rfc = moment("22 Mar 2017 21:22:23 GMT");
+
+// Add additonal statement to print the values of the dates:
+console.log(mom.format('YYYY MM DD'));
+console.log("Bad Date: " + bad);
+console.log(momISO.format());
+console.log(rfc.format());
+
+// Using the values in the chart, print each of the above dates in the following formats:
+
+// Long day, short month, day number, year and time
+console.log("\nEach date in long day, short month, day number, year and time format:");
+console.log(mom.format("dddd MMM D, YYYY h:mmA"));
+console.log(momISO.format("dddd MMM D, YYYY h:mmA"));
+console.log(rfc.format("dddd MMM D, YYYY h:mmA"));
+
+// Short month, day, year, and time
+console.log("\nEach date in short month, day, year, and time format:");
+console.log(mom.format("MMM D, YYYY h:mmA"));
+console.log(momISO.format("MMM D, YYYY h:mmA"));
+console.log(rfc.format("MMM D, YYYY h:mmA"));
+
+// Week of year, short year
+console.log("\nEach date in week of year, short year format:");
+console.log(mom.format("wo YY"));
+console.log(momISO.format("wo YY"));
+console.log(rfc.format("wo YY"));
+
+// Quarter of year, long year
+console.log("\nEach date in quarter of year, long year format:");
+console.log(mom.format("Qo YYYY"));
+console.log(momISO.format("Qo YYYY"));
+console.log(rfc.format("Qo YYYY"));
+
+// Using the difference function, find the difference between the ISO and rfc dates in days, weeks, and
+// months. Find the difference between the current date and the rfc in weeks, months, and years.
+
+// Find the difference between the ISO and rfc dates in days, weeks, and months.
+console.log("\nThe difference between the ISO and rfc dates in days: " + momISO.diff(rfc, "days"));
+console.log("The difference between the ISO and rfc dates in weeks: " + momISO.diff(rfc, "weeks"));
+console.log("The difference between the ISO and rfc dates in months: " + momISO.diff(rfc, "months"));
+
+// Find the difference between the current date and the rfc in weeks, months, and years.
+console.log("\nThe difference between the current and rfc dates in weeks: " + mom.diff(rfc, "weeks"));
+console.log("The difference between the current and rfc dates in months: " + momISO.diff(rfc, "months"));
+console.log("The difference between the current and rfc dates in years: " + momISO.diff(rfc, "years"));
