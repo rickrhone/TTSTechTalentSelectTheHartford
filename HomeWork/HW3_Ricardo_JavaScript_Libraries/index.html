@@ -80,11 +80,24 @@
             </table>
         </div>
 
+        <!-- CHART SECTION  -->
+
+        <!--  Create a canvas area in the body, then reference that area when creating a chart: -->
+        <h1> Chart Area </h1>
+        <canvas id="chartArea"></canvas>
+
+
+
+
+
+
+
         <!-- Linking JavaScript Libraries  -->
         <script src="jquery-3.4.1.min.js"></script>
         <script src="lodash.js"></script>
         <script src="moment.js"></script>
         <script src="math.min.js"></script>
+        <script src="Chart.min.js"></script>
         <script>
             $(document).ready(function () {
 
@@ -155,6 +168,28 @@
 
                 });
 
+
+                // CHART SECTION 
+                var ctx = $("#chartArea"); // using jquery
+                var chart = new Chart(ctx, {
+                    //Reference the properties in the ChartJS documentation and change the display to a line graph. Also,
+                    //make the lines blue instead of the color above.
+                    // type: 'bar',
+                    type: 'line',
+                    data: {
+                        labels: ['XX-Small', 'X-Small', 'Small', 'Medium', 'Large', 'X-Large'],
+                        datasets: [{
+                            label: 'Planning Poker Sizes',
+                            // backgroundColor: 'rgb(255, 55, 128)',
+                            backgroundColor: 'blue',
+                            // borderColor: 'rgb(255, 55, 128)',
+                            borderColor: 'blue',
+                            fill: false,
+                            data: [1, 2, 3, 5, 8, 13]
+                        }]
+                    },
+                    options: {}
+                });
             });
         </script>
         <script type="text/javascript" src="DataTables/datatables.min.js"></script>
