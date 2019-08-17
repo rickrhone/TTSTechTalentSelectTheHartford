@@ -87,6 +87,15 @@
         <canvas id="chartArea"></canvas>
 
 
+        <!-- REACT SECTION  -->
+
+        <!--   Inside of the <body> element, create a section with an id: -->
+        <h1> React Section </h1>
+        <div id="root"></div>
+
+        <!-- Create a text input area on the page and give it an id -->
+        <input type="text" name="" id="textInput">
+
 
 
 
@@ -192,7 +201,53 @@
                 });
             });
         </script>
+        <!-- Datatables -->
         <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+        <!-- React -->
+        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+        <script type="text/babel">
+            class HelloMessage extends React.Component {
+                constructor(props) {
+                    super(props);
+                    this.handleClick = this.handleClick.bind(this);
+                    this.state = {name: props.name};
+                }
+
+                handleClick(e) {
+                    // In the handleClick method, use jQuery to get the value from the text box and update the state of
+                    // the React control so that it is automatically updated.
+                    // this.setState({ name: "Ted" });
+                    var Name = $('#textInput').val()                                       
+                    this.setState({ name: Name });
+                }
+
+                render() {
+                    return (
+                        <div>
+                            <div>
+                                Hello {this.state.name}
+                            </div>
+                            <div>
+                                <button onClick={this.handleClick}>
+                                    Change Name
+                                </button>
+                            </div>
+                        </div>
+                    );
+                }
+            }
+                ReactDOM.render(
+                    <HelloMessage name="John Taylor" id="hello" />,
+                    // replace the getElementById('root') with the appropriate jQuery call. 
+                    // To get the DOM element from the jQuery element, use $("#root")[ 0 ]
+                    document.getElementById('root')
+                    // $('#root')[0].html('#hello')  // did not work - check with others               
+                );
+        </script>
+
+        <!-- My Custom JS -->
         <script src="js.js"></script>
     </body>
 
