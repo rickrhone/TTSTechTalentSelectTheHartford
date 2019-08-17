@@ -97,7 +97,11 @@
         <input type="text" name="" id="textInput">
 
 
-
+        <!-- VUE SECTION -->
+        <h1> Vue Section </h1>
+        <div id="app">
+            <h2>Welcome to my first {{ frameName }} application</h2>
+        </div>
 
 
 
@@ -246,7 +250,16 @@
                     // $('#root')[0].html('#hello')  // did not work - check with others               
                 );
         </script>
-
+        <!-- Vue -->
+        <script src="https://unpkg.com/vue"></script>
+        <script>
+            const app = new Vue({
+                el: '#app',
+                data: {
+                    frameName: 'Vue'
+                }
+            })
+        </script>
         <!-- My Custom JS -->
         <script src="js.js"></script>
     </body>
