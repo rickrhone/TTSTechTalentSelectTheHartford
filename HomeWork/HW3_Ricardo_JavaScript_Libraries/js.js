@@ -283,3 +283,15 @@ console.log("The difference between the ISO and rfc dates in months: " + momISO.
 console.log("\nThe difference between the current and rfc dates in weeks: " + mom.diff(rfc, "weeks"));
 console.log("The difference between the current and rfc dates in months: " + momISO.diff(rfc, "months"));
 console.log("The difference between the current and rfc dates in years: " + momISO.diff(rfc, "years"));
+
+/* ***************************** Math Section ****************************** */
+
+console.log("\n*************** MATH SECTION ***************");
+// Using the correct math methods, calculate and display the following:
+console.log("Base 10 log of 1,000,000 = " + math.log10(1000000));
+console.log("Base 2 log of 64 = " + math.log2(64));
+console.log("Base 4 log of 16,384 = " + math.log(16384, 4));
+console.log("Square root of 96 = " + math.sqrt(96));
+console.log("Square root of -64 = " + math.sqrt(-64));
+console.log("Simplify the expression '3x + 4y + 9x + 2y + 8' = " + math.simplify("3x + 4y + 9x + 2y + 8"));
+console.log("The cosine of 45 degrees = " + math.cos(math.unit(45, "deg")));
