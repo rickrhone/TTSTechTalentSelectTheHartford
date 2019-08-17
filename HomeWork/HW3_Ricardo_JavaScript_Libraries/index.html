@@ -8,10 +8,54 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>HW3_JavaScript_Libraries</title>
+        <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css" />
+        <link rel="stylesheet" href="HW3style.css" />
     </head>
 
     <body>
-        <p id="para">Lodash, Moment, Math, DataTable, Chart, React and Vue Libraries Testing</p>
+        <h1 id="para">Lodash, Moment, Math, DataTable, Chart, React and Vue Libraries Homework</h1>
+
+        <!-- DATA TABLE SECTION OF THE HOMEWORK -->
+        <!-- In the body of the page, create the following table: -->
+        <table id="person_table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Cell Phone</th>
+                    <th>Zip Code</th>
+                    <th>State</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>111</td>
+                    <td>Brian</td>
+                    <td>Smith</td>
+                    <td>980-996-9650</td>
+                    <td>28025</td>
+                    <td>NC</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>720-859-6284</td>
+                    <td>50566</td>
+                    <td>CO</td>
+                </tr>
+                <tr>
+                    <td>321</td>
+                    <td>Cindy</td>
+                    <td>Williamson</td>
+                    <td>214-933-3218</td>
+                    <td>41482</td>
+                    <td>TX</td>
+                </tr>
+            </tbody>
+        </table>
+
 
 
         <!-- Linking JavaScript Libraries  -->
@@ -19,13 +63,21 @@
         <script src="lodash.js"></script>
         <script src="moment.js"></script>
         <script src="math.min.js"></script>
-        <script src="js.js"></script>
         <script>
             $(document).ready(function () {
-
+                // create the basic statement in the jQuery block that turns that into a data table
                 // jquery code
+                $('#person_table').DataTable({
+
+                    //Using the columns option add a class to the cells that will center-align them.
+                    // "columns": columns: [{
+                    //     className: "centerCols"
+                    // }]
+                });
             });
         </script>
+        <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+        <script src="js.js"></script>
     </body>
 
 </html>

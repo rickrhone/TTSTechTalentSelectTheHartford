@@ -1,0 +1,104 @@
+<!-- Ricardo Rhone TTS Homework 3 - Aug 14, 2019 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>HW3_JavaScript_Libraries_DataTable</title>
+        <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css" />
+        <link rel="stylesheet" href="HW3style.css" />
+        <style>
+            .la {
+                text-align: left;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 id="para">DataTable 2 - populated from simulated JSON data</h1>
+
+        <!-- DATA TABLE SECTION OF THE HOMEWORK -->
+        <!-- Create a new page with an empty table: -->
+        <div>
+            <table id="base_table">
+                <thead>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Linking JavaScript Libraries  -->
+        <script src="jquery-3.4.1.min.js"></script>
+        <!-- <script src="lodash.js"></script>
+        <script src="moment.js"></script>
+        <script src="math.min.js"></script> -->
+        <script>
+            $(document).ready(function () {
+                // Next create a JavaScript array in the script block to represent some JSON data:
+                var objs = [{
+                        "name": "Jerry Nixon",
+                        "position": "System Architect",
+                        "salary": "$95,000",
+                        "start_date": "2010/03/19",
+                        "office": "Scottsdale"
+                    },
+                    {
+                        "name": "George Parker",
+                        "position": "Director",
+                        "salary": "$123,000",
+                        "start_date": "2002/01/19",
+                        "office": "Phoenix"
+                    },
+                    {
+                        "name": "Cindy Stackhouse",
+                        "position": "Development Manager",
+                        "salary": "$93,000",
+                        "start_date": "2016/04/25",
+                        "office": "Dallas"
+                    }
+                ];
+
+                // In the DataTable call, use the data option to load the data from the variable. Note that when
+                // loading this way you'll have to specify the property name to get the data from,
+                $('#base_table').DataTable({
+
+                    "data": objs,
+                    columns: [{
+                        // Add additional settings in each column to specify a title.
+                        title: 'Name',
+                        data: 'name',
+                        //left align the columns with my own class called la
+                        className: 'la'
+                    }, {
+                        title: 'Position',
+                        data: 'position',
+                        className: 'la'
+                    }, {
+                        title: 'Salary',
+                        data: 'salary',
+                        className: 'la'
+                    }, {
+                        title: 'Start Date',
+                        data: 'start_date',
+                        className: 'la'
+                    }, {
+                        title: 'Office',
+                        data: 'office',
+                        className: 'la'
+                    }]
+
+                });
+
+            });
+        </script>
+        <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+        <!-- <script src="js.js"></script> -->
+    </body>
+
+</html>

@@ -295,3 +295,7 @@ console.log("Square root of 96 = " + math.sqrt(96));
 console.log("Square root of -64 = " + math.sqrt(-64));
 console.log("Simplify the expression '3x + 4y + 9x + 2y + 8' = " + math.simplify("3x + 4y + 9x + 2y + 8"));
 console.log("The cosine of 45 degrees = " + math.cos(math.unit(45, "deg")));
+
+/* ***************************** Data Table Section ****************************** */
+
+console.log("\n*************** DATA TABLE SECTION ***************");
