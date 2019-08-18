@@ -7,6 +7,11 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Bootstrap Playing</title>
         <link rel="stylesheet" href="bootstrap.css" />
+        <style>
+            .border-blue {
+                border: 1px solid blue;
+            }
+        </style>
     </head>
 
     <body>
@@ -120,6 +125,42 @@
         <div class="bg-secondary">
             <p class="text-light"> Message Area 3 - using classes "bg-secondary" and text-light </p>
         </div>
+
+        <!--  create a basic table using <div> sections. Resize the browser and notice how the column react -->
+        <!--  Create several more rows, each with a different number of columns. Continue to resize the browser and notice the behavior -->
+        <h2> Basic Table Section </h2>
+        <div class="container">
+            <div class="row">
+                <div class="col border border-danger"> Column 1 </div> <!-- uses Bootstrap border-->
+                <div class="col border border-warning"> Column 2 </div> <!-- uses Bootstrap border-->
+                <div class="col border-blue"> Column 3 </div> <!-- uses custom border-->
+            </div>
+            <div class="row">
+                <!-- Next, change the columns to use absolute column sizing using col-3 , col-4 , etc. Make sure that sum and limit is 12. -->
+                <!-- Alter the sum of the columns so that it is less than 12. What happens? -->
+                <div class="col-3 border border-danger"> Column 1 </div> <!-- uses Bootstrap border-->
+                <div class="col-6 border border-warning"> Column 2 </div> <!-- uses Bootstrap border-->
+            </div>
+            <div class="row">
+                <!-- Next, change the columns to use absolute column sizing using col-3 , col-4 , etc. Make sure that sum and limit is 12. -->
+                <!-- Alter the sum of the columns so that it is more than 12. What happens? -->
+                <div class="col-12 border-blue"> Column 1 </div> <!-- uses custom border-->
+                <div class="col-6 border border-warning"> Column 2 </div> <!-- uses Bootstrap border-->
+            </div>
+            <div class="row">
+                <!-- Next, add adaptive sizing. Change the col- classes to col-md- on various rows. Resize the browser and observe the behavior. -->
+                <div class="col-md-3 border border-danger"> Column 1 </div> <!-- uses Bootstrap border-->
+                <div class="col-md-1 border border-warning"> Column 2 </div> <!-- uses Bootstrap border-->
+                <div class="col-md-2 border-blue"> Column 3 </div> <!-- uses custom border-->
+            </div>
+            <div class="row">
+                <!-- Using the .offset classes, create a row that has space to the left and all the column content shown to the right. -->
+                <div class="offset-md-2 col-md-6 border-blue"> Column 1 </div> <!-- uses custom border-->
+                <div class="col-md-4 border border-warning"> Column 2 </div> <!-- uses Bootstrap border-->
+            </div>
+        </div>
+        <p> if the sum of the columns is less than 12 there is a gap in the table </p>
+        <p> if the sum of the columns is more than 12 a new row is automatically added to accomodate the excess </p>
 
         <script src="jquery-3.4.1.slim.js"></script>
         <script src="popper.min.js"></script>
