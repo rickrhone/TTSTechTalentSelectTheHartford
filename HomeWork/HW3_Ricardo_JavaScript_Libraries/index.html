@@ -257,8 +257,7 @@
                     <HelloMessage name="John Taylor" id="hello" />,
                     // replace the getElementById('root') with the appropriate jQuery call. 
                     // To get the DOM element from the jQuery element, use $("#root")[ 0 ]
-                    document.getElementById('root')
-                    // $('#root')[0].html('#hello')  // did not work - check with others               
+                    $('#root')[0] // was document.getElementById('root')                 
                 );
         </script>
         <!-- Vue -->
