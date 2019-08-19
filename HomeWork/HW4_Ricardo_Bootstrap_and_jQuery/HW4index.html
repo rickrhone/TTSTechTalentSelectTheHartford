@@ -36,7 +36,7 @@
         <h2 class="sectionHeading"> Alert Component Section </h2>
         <div class="alert alert-primary" role="alert"> This is a primary alert</div>
         <div class="alert alert-secondary" role="alert"> This is a secondary alert </div>
-        <div class="alert alert-danger" role="alert"> A is a danger alert </div>
+        <div class="alert alert-danger" role="alert" id="dangerAlert"> A is a danger alert </div>
 
         <h2 class="sectionHeading"> Button Component Section </h2>
         <button type="button" class="btn btn-success"> This is a Success Button </button>
@@ -172,56 +172,58 @@
         <h2 class="sectionHeading"> justify-content- class Section </h2>
         <!-- Using the justify-content- classes, create a grid that forms an "X" on the screen. That is the top
         row has content at the ends (grid 1 and 12), the second row has one empty space on either end (content in grid 2 and 11), etc. -->
-        <div class="row">
-            <div class="col-1 d-flex justify-content-start"> O </div>
-            <div class="col-11 d-flex justify-content-end"> O </div>
-        </div>
-        <div class="row">
-            <div class="offset-1 col-5 d-flex justify-content-start"> O </div>
-            <div class="col-5 d-flex justify-content-end"> O </div>
-        </div>
-        <div class="row">
-            <div class="offset-2 col-5 d-flex justify-content-start"> O </div>
-            <div class="col-3 d-flex justify-content-end"> O </div>
-        </div>
-        <div class="row">
-            <div class="offset-3 col-5 d-flex justify-content-start"> O </div>
-            <div class="col-1 d-flex justify-content-end"> O </div>
-        </div>
-        <div class="row">
-            <div class="offset-4 col-3 d-flex justify-content-start"> O </div>
-            <div class="col-1 d-flex justify-content-end"> O </div>
-        </div>
-        <div class="row">
-            <div class="offset-5 col-1 d-flex justify-content-start"> O </div>
-            <div class="col-1 d-flex justify-content-end"> O </div>
-        </div>
-        <div class="row">
-            <div class="offset-5 col-2 d-flex justify-content-around"> O </div>
-        </div>
-        <div class="row">
-            <div class="offset-5 col-1 d-flex justify-content-start"> O </div>
-            <div class="col-1 d-flex justify-content-end"> O </div>
-        </div>
-        <div class="row">
-            <div class="offset-4 col-3 d-flex justify-content-start"> O </div>
-            <div class="col-1 d-flex justify-content-end"> O </div>
-        </div>
-        <div class="row">
-            <div class="offset-3 col-5 d-flex justify-content-start"> O </div>
-            <div class="col-1 d-flex justify-content-end"> O </div>
-        </div>
-        <div class="row">
-            <div class="offset-2 col-5 d-flex justify-content-start"> O </div>
-            <div class="col-3 d-flex justify-content-end"> O </div>
-        </div>
-        <div class="row">
-            <div class="offset-1 col-5 d-flex justify-content-start"> O </div>
-            <div class="col-5 d-flex justify-content-end"> O </div>
-        </div>
-        <div class="row">
-            <div class="col-1 d-flex justify-content-start"> O </div>
-            <div class="col-11 d-flex justify-content-end"> O </div>
+        <div id="justCont">
+            <div class="row">
+                <div class="col-1 d-flex justify-content-start"> O </div>
+                <div class="col-11 d-flex justify-content-end"> O </div>
+            </div>
+            <div class="row">
+                <div class="offset-1 col-5 d-flex justify-content-start"> O </div>
+                <div class="col-5 d-flex justify-content-end"> O </div>
+            </div>
+            <div class="row">
+                <div class="offset-2 col-5 d-flex justify-content-start"> O </div>
+                <div class="col-3 d-flex justify-content-end"> O </div>
+            </div>
+            <div class="row">
+                <div class="offset-3 col-5 d-flex justify-content-start"> O </div>
+                <div class="col-1 d-flex justify-content-end"> O </div>
+            </div>
+            <div class="row">
+                <div class="offset-4 col-3 d-flex justify-content-start"> O </div>
+                <div class="col-1 d-flex justify-content-end"> O </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-1 d-flex justify-content-start"> O </div>
+                <div class="col-1 d-flex justify-content-end"> O </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-2 d-flex justify-content-around"> O </div>
+            </div>
+            <div class="row">
+                <div class="offset-5 col-1 d-flex justify-content-start"> O </div>
+                <div class="col-1 d-flex justify-content-end"> O </div>
+            </div>
+            <div class="row">
+                <div class="offset-4 col-3 d-flex justify-content-start"> O </div>
+                <div class="col-1 d-flex justify-content-end"> O </div>
+            </div>
+            <div class="row">
+                <div class="offset-3 col-5 d-flex justify-content-start"> O </div>
+                <div class="col-1 d-flex justify-content-end"> O </div>
+            </div>
+            <div class="row">
+                <div class="offset-2 col-5 d-flex justify-content-start"> O </div>
+                <div class="col-3 d-flex justify-content-end"> O </div>
+            </div>
+            <div class="row">
+                <div class="offset-1 col-5 d-flex justify-content-start"> O </div>
+                <div class="col-5 d-flex justify-content-end"> O </div>
+            </div>
+            <div class="row">
+                <div class="col-1 d-flex justify-content-start"> O </div>
+                <div class="col-11 d-flex justify-content-end"> O </div>
+            </div>
         </div>
 
         <h2 class="sectionHeading"> form-group and form-control class Section </h2>
@@ -246,7 +248,13 @@
             <button type="submit" class="btn btn-primary"> Click Here to Submit</button>
         </form>
 
-
+        <h2 class="sectionHeading"> Color changing button Section </h2>
+        <!-- Create a button on the page for changing colors. Code several iterations of the button and alter the
+        color of the some of the sections you created earlier by adding or removing classes. -->
+        <button class="btn btn-primary" id="btn1"> Click here to change the color of the justify-content- class
+            section</button>
+        <button class="btn btn-secondary" id="btn2"> Click here to change the danger alert in the Alert Component
+            Section to a primary alert</button>
 
 
         <script src="jquery-3.4.1.slim.js"></script>
@@ -254,7 +262,20 @@
         <script src="bootstrap.js"></script>
         <script src="lodash.js"></script>
         <script>
-            $(document).ready(function () {});
+            $(document).ready(function () {
+                $("#btn1").on({
+                    click: function () {
+                        $("#justCont").css("background-color", "yellow");
+                    }
+                })
+                $("#btn2").on({
+                    click: function () {
+                        $("#dangerAlert").removeClass("alert-danger").addClass("alert-primary")
+                            .html("This is now a Primary Alert");
+                    }
+                })
+
+            });
         </script>
     </body>
 
