@@ -21,8 +21,7 @@ var Employee = /** @class */ (function () {
         this.HourlyWage = hourlyWage;
         if (numberOfHours) {
             this.NumberOfHours = numberOfHours;
-        }
-        else {
+        } else {
             this.NumberOfHours = 40;
         }
         this.CertsAndDegress = certsAndDegrees;
@@ -93,7 +92,10 @@ document.getElementById("div7").innerHTML = Employee5.addCerts([
     " M.S. Engineering Science"
 ]);
 // Employee 6
-var employee6Interface = { firstName: "Carl", lastName: "Maguire" };
+var employee6Interface = {
+    firstName: "Carl",
+    lastName: "Maguire"
+};
 var Employee6 = Employee5.interfaceMethod(employee6Interface);
 // display employee6 first and last name in div 8 of the HTML page
 document.getElementById("div8").innerHTML = Employee6.getFullName();

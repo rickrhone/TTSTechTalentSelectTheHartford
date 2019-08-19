@@ -27,6 +27,21 @@ export class PersonService {
 
   //Change the service call to return an Obervable rather than a Person object
   getPerson3(): Observable<Person> {
+    this.delay(6000);
+    console.log("just pass delay");
     return of(this.person3);
+
+    // this.delay(4000).then(any => {return of(this.person3)});
+  }
+
+  //To really see the process of Observables without a long web delay, create this function inside the service class:
+  async delay(ms: number) {
+    await new Promise(resolve =>
+      setTimeout(() => {
+        console.log("inside the setTimeout() function");
+        console.log(ms);
+        resolve();
+      }, ms)
+    );
   }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-//import the persin service
+//import the person service
 import { PersonService } from "../person.service";
 import { Person } from "../Person";
 
