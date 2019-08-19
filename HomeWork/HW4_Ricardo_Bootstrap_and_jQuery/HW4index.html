@@ -11,13 +11,20 @@
             .border-blue {
                 border: 1px solid blue;
             }
+
+            .sectionHeading {
+                background-color: black;
+                color: white;
+                margin-top: 15px;
+                align-items: center;
+            }
         </style>
     </head>
 
     <body>
         <p>Hello Bootstrap</p>
 
-        <p>Jumbotron Section</p>
+        <h2 class="sectionHeading">Jumbotron Section</h2>
         <!-- Create a <div> section at the top of the page. Put a welcome message in it.  -->
         <!-- Now, surround that <div> with another one. If you refresh the page nothing should happen. -->
         <!-- Now, create a Jumbotron. -->
@@ -26,12 +33,12 @@
         </div>
 
         <!-- Pick out a few of the components and code some simple sections. -->
-        <h2> Alert Component Section </h2>
+        <h2 class="sectionHeading"> Alert Component Section </h2>
         <div class="alert alert-primary" role="alert"> This is a primary alert</div>
         <div class="alert alert-secondary" role="alert"> This is a secondary alert </div>
         <div class="alert alert-danger" role="alert"> A is a danger alert </div>
 
-        <h2> Button Component Section </h2>
+        <h2 class="sectionHeading"> Button Component Section </h2>
         <button type="button" class="btn btn-success"> This is a Success Button </button>
         <button type="button" class="btn btn-warning"> This is a Warning Button </button>
         <button type="button" class="btn btn-link"> This is a Link Button </button>
@@ -42,7 +49,7 @@
             This is a button group
         </div>
 
-        <h2> Card Component Section </h2>
+        <h2 class="sectionHeading"> Card Component Section </h2>
         <div class="card text-center">
             <div class="card-header"> This is a card </div>
             <div class="card-body">
@@ -74,7 +81,7 @@
             </div>
         </div>
 
-        <h2> Collapse Component Section </h2>
+        <h2 class="sectionHeading"> Collapse Component Section </h2>
         <p>
             <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
                 aria-expanded="false" aria-controls="collapseExample">
@@ -88,7 +95,7 @@
             </div>
         </div>
 
-        <h2> Dropdown Component Section </h2>
+        <h2 class="sectionHeading"> Dropdown Component Section </h2>
         <div class="dropdown">
             <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
@@ -103,19 +110,19 @@
 
         <!-- Using div sections, create several message areas that have different background colors. Reference
         the bg- series of classes. -->
-        <h2> bg- Series of Classes Section </h2>
+        <h2 class="sectionHeading"> bg- Series of Classes Section </h2>
         <div class="bg-primary"> Message Area 1 - using class "bg-primary"</div>
         <div class="bg-danger"> Message Area 2 - using class "bg-danger"</div>
         <div class="bg-transparent"> Message Area 3 - using class "bg-transparent"</div>
 
         <!-- Use <p> tags and the text- classes to create several areas of colored text.  -->
-        <h2> text- Series of Classes Section </h2>
+        <h2 class="sectionHeading"> text- Series of Classes Section </h2>
         <p class="text-warning">This is a warning text </p>
         <p class="text-muted">This is muted text </p>
         <p class="text-danger">This is danger text </p>
 
         <!-- Combine the bg- and text- classes to make some custom alert-like sections -->
-        <h2> Custom Alerts section using both bg- and text- Series of Classes </h2>
+        <h2 class="sectionHeading"> Custom Alerts section using both bg- and text- Series of Classes </h2>
         <div class="bg-primary">
             <p class="text-danger"> Message Area 1 - using classes "bg-primary" and text-danger</p>
         </div>
@@ -128,7 +135,7 @@
 
         <!--  create a basic table using <div> sections. Resize the browser and notice how the column react -->
         <!--  Create several more rows, each with a different number of columns. Continue to resize the browser and notice the behavior -->
-        <h2> Basic Table Section </h2>
+        <h2 class="sectionHeading"> Basic Table Section </h2>
         <div class="container">
             <div class="row">
                 <div class="col border border-danger"> Column 1 </div> <!-- uses Bootstrap border-->
@@ -161,6 +168,63 @@
         </div>
         <p> if the sum of the columns is less than 12 there is a gap in the table </p>
         <p> if the sum of the columns is more than 12 a new row is automatically added to accomodate the excess </p>
+
+        <h2 class="sectionHeading"> justify-content- class Section </h2>
+        <!-- Using the justify-content- classes, create a grid that forms an "X" on the screen. That is the top
+        row has content at the ends (grid 1 and 12), the second row has one empty space on either end (content in grid 2 and 11), etc. -->
+        <div class="row">
+            <div class="col-1 d-flex justify-content-start"> O </div>
+            <div class="col-11 d-flex justify-content-end"> O </div>
+        </div>
+        <div class="row">
+            <div class="offset-1 col-5 d-flex justify-content-start"> O </div>
+            <div class="col-5 d-flex justify-content-end"> O </div>
+        </div>
+        <div class="row">
+            <div class="offset-2 col-5 d-flex justify-content-start"> O </div>
+            <div class="col-3 d-flex justify-content-end"> O </div>
+        </div>
+        <div class="row">
+            <div class="offset-3 col-5 d-flex justify-content-start"> O </div>
+            <div class="col-1 d-flex justify-content-end"> O </div>
+        </div>
+        <div class="row">
+            <div class="offset-4 col-3 d-flex justify-content-start"> O </div>
+            <div class="col-1 d-flex justify-content-end"> O </div>
+        </div>
+        <div class="row">
+            <div class="offset-5 col-1 d-flex justify-content-start"> O </div>
+            <div class="col-1 d-flex justify-content-end"> O </div>
+        </div>
+        <div class="row">
+            <div class="offset-5 col-2 d-flex justify-content-around"> O </div>
+        </div>
+        <div class="row">
+            <div class="offset-5 col-1 d-flex justify-content-start"> O </div>
+            <div class="col-1 d-flex justify-content-end"> O </div>
+        </div>
+        <div class="row">
+            <div class="offset-4 col-3 d-flex justify-content-start"> O </div>
+            <div class="col-1 d-flex justify-content-end"> O </div>
+        </div>
+        <div class="row">
+            <div class="offset-3 col-5 d-flex justify-content-start"> O </div>
+            <div class="col-1 d-flex justify-content-end"> O </div>
+        </div>
+        <div class="row">
+            <div class="offset-2 col-5 d-flex justify-content-start"> O </div>
+            <div class="col-3 d-flex justify-content-end"> O </div>
+        </div>
+        <div class="row">
+            <div class="offset-1 col-5 d-flex justify-content-start"> O </div>
+            <div class="col-5 d-flex justify-content-end"> O </div>
+        </div>
+        <div class="row">
+            <div class="col-1 d-flex justify-content-start"> O </div>
+            <div class="col-11 d-flex justify-content-end"> O </div>
+        </div>
+
+
 
         <script src="jquery-3.4.1.slim.js"></script>
         <script src="popper.min.js"></script>
