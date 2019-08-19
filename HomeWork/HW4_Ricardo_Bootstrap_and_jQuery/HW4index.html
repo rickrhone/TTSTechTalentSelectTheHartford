@@ -224,6 +224,29 @@
             <div class="col-11 d-flex justify-content-end"> O </div>
         </div>
 
+        <h2 class="sectionHeading"> form-group and form-control class Section </h2>
+        <!-- Create an imput form using the form-group and form-control classes. For reference look at the
+        forms section of the Bootstrap documentation. Also create a button on the form and make it a primary button. -->
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary"> Click Here to Submit</button>
+        </form>
+
+
 
 
         <script src="jquery-3.4.1.slim.js"></script>
