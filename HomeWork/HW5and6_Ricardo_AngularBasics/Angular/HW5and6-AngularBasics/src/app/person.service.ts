@@ -27,11 +27,15 @@ export class PersonService {
 
   //Change the service call to return an Obervable rather than a Person object
   getPerson3(): Observable<Person> {
-    this.delay(6000);
+    // this.delay(6000);
     console.log("just pass delay");
-    return of(this.person3);
+    let x = of(this.person3);
 
-    // this.delay(4000).then(any => {return of(this.person3)});
+    this.delay(4000).then(p => {
+      x;
+    });
+    console.log("delay code ran");
+    return x;
   }
 
   //To really see the process of Observables without a long web delay, create this function inside the service class:
