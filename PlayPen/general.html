@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="bootstrap.css">
+
+        <style>
+            .batman {
+                background-color: #d7d9f2;
+            }
+
+            .flash {
+                background-color: #ffe8d4;
+            }
+
+            caption {
+                padding: 8px;
+                caption-side: bottom;
+            }
+
+            table {
+                border-collapse: collapse;
+                border: 2px solid rgb(100, 100, 100);
+                letter-spacing: 1px;
+                font-family: sans-serif;
+                font-size: .7rem;
+            }
+
+            td,
+            th {
+                border: 1px solid rgb(100, 100, 100);
+                padding: 10px 10px;
+            }
+
+            td {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+
+
+        <select name="" id="">
+            <option value="">--Please choose an option--</option>
+            <option value="">Dog</option>
+            <option value="" selected>Cat</option>
+        </select>
+
+        <label>Please choose one or more pets:
+            <select name="pets" multiple size="4">
+                <optgroup label="4-legged pets">
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="hamster" disabled>Hamster</option>
+                </optgroup>
+                <optgroup label="Flying pets">
+                    <option value="parrot">Parrot</option>
+                    <option value="macaw">Macaw</option>
+                    <option value="albatross">Albatross</option>
+                </optgroup>
+            </select>
+        </label>
+
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+
+
+        <table>
+            <caption>Superheros and sidekicks</caption>
+            <colgroup>
+                <col>
+                <col span="3" class="batman">
+                <col span="3" class="flash">
+            </colgroup>
+            <tr>
+                <td> </td>
+                <th scope="col">Batman</th>
+                <th scope="col">Robin</th>
+                <th scope="col">The Flash</th>
+                <th scope="col">Kid Flash</th>
+            </tr>
+            <tr>
+                <th scope="row">Skill</th>
+                <td>Smarts</td>
+                <td>Dex, acrobat</td>
+                <td>Super speed</td>
+                <td>Super speed</td>
+            </tr>
+        </table>
+
+        <script>
+            for (var i = 0; i < 5; i++) {
+                console.log("this is the value of i : " + i);
+            }
+
+            if (i == 5) {
+                console.log("this is the value of i in the if statement: " + i);
+            }
+        </script>
+
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="popper.min.js"></script>
+        <script src="bootstrap.js"> </script>
+    </body>
+
+</html>
