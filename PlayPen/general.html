@@ -78,26 +78,18 @@
         </nav>
 
 
+
         <table>
-            <caption>Superheros and sidekicks</caption>
-            <colgroup>
-                <col>
-                <col span="3" class="batman">
-                <col span="3" class="flash">
-            </colgroup>
             <tr>
-                <td> </td>
-                <th scope="col">Batman</th>
-                <th scope="col">Robin</th>
-                <th scope="col">The Flash</th>
-                <th scope="col">Kid Flash</th>
+                <th>Name</th>
+                <td>Jill Smith</td>
             </tr>
             <tr>
-                <th scope="row">Skill</th>
-                <td>Smarts</td>
-                <td>Dex, acrobat</td>
-                <td>Super speed</td>
-                <td>Super speed</td>
+                <th rowspan="2">Phone</th>
+                <td>583-46493</td>
+            </tr>
+            <tr>
+                <td>123-4567</td>
             </tr>
         </table>
 
@@ -111,9 +103,42 @@
             }
         </script>
 
+
+        <!-- Three column layout -->
+        <div class="jumbotron" style="text-align: center">
+            <h1> My 3 Column Bootstrap Page </h1>
+            <p> This page is a simple 3 column bootstrap page </p>
+        </div>
+        <div class="row">
+            <div class="col col-4">
+                <h2>Column 1</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem incidunt in assumenda
+                    voluptatum adipisci architecto! </p>
+            </div>
+            <div class="col col-4">
+                <h2>Column 2</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem incidunt in assumenda
+                    voluptatum adipisci architecto! </p>
+            </div>
+            <div class="col col-4">
+                <h2>Column 3</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem incidunt in assumenda
+                    voluptatum adipisci architecto! </p>
+            </div>
+        </div>
+
+         <!-- Unordered List -->
+         <ul style="list-style-image: url(image.png)">
+             <li> Coffee </li>
+             <li> Tea </li>
+             <li> Coca Cola </li>
+         </ul>
+
+
         <script src="jquery-3.4.1.min.js"></script>
         <script src="popper.min.js"></script>
         <script src="bootstrap.js"> </script>
+        <script src="playpen.js"> </script>
     </body>
 
 </html>
