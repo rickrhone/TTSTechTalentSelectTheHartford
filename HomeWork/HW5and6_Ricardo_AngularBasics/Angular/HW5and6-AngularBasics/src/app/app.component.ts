@@ -6,5 +6,5 @@ import { Component } from "@angular/core";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  title = "HW5-AngularBasics-Ricardo";
+  title = "HW5,6&7-AngularBasics-Ricardo";
 }

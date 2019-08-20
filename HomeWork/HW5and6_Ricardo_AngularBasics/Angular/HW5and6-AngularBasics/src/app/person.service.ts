@@ -15,7 +15,7 @@ export class PersonService {
   constructor() {
     this.person1 = new Person("Gordon", "Lyft", 26);
     this.person2 = new Person("Lillian", "Armstrong", 35);
-    this.person3 = new Person("John", "Observable", 56);
+    this.person3 = new Person("John", "Malcolm", 56);
   }
 
   getPerson1(): Person {
@@ -27,25 +27,16 @@ export class PersonService {
 
   //Change the service call to return an Obervable rather than a Person object
   getPerson3(): Observable<Person> {
-    // this.delay(6000);
-    console.log("just pass delay");
     let x = of(this.person3);
-
-    this.delay(4000).then(p => {
-      x;
+    // this.delay(4000).then(any => (this.person3.FirstName = "Brian")); //also works
+    this.delay(4000).then(any => {
+      return (this.person3.FirstName = "Brian");
     });
-    console.log("delay code ran");
     return x;
   }
 
   //To really see the process of Observables without a long web delay, create this function inside the service class:
   async delay(ms: number) {
-    await new Promise(resolve =>
-      setTimeout(() => {
-        console.log("inside the setTimeout() function");
-        console.log(ms);
-        resolve();
-      }, ms)
-    );
+    await new Promise(resolve => setTimeout(() => resolve(), ms));
   }
 }
