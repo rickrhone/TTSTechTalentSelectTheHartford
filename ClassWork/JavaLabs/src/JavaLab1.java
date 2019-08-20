@@ -221,14 +221,17 @@ public class JavaLab1 {
         // Answer - Yes, same value in String Pool
         System.out.print("(Str1 == Str2) = ");
         System.out.println(Str1 == Str2);
+
         // Question 11 -  Are the first two equal if you use the equals() method?
         // Answer - Yes, same literal value
         System.out.print("Str1.equals(Str2) = ");
         System.out.println(Str1.equals(Str2));
+
         // Question 12 -  Are the first and third equal if you use the equals() method?
         // Answer - no, not the same literal value because of the lower case j
         System.out.print("Str1.equals(Str3) = ");
         System.out.println(Str1.equals(Str3));
+        
         // Question 13 -  How can you compare them (str1 and str3) and ignore the case?
         // Answer - by using the equalsIgnoreCase() method
         System.out.print("Str1.equals(Str3) Ignore Case = ");
