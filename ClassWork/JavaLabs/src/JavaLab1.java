@@ -1,3 +1,6 @@
+// Java Data Types and Variables - LAB
+// Ricardo Rhone Aug 20, 2019
+
 public class JavaLab1 {
 
     // -------------------------------------------- Task 2 -----------------------------------------------------
@@ -12,6 +15,10 @@ public class JavaLab1 {
     // Answer - Yes they do have a default initial value. No compile time error if they are used without being initialized.
     // Question 4 - Where are these variables visible?
     // Answer - because the access modifier is private they are visible only to the this class.
+
+    // -------------------------------------------- Task 24 -----------------------------------------------------
+    // Create a string variable that represents a template to print an integer.
+    public static void template(int integer) {System.out.println("The integer printed from the template is: " + integer);};
 
     public static void main(String[] args)
     {
@@ -107,6 +114,198 @@ public class JavaLab1 {
         System.out.println("\n----------- Task 14 ---------------");
         System.out.println("(z += (x * 2) - 6) = " + z);
 
+        // -------------------------------------------- Task 15 -----------------------------------------------------
+        // Now lets move on to boolean operators. Reuse the previous int values and declare them as follows
+        // x = y = 13; z = 15;
+        x = y = 13;
+        z = 15;
 
+        // -------------------------------------------- Task 16 -----------------------------------------------------
+        // After that print the value of the following expressions:
+        // x == y; x <= y; x != y; x > y; z < (x+y); z > (x+2)
+        System.out.println("\n----------- Task 16 ---------------");
+        System.out.println("x = " + x + ", y = " + y + ", z = " + z);
+
+        System.out.print("(x == y) = ");
+        System.out.println(x == y);
+
+        System.out.print("(x <= y) = ");
+        System.out.println(x <= y);
+
+        System.out.print("(x != y) = ");
+        System.out.println(x != y);
+
+        System.out.print("(x > y) = ");
+        System.out.println(x > y);
+
+        System.out.print("(z < (x + y)) = ");
+        System.out.println(z < (x + y));
+
+        System.out.print("(z > (x + 2)) = ");
+        System.out.println(z > (x + 2));
+
+        // -------------------------------------------- Task 17 -----------------------------------------------------
+        // For binary operators, write the statements that will verify the first 6 lines of the table on binary
+        // operations. The statements should be in the form (using slightly different variable names):
+        // b3 = b1 & b2; System.out.println("50 AND 19 is: " + b3);
+        int b1 = 50; // binary 0011 0010
+        int b2 = 19; // binary 0001 0011
+        int b3 = 0;
+        System.out.println("\n----------- Task 17 ---------------");
+
+        b3 = b1 & b2; // bitwise AND
+        System.out.println("50 AND(&) 19 = " + b3);
+
+        b3 = b1 | b2; // bitwise OR
+        System.out.println("50 OR(|) 19 = " + b3);
+
+        b3 = b1 ^ b2; // bitwise XOR
+        System.out.println("50 XOR(^) 19 = " + b3);
+
+        b3 = ~b1; // bitwise COMPLEMENT
+        System.out.println("COMPLEMENT(~) 50 = " + b3); //HELP
+
+        b3 = b2 << 2; // bitwise shift left
+        System.out.println("19 bitwise shift left(<<) 2 = " + b3);
+
+        b3 = b2 >> 2; // bitwise shift right
+        System.out.println("19 bitwise shift right(>>) = " + b3);
+
+        // -------------------------------------------- Task 18 -----------------------------------------------------
+        // For the right shift carry and non-carry operators, type in the following and note the output:
+        System.out.println("\n----------- Task 18 ---------------");
+        b3 = b2>>>2;
+        System.out.println("19 SHIFT RIGHT (NON CARRY) 2 = " + b3);
+
+        b3 = (~b1)>>2;
+        System.out.println("50 COMP SHIFT RIGHT (CARRY) 2 = " + b3);
+
+        b3 = (~b1)>>>2;
+        System.out.println("50 COMP SHIFT RIGHT (NON CARRY) 2 = " + b3);
+
+        // -------------------------------------------- STRINGS -----------------------------------------------------
+
+        // -------------------------------------------- Task 19 -----------------------------------------------------
+        // Declare three string variables, firstName , lastName , middle and initialize them with the appropriate values.
+        // Use different methods; one directly with a literal string, one with the new operator,
+        // and one with assigning a value after initialization.
+        String firstName = "Ricardo"; // directly with a literal string
+        String lastName = new String("Rhone"); // with the new operator
+        String middle = "Antonio";
+        middle = "Java"; // with assigning a value after initialization
+
+        // -------------------------------------------- Task 20 -----------------------------------------------------
+        // Print out each variable to ensure that the values are correct.
+        System.out.println("\n----------- Task 20 ---------------");
+        System.out.println("firstName: " + firstName);
+        System.out.println("lastName: " + lastName);
+        System.out.println("middle: " + middle);
+
+        // -------------------------------------------- Task 21 -----------------------------------------------------
+        // Create a string called fullName that will be made from concatenating the previous three values. Will
+        // you use the concat() method or the + operator? Be sure the spacing is correct.
+        System.out.println("\n----------- Task 21 ---------------");
+        String fullName = firstName.concat(" ").concat(middle) + " " + lastName;
+        System.out.println("Full Name is: " + fullName);
+        // Question 9 - Will you use the concat() method or the + operator?
+        // Answer - I used both the concat() method and the + operator
+
+        // -------------------------------------------- Task 22 -----------------------------------------------------
+        // Create three strings with the values of "James", "James" and james.
+        String Str1 = "James";
+        String Str2 = "James";
+        String Str3 = "james";
+        System.out.println("\n----------- Task 22 ---------------");
+        System.out.println("Str1 = " + Str1 + ", Str2 = " + Str2 + ", Str3 = " + Str3);
+        // Question 10 -  Are the first two equal if you use the "==" operator
+        // Answer - Yes, same value in String Pool
+        System.out.print("(Str1 == Str2) = ");
+        System.out.println(Str1 == Str2);
+        // Question 11 -  Are the first two equal if you use the equals() method?
+        // Answer - Yes, same literal value
+        System.out.print("Str1.equals(Str2) = ");
+        System.out.println(Str1.equals(Str2));
+        // Question 12 -  Are the first and third equal if you use the equals() method?
+        // Answer - no, not the same literal value because of the lower case j
+        System.out.print("Str1.equals(Str3) = ");
+        System.out.println(Str1.equals(Str3));
+        // Question 13 -  How can you compare them (str1 and str3) and ignore the case?
+        // Answer - by using the equalsIgnoreCase() method
+        System.out.print("Str1.equals(Str3) Ignore Case = ");
+        System.out.println(Str1.equalsIgnoreCase(Str3));
+
+        // -------------------------------------------- Task 23 -----------------------------------------------------
+        // Create a string with a full sentence of a least ten words. Using that string and any resultant variables
+        // carry out the following operations:
+        System.out.println("\n----------- Task 23 ---------------");
+        String stringSentence = "However, since primitive types most commonly exist in two places, \r\n"
+                + "class variables and method variables, it maybe necessary to use certain aspects \r\n"
+                + "of classes during this lab.";
+        System.out.println("stringSentence:\n" + stringSentence);
+
+        // Check to see if the sentence contains the word 'and'.
+        System.out.print("\nDoes stringSentence contain 'and'?: ");
+        System.out.println(stringSentence.contains("and"));
+
+        // Declare a char variable and put the 16th letter in it.
+        char charVar = stringSentence.charAt(16);
+        System.out.println("The 16th letter of the sentence is: " + charVar);
+
+        // Declare an int variable and find the first instance of the letter 'u'.
+        int firstInstofU = stringSentence.indexOf('u', 0);
+        System.out.println("The first instance of the letter 'u' is at index position: " + firstInstofU);
+
+        // Declare an int variable and find the last instance of the letter 'c'.
+        int lastInstofC = stringSentence.lastIndexOf('c');
+        System.out.println("The last instance of the letter 'c' is at index position: " + lastInstofC);
+
+        // Declare an int and find the total length of the string.
+        int totalLength = stringSentence.length();
+        System.out.println("The total length of the string is: " + totalLength);
+
+        // Does the sentence start with the word "The"?
+        boolean startWithThe = stringSentence.startsWith("The");
+        System.out.println("Does the sentence start with the word 'The'?: " + startWithThe);
+
+        // -------------------------------------------- Task 25 -----------------------------------------------------
+        // Create a string variable that represents a template to print an integer - Task 24 at the top
+        // Now use that template and an integer to print the template with the values of 22, 89, and 93.
+        System.out.println("\n----------- Task 25 ---------------");
+        template(22);
+        template(89);
+        template(93);
+
+        // -------------------------------------------- WRAPPERS -----------------------------------------------------
+
+        // -------------------------------------------- Task 26 -----------------------------------------------------
+        // Declare an integer wrapper object and initialize it with the value of 42.
+        Integer intWrapper = 42;
+
+        // -------------------------------------------- Task 27 -----------------------------------------------------
+        // Declare another wrapper object and initialize it from the literal "88".
+        Integer intWrapper2 = Integer.parseInt("88");
+        // Integer intWrapper3 = new Integer("88"); // deprecated
+        // Question 13 - Will you use a constructor or a Parse() function?
+        // Answer - I used the parseInt() function the Integer(String S) constructor is deprecated
+
+        // -------------------------------------------- Task 28 -----------------------------------------------------
+        // Finally, to wrap things up and combine a wrapper class with a string substitution (and to prove out
+        // some of the earlier statements), enter the following three lines and examine the output:
+        System.out.println("\n----------- Task 28 ---------------");
+        b3 = b2>>2;
+        System.out.println("19 SHIFT RIGHT (NON CARRY) 2 is: " + b3);
+        System.out.println(String.format("In binary %s", Integer.toBinaryString(b3)));
+
+        b3 = (~b1)>>2;
+        System.out.println("\n50 COMP SHIFT RIGHT (CARRY) 2 is: " + b3);
+        System.out.println(String.format("In binary %s", Integer.toBinaryString(b3)));
+
+        b3 = (~b1)>>>2;
+        System.out.println("\n50 COMP SHIFT RIGHT (NON CARRY) 2 is: " + b3);
+        System.out.println(String.format("In binary %s", Integer.toBinaryString(b3)));
+
+        // Note that in the output, leading zeros aren't included. So the fact that the last string is 2 characters
+        // shorter than the previous one indicates that there are two leading zeros - hence zeros were inserted
+        // and the sign bit not kept.
     }
 }
