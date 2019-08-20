@@ -2,7 +2,6 @@
 // Ricardo Rhone Aug 20, 2019
 
 public class JavaLab1 {
-
     // -------------------------------------------- Task 2 -----------------------------------------------------
     // Declare two variables in the class: 1. an integer named methodCount 2. a string variable named className
     private static int methodCount = 2;
