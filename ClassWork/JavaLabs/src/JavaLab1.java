@@ -231,7 +231,7 @@ public class JavaLab1 {
         // Answer - no, not the same literal value because of the lower case j
         System.out.print("Str1.equals(Str3) = ");
         System.out.println(Str1.equals(Str3));
-        
+
         // Question 13 -  How can you compare them (str1 and str3) and ignore the case?
         // Answer - by using the equalsIgnoreCase() method
         System.out.print("Str1.equals(Str3) Ignore Case = ");
