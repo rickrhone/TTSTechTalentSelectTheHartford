@@ -1,0 +1,57 @@
+<div id="component4">
+  <h4>This component was created as part of HW7 </h4>
+</div>
+
+<div class="container" id="newPersonForm2">
+
+  <h2 id="formHeading">Create a New Person Using Reactive Forms </h2>
+
+  <form [formGroup]="personForm2" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label>
+        First Name:
+        <input type="text" formControlName="FirstName" class="form-control">
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label>
+        Last Name:
+        <input type="text" formControlName="LastName" class="form-control">
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label>
+        Age:
+        <input type="text" formControlName="Age" class="form-control">
+      </label>
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="!personForm2.valid">Submit</button>
+    <button type="reset" class="btn btn-default" (click)="newPerson()" id="clearbtn">Clear The Form</button>
+
+  </form>
+
+</div>
+
+
+<!-- This displays after the form is submitted -->
+<div [hidden]="!submitted" class="container" id="personSubmitted">
+  <h2>You submitted the following:</h2>
+  <div class="row">
+    <div class="col-xs-3">First Name:</div>
+    <div class="col-xs-9">{{ this.personForm2.controls["FirstName"].value }}</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">Last Name:</div>
+    <div class="col-xs-9">{{ this.personForm2.controls["LastName"].value }}</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">Age:</div>
+    <div class="col-xs-9">{{ this.personForm2.controls["Age"].value}}</div>
+  </div>
+  <br>
+  <button class="btn btn-primary" (click)="submitted=false">Edit</button>
+</div>
