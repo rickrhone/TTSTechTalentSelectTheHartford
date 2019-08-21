@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   background-color: gray;
-  height: 30px;
+  height: 45px;
 }
 
 #btn2 {
@@ -11,5 +11,9 @@
 }
 
 #btn3 {
+  margin-left: 10px;
+}
+
+#btn4 {
   margin-left: 10px;
 }
