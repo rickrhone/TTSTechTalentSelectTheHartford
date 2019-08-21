@@ -10,6 +10,7 @@ import { HW5NewComponent2Component } from "./hw5-new-component2/hw5-new-componen
 import { ApplicationDefaultComponentComponent } from "./application-default-component/application-default-component.component";
 import { NewPersonComponentComponent } from "./new-person-component/new-person-component.component";
 import { NewpersonreactiveformComponent } from "./newpersonreactiveform/newpersonreactiveform.component";
+import { AnimalClassComponentComponent } from './animal-class-component/animal-class-component.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NewpersonreactiveformComponent } from "./newpersonreactiveform/newperso
     HW5NewComponent2Component,
     ApplicationDefaultComponentComponent,
     NewPersonComponentComponent,
-    NewpersonreactiveformComponent
+    NewpersonreactiveformComponent,
+    AnimalClassComponentComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
