@@ -6,13 +6,15 @@ import { HW5NewComponent2Component } from "./hw5-new-component2/hw5-new-componen
 import { ApplicationDefaultComponentComponent } from "./application-default-component/application-default-component.component";
 import { NewPersonComponentComponent } from "./new-person-component/new-person-component.component";
 import { NewpersonreactiveformComponent } from "./newpersonreactiveform/newpersonreactiveform.component";
+import { AnimalClassComponentComponent } from "./animal-class-component/animal-class-component.component";
 
 const routes: Routes = [
   { path: "", component: ApplicationDefaultComponentComponent },
   { path: "hw5Comp", component: HW5NewComponentComponent },
   { path: "hw5Comp2", component: HW5NewComponent2Component },
   { path: "newPerson", component: NewPersonComponentComponent },
-  { path: "newPersonR", component: NewpersonreactiveformComponent }
+  { path: "newPersonR", component: NewpersonreactiveformComponent },
+  { path: "animal", component: AnimalClassComponentComponent }
 ];
 
 @NgModule({
