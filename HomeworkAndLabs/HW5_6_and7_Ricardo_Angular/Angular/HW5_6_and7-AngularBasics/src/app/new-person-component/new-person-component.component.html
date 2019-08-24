@@ -1,0 +1,61 @@
+<div id="component3">
+  <h4>This component was created as part of HW7 </h4>
+</div>
+
+<div class="container" [hidden]="submitted" id="newPersonForm">
+  <h2 id="formHeading">Create a New Person Using Template Forms </h2>
+  <form (ngSubmit)="onSubmit()" #personForm="ngForm">
+
+    <div class="form-group">
+      <label for="firstname">First Name: </label>
+      <input type="text" class="form-control" id="firstname" required [(ngModel)]="person4.FirstName" name="FirstName"
+        #FirstName="ngModel">
+      <div [hidden]="FirstName.valid || FirstName.pristine" class="alert alert-danger">
+        First Name is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="lastname">Last Name: </label>
+      <input type="text" class="form-control" id="lastname" required [(ngModel)]="person4.LastName" name="LastName"
+        #LastName="ngModel">
+      <div [hidden]="LastName.valid || LastName.pristine" class="alert alert-danger">
+        Last Name is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age: </label>
+      <input type="text" class="form-control" id="age" required [(ngModel)]="person4.Age" name="Age" #Age="ngModel">
+      <div [hidden]="Age.valid || Age.pristine" class="alert alert-danger">
+        Age is required
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="!personForm.form.valid">Submit</button>
+
+    <button type="button" class="btn btn-default" id="clearbtn" (click)="newPerson(); personForm.reset()">Clear the
+      Form</button>
+
+  </form>
+</div>
+
+
+<!-- This displays after the form is submitted -->
+<div [hidden]="!submitted" class="container" id="personSubmitted">
+  <h2>You submitted the following:</h2>
+  <div class="row">
+    <div class="col-xs-3">First Name:</div>
+    <div class="col-xs-9">{{ person4.FirstName }}</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">Last Name:</div>
+    <div class="col-xs-9">{{ person4.LastName }}</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">Age:</div>
+    <div class="col-xs-9">{{ person4.Age }}</div>
+  </div>
+  <br>
+  <button class="btn btn-primary" (click)="submitted=false">Edit</button>
+</div>

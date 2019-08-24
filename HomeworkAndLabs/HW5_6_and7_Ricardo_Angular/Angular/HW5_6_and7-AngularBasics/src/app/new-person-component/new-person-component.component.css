@@ -1,0 +1,18 @@
+#clearbtn {
+  margin-left: 10px;
+}
+
+#newPersonForm {
+  margin-bottom: 20px;
+}
+
+#formHeading {
+  text-align: center;
+}
+
+#component3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: coral;
+}

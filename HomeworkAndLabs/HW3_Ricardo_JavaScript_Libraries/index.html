@@ -1,0 +1,291 @@
+<!-- Ricardo Rhone TTS Homework 3 - Aug 14, 2019 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>HW3_JavaScript_Libraries</title>
+        <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css" />
+        <link rel="stylesheet" href="HW3style.css" />
+        <style>
+            .la {
+                text-align: left;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="heading">
+            <h1> Lodash, Moment, Math, DataTable, Chart, React and Vue Libraries Homework</h1>
+        </div>
+
+        <h1> DataTable 1 -pre-populated data</h1>
+        <div>
+            <!-- DATA TABLE SECTION OF THE HOMEWORK -->
+            <!-- In the body of the page, create the following table: -->
+            <table id="person_table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Cell Phone</th>
+                        <th>Zip Code</th>
+                        <th>State</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>111</td>
+                        <td>Brian</td>
+                        <td>Smith</td>
+                        <td>980-996-9650</td>
+                        <td>28025</td>
+                        <td>NC</td>
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>720-859-6284</td>
+                        <td>50566</td>
+                        <td>CO</td>
+                    </tr>
+                    <tr>
+                        <td>321</td>
+                        <td>Cindy</td>
+                        <td>Williamson</td>
+                        <td>214-933-3218</td>
+                        <td>41482</td>
+                        <td>TX</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Create a new page with an empty table: -->
+        <h1> DataTable 2 - populated from simulated JSON data</h1>
+
+        <div>
+            <table id="base_table">
+                <thead>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+        <!-- CHART SECTION  -->
+
+        <!--  Create a canvas area in the body, then reference that area when creating a chart: -->
+        <h1> Chart Area </h1>
+        <canvas id="chartArea"></canvas>
+
+
+        <!-- REACT SECTION  -->
+
+        <!--   Inside of the <body> element, create a section with an id: -->
+        <h1> React Section </h1>
+        <div id="root"></div>
+
+        <!-- Create a text input area on the page and give it an id -->
+        <input type="text" name="" id="textInput">
+
+
+        <!-- VUE SECTION -->
+        <h1> Vue Section </h1>
+        <div id="app">
+            <h2>Welcome to my first {{ frameName }} application</h2>
+            <ul>
+                <li v-for="product in products">
+                    <input type="number" v-model.number="product.quantity">
+                    {{ product.quantity }} {{ product.name }}
+                    <span v-if="product.quantity === 0">
+                        - OUT OF STOCK
+                    </span>
+                    <button @click="product.quantity += 1">Add</button>
+                </li>
+            </ul>
+            <h2>Total Inventory: {{ totalProducts }}</h2>
+        </div>
+
+
+
+        <!-- Linking JavaScript Libraries  -->
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="lodash.js"></script>
+        <script src="moment.js"></script>
+        <script src="math.min.js"></script>
+        <script src="Chart.min.js"></script>
+        <script>
+            $(document).ready(function () {
+
+                // DATA TABLE 1
+                // create the basic statement in the jQuery block that turns that into a data table
+                $('#person_table').DataTable({
+                    //Using the columns option add a class to the cells that will center-align them.
+                    // "columns": [{
+                    //     className: "centerCols"
+                    // }]
+                });
+
+
+                // DATA TABLE 2
+                // Next create a JavaScript array in the script block to represent some JSON data:
+                var objs = [{
+                        "name": "Jerry Nixon",
+                        "position": "System Architect",
+                        "salary": "$95,000",
+                        "start_date": "2010/03/19",
+                        "office": "Scottsdale"
+                    },
+                    {
+                        "name": "George Parker",
+                        "position": "Director",
+                        "salary": "$123,000",
+                        "start_date": "2002/01/19",
+                        "office": "Phoenix"
+                    },
+                    {
+                        "name": "Cindy Stackhouse",
+                        "position": "Development Manager",
+                        "salary": "$93,000",
+                        "start_date": "2016/04/25",
+                        "office": "Dallas"
+                    }
+                ];
+
+                // In the DataTable call, use the data option to load the data from the variable. Note that when
+                // loading this way you'll have to specify the property name to get the data from,
+                $('#base_table').DataTable({
+
+                    "data": objs,
+                    columns: [{
+                        // Add additional settings in each column to specify a title.
+                        title: 'Name',
+                        data: 'name',
+                        //left align the columns with my own class called la
+                        className: 'la'
+                    }, {
+                        title: 'Position',
+                        data: 'position',
+                        className: 'la'
+                    }, {
+                        title: 'Salary',
+                        data: 'salary',
+                        className: 'la'
+                    }, {
+                        title: 'Start Date',
+                        data: 'start_date',
+                        className: 'la'
+                    }, {
+                        title: 'Office',
+                        data: 'office',
+                        className: 'la'
+                    }]
+
+                });
+
+
+                // CHART SECTION 
+                var ctx = $("#chartArea"); // using jquery
+                var chart = new Chart(ctx, {
+                    //Reference the properties in the ChartJS documentation and change the display to a line graph. Also,
+                    //make the lines blue instead of the color above.
+                    // type: 'bar',
+                    type: 'line',
+                    data: {
+                        labels: ['XX-Small', 'X-Small', 'Small', 'Medium', 'Large', 'X-Large'],
+                        datasets: [{
+                            label: 'Planning Poker Sizes',
+                            // backgroundColor: 'rgb(255, 55, 128)',
+                            backgroundColor: 'blue',
+                            // borderColor: 'rgb(255, 55, 128)',
+                            borderColor: 'blue',
+                            fill: false,
+                            data: [1, 2, 3, 5, 8, 13]
+                        }]
+                    },
+                    options: {}
+                });
+            });
+        </script>
+        <!-- Datatables -->
+        <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+        <!-- React -->
+        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+        <script type="text/babel">
+            class HelloMessage extends React.Component {
+                constructor(props) {
+                    super(props);
+                    this.handleClick = this.handleClick.bind(this);
+                    this.state = {name: props.name};
+                }
+
+                handleClick(e) {
+                    // In the handleClick method, use jQuery to get the value from the text box and update the state of
+                    // the React control so that it is automatically updated.
+                    // this.setState({ name: "Ted" });
+                    var Name = $('#textInput').val()                                       
+                    this.setState({ name: Name });
+                }
+
+                render() {
+                    return (
+                        <div>
+                            <div>
+                                Hello {this.state.name}
+                            </div>
+                            <div>
+                                <button onClick={this.handleClick}>
+                                    Change Name
+                                </button>
+                            </div>
+                        </div>
+                    );
+                }
+            }
+                ReactDOM.render(
+                    <HelloMessage name="John Taylor" id="hello" />,
+                    // replace the getElementById('root') with the appropriate jQuery call. 
+                    // To get the DOM element from the jQuery element, use $("#root")[ 0 ]
+                    $('#root')[0] // was document.getElementById('root')                 
+                );
+        </script>
+        <!-- Vue -->
+        <script src="https://unpkg.com/vue"></script>
+        <script>
+            const app = new Vue({
+                el: '#app',
+                data: {
+                    frameName: 'Vue',
+                    products: []
+                },
+                computed: {
+                    totalProducts() {
+                        return this.products.reduce((sum, product) => {
+                            return sum + product.quantity
+                        }, 0)
+                    }
+                },
+                created() {
+                    fetch('https://api.myjson.com/bins/74l63')
+                        .then(response => response.json())
+                        .then(json => {
+                            this.products = json.products
+                        })
+                }
+            })
+        </script>
+        <!-- My Custom JS -->
+        <script src="js.js"></script>
+    </body>
+
+</html>

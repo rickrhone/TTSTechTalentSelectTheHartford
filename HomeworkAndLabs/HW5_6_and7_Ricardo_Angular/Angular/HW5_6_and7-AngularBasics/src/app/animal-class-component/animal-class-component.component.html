@@ -1,0 +1,70 @@
+<div id="component5">
+  <h4>This component was created as part of HW7 </h4>
+</div>
+
+<div class="container" id="newAnimal">
+
+  <h2 id="formHeading">Create a New Animal Using Reactive FormBuilder </h2>
+
+  <form [formGroup]="animalForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label>
+        Name:
+        <input type="text" formControlName="Name" class="form-control">
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label>
+        Sex:
+        <input type="text" formControlName="Sex" class="form-control">
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label>
+        Color:
+        <input type="text" formControlName="Color" class="form-control">
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label>
+        Age:
+        <input type="text" formControlName="Age" class="form-control">
+      </label>
+    </div>
+
+    <button type="reset" class="btn btn-default" (click)="newAnimal()" id="clearbtn">Clear The Form</button>
+
+  </form>
+
+</div>
+
+<div class="container" id="changeDataBtn">
+  <button type="submit" class="btn btn-danger" [disabled]="!animalForm.valid" (click)="assignValues()">Click to Change
+    the Data in the Model </button>
+</div>
+
+<!-- This displays after the form is submitted -->
+
+<div class="container" id="animalSubmitted">
+  <h2>The Data In The Model Is Now:</h2>
+  <div class="row">
+    <div class="col-xs-3">Name:</div>
+    <div class="col-xs-9">{{ this.animalForm.controls["Name"].value }}</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">Sex:</div>
+    <div class="col-xs-9">{{ this.animalForm.controls["Sex"].value }}</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">Color:</div>
+    <div class="col-xs-9">{{ this.animalForm.controls["Color"].value }}</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">Age:</div>
+    <div class="col-xs-9">{{ this.animalForm.controls["Age"].value }}</div>
+  </div>
+</div>

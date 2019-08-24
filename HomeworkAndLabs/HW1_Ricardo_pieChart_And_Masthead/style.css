@@ -1,0 +1,158 @@
+/* ------------------------------------ MastHead Related CSS ----------------------- */
+#mastheadOuterContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 101vw;
+    /* to enable to width to always be 100% of viewport  - for responsiveness */
+    height: 60px;
+}
+
+#logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8%;
+    /* 8% of the masthead container */
+    background-color: rgb(184, 3, 3);
+    font-size: 30px;
+    color: white;
+}
+
+#linksContainer {
+    width: 36%;
+    height: 100%;
+    background-color: black;
+    font-size: 15px;
+    color: white;
+}
+
+#linkList {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    /* remove the bullets from the ul */
+}
+
+ul {
+    margin-top: 5%;
+    padding: 0;
+}
+
+#searchBoxContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20%;
+    background-color: black;
+}
+
+#searchIconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(184, 3, 3);
+    width: 22px;
+    height: 20px;
+}
+
+#searchIcon {
+    width: 60%;
+    height: 60%;
+}
+
+#signinShoppingCartContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    width: 36%;
+    font-size: 15px;
+
+}
+
+#shoppingCartIcon {
+    width: 20px;
+    height: 15px;
+    margin-top: 5px;
+}
+
+.ShoppingMargin {
+    margin-right: 15px;
+}
+
+/* ------------------------------------ Pie Chart Related CSS ----------------------- */
+
+#pieChartDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* used to center the file pie chart in the middle of the page */
+}
+
+#pieChartOuterContainer {
+    margin-top: 5%;
+    /*provides some space between the masthead and the piechart */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* enables innerContainer 2 to wrap around - be below innerContainer1 */
+    width: 30vw;
+    /* to enable to width to always be 50% of viewport  - for responsiveness */
+    height: 30vh;
+    /* to enable to height to always be 50% of viewport  - for responsiveness */
+
+}
+
+.innerContainer {
+    display: flex;
+    width: 100%;
+    /* takes the max width of the outer container */
+    height: 100%;
+    /* takes the max height of the outer container */
+}
+
+/* properties that all quads share */
+#redQuad,
+#yellowQuad,
+#blueQuad,
+#greenQuad {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#redQuad {
+    background-color: red;
+    border-top-left-radius: 100%;
+    /* rounded top-left corner */
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+#yellowQuad {
+    background-color: yellow;
+    border-top-right-radius: 100%;
+    /* rounded top-right corner */
+    border-bottom: 1px solid white;
+}
+
+#blueQuad {
+    background-color: blue;
+    border-bottom-left-radius: 100%;
+    /* rounded bottom-left corner */
+    border-right: 1px solid white;
+}
+
+#greenQuad {
+    background-color: green;
+    border-bottom-right-radius: 100%;
+    /* rounded bottom-right corner */
+}

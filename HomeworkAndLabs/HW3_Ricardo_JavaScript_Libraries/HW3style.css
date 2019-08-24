@@ -1,0 +1,14 @@
+#heading {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+/* .centerCols {
+    text-align: center;
+} */
+
+table.dataTable thead th,
+table.dataTable tfoot th {
+    text-align: left;
+}
