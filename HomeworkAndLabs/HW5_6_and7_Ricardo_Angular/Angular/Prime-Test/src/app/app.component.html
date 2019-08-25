@@ -1,21 +1,102 @@
 <!--The content below is only a placeholder and can be replaced.-->
+
+<head>
+  <!-- PrimeNG Style SHeets -->
+  <link rel="stylesheet" type="text/css" href="/node_modules/primeicons/primeicons.css" />
+  <link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/themes/nova-light/theme.css" />
+  <link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/primeng.min.css" />
+</head>
+
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+  <img width="300" alt="Angular Logo"
+    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div>
+  <h2> Buttons </h2>
+  <ul style="list-style: none">
+    <li>
+      <a target="_blank" rel="noopener" href="https://angular.io/tutorial">
+        <button pButton type="button" label="Tour of Heroes" class="ui-button-rounded ui-button-primary"></button>
+      </a>
+    </li>
+    <li>
+      <a target="_blank" rel="noopener" href="https://angular.io/cli">
+        <button pButton type="button" label="CLI Documentation" class="ui-button-raised ui-button-success"></button>
+      </a>
+    </li>
+    <li>
+      <a target="_blank" rel="noopener" href="https://blog.angular.io/">
+        <button pButton type="button" icon="pi pi-check" iconPos="right" label="Angular blog"></button>
+      </a>
+    </li>
+  </ul>
+</div>
 
+<div>
+  <h2> Input </h2>
+  <h3 class="first">Enter your comments</h3>
+  <textarea rows="5" cols="30" pInputTextarea></textarea>
+
+  <h3 class="first">Addons</h3>
+  <div class="ui-g ui-fluid">
+    <div class="ui-g-12 ui-md-4">
+      <div class="ui-inputgroup">
+        <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+        <input type="text" pInputText placeholder="Username">
+      </div>
+    </div>
+
+    <div class="ui-g-12 ui-md-4">
+      <div class="ui-inputgroup">
+        <span class="ui-inputgroup-addon">$</span>
+        <input type="text" pInputText placeholder="Price">
+        <span class="ui-inputgroup-addon">.00</span>
+      </div>
+    </div>
+
+    <div class="ui-g-12 ui-md-4">
+      <div class="ui-inputgroup">
+        <span class="ui-inputgroup-addon">www</span>
+        <input type="text" pInputText placeholder="Website">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div>
+  <h2> Menu </h2>
+  <h3 class="first">Basic</h3>
+  <p-menu [model]="items"></p-menu>
+
+  <h3>Popup</h3>
+  <p-menu #menu [popup]="true" [model]="items"></p-menu>
+  <button type="button" pButton icon="pi pi-bars" label="Show" (click)="menu.toggle($event)"></button>
+</div>
+
+<div>
+  <h2> Tables </h2>
+  <h3 class="first">Basic</h3>
+  <!-- <p-table [value]="cars">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Vin</th>
+            <th>Year</th>
+            <th>Brand</th>
+            <th>Color</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-car>
+        <tr>
+            <td>{{car.vin}}</td>
+            <td>{{car.year}}</td>
+            <td>{{car.brand}}</td>
+            <td>{{car.color}}</td>
+        </tr>
+    </ng-template>
+</p-table> -->
+</div>
 <router-outlet></router-outlet>
