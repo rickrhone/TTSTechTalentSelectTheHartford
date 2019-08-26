@@ -4,6 +4,7 @@ This repo also contains a play pen area which I used to play around with differe
 
 ## Homework and Labs
 ### HW1 - Pie Chart and Masthead
-* Objective: 
-* My Solution: [Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW1_Ricardo_pieChart_And_Masthead) 
+* Objective: using HTML and CSS only - create [this]().  
+* My Solution: [Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW1_Ricardo_pieChart_And_Masthead) 
+
 [Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/HomeworkAndLabs/HW1_Ricardo_pieChart_And_Masthead/)
