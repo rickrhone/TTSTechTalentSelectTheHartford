@@ -7,4 +7,7 @@
 - **Objective:** using HTML and CSS only - create [this]().  
 - **My Solution:** [Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW1_Ricardo_pieChart_And_Masthead) 
 
+### HW2 - Todo List [Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/HomeworkAndLabs/HW2_Ricardo_Todo_List/)
+- **Objective:** using HTML, CSS and JavaScript only - create [this]().  
+- **My Solution:** [Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW2_Ricardo_Todo_List) 
 
