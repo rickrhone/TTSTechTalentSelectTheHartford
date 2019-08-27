@@ -34,7 +34,9 @@
 - **Objective:** to exercise several Bootstrap and jQuery features in accordance with the instructions located [here](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/HomeworkAndLabs/HW4_Ricardo_Bootstrap_and_jQuery/bootstrap_project_homework.pdf).
 - **My Solution:** [Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW4_Ricardo_Bootstrap_and_jQuery)
 
-### HW5 - Angular Basics - Lab and Homework [Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular)
+### HW5 - Angular Basics - Lab and Homework [Live-Demo-TypeScript](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular)
 
-- **Objective:** to exercise several TypeScript features and to create a basic angular component in accordance with the instructions located [here]https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular_basics_HW.pdf).
+[Live-Demo-Aagular](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular)
+
+- **Objective:** to exercise several TypeScript features and to create a basic angular component in accordance with the instructions located [here](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular_basics_HW.pdf).
 - **My Solution:** [Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular)
