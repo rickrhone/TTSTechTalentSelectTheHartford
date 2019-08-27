@@ -41,12 +41,12 @@
 
 ### HW6 - Angular Services LAB and Homework [Live-Demo(TypeScript)](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular)
 
-- **Objective:** to exercise several angular components in accordance with the instructions located [here](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular_basics_HW.pdf).
+- **Objective:** to exercise several angular components in accordance with the instructions located [here](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular_Services_HW.pdf).
 - **My Solution:** [Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular/HW5_6_and7-AngularBasics)
 
 ### HW7 - Angular LAB and Homework [Live-Demo(TypeScript)](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular)
 
-- **Objective:** to exercise several angular components in accordance with the instructions located [here](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular_Services_HW2.pdf).
+- **Objective:** to exercise several angular components in accordance with the instructions located [here](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular_Forms_Testing_Libraries_HW.pdf).
 - **My Solution:** [Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular/HW5_6_and7-AngularBasics)
 
 - **Live-Demos:**
