@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tts.Tests" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-08-27T01:20:29" hostname="RicksLenovo" time="0.033">
+  <properties/>
+  <testcase name="checkDefaultsForAttributes" classname="com.tts.Tests" time="0.015"/>
+  <testcase name="castFloatToInt" classname="com.tts.Tests" time="0.014"/>
+  <testcase name="incrementMethodCountTest" classname="com.tts.Tests" time="0.0"/>
+  <system-out><![CDATA[float: 856.2, cast float 856
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
