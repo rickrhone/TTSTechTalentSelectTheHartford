@@ -3,7 +3,7 @@
 > This repo also contains a play pen area which I use to play around with different things I am learning. 
 
 ## Homework and Labs
-### HW1 - Pie Chart and Masthead [Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/HomeworkAndLabs/HW1_Ricardo_pieChart_And_Masthead/)
+### HW1 - Pie Chart and Masthead [Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/HomeworkAndLabs/HW1_Ricardo_pieChart_And_Masthead)
 - **Objective:** using HTML and CSS only - create [this](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/HomeworkAndLabs/HW1_Ricardo_pieChart_And_Masthead/CSS%20Homework.pdf).  
 - **My Solution:** [Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW1_Ricardo_pieChart_And_Masthead) 
 
