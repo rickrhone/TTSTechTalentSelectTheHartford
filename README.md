@@ -12,6 +12,6 @@
 - **My Solution:** [Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW2_Ricardo_Todo_List) 
 
 ### HW3 - JavaScript Libraries [Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/HomeworkAndLabs/HW3_Ricardo_JavaScript_Libraries/)
-- **Objective:** using HTML, CSS and JavaScript only - create [this]().  
+- **Objective:** to download and exercise several different JavaScript libraries in accordance with the instructions located [here]().  
 - **My Solution:** [Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW3_Ricardo_JavaScript_Libraries) 
 
