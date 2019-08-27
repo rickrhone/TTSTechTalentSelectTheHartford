@@ -1,4 +1,4 @@
-# TTSTechTalentSelectTheHartford
+# TTS-TechTalentSelect-TheHartford
 
 > Repository for classwork, homework, labs and projects associated with the 12 week Bootcamp.
 > This repo also contains a play pen area which I use to play around with different things I am learning.
