@@ -22,6 +22,6 @@
 - **Objective:** to download and exercise several different JavaScript libraries in accordance with the instructions located [here](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/HomeworkAndLabs/HW3_Ricardo_JavaScript_Libraries/JS_Libraries_-_Lab_and_Homework.pdf).  
 - **My Solution:** [Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW3_Ricardo_JavaScript_Libraries) 
 
-### HW4 - Bootstrap and jQuery  [Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/HomeworkAndLabs/HW3_Ricardo_JavaScript_Libraries/)
+### HW4 - Bootstrap and jQuery  [Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/HomeworkAndLabs/HW4_Ricardo_Bootstrap_and_jQuery)
 - **Objective:** to exercise several Bootstrap and jQuery features in accordance with the instructions located [here](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/HomeworkAndLabs/HW4_Ricardo_Bootstrap_and_jQuery/bootstrap_project_homework.pdf).  
 - **My Solution:** [Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW4_Ricardo_Bootstrap_and_jQuery) 
