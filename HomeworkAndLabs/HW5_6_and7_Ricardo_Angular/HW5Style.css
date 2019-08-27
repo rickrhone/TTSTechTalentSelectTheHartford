@@ -1,0 +1,56 @@
+.titleHeading {
+    display: flex;
+    justify-content: center;
+}
+
+#mainDisplay {
+    display: flex;
+    flex-direction: column;
+}
+
+.innerDisplay {
+    display: flex;
+    margin-top: 10px;
+    height: 100%;
+}
+
+.outerDiv {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 10px;
+    margin-right: 10px;
+    /* height: 100%; */
+}
+
+.headingbgk {
+    display: flex;
+    align-items: center;
+    background-color: tan;
+    color: white;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.employeeDisplay {
+    display: flex;
+    background-color: bisque;
+    padding: 10px;
+    height: 100%;
+}
+
+#div1 {
+    display: flex;
+    justify-content: center;
+}
+
+.imgSize {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.innerDiv {
+    margin-left: 30px;
+
+}
