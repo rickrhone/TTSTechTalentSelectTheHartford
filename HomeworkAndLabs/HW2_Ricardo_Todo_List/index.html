@@ -14,22 +14,24 @@
     <body>
         <h1 class="centerAll"> Ricardo's Todo List </h1>
         <!-- unordered List of Todos-->
-        <div class="centerAll">
-            <ul id="listOfItems">
-                <!-- list of Todos -->
-                <li> Complete TTS Bootcamp </li>
-                <li> Get a job with The Hartford </li>
-                <li> Develop Skillset Further </li>
-                <li> Obtain Java OCA Certification </li>
-            </ul>
-        </div>
-        <!-- input field for new todos  -->
-        <div class="centerAll">
-            <input type="text" name="newTodo" id="newTodo" value="Enter new todo item here" />
-            <input type="button" id="addTodo" value="Add Todo" onclick="AddLiOnClickFunc()" />
-            <!-- button to add todos-->
-        </div>
+        <div id="outerDiv">
+            <div class="centerAll">
+                <ul id="listOfItems">
+                    <!-- list of Todos -->
+                    <li> Complete TTS Bootcamp </li>
+                    <li> Obtain a Fulltime Position With The Hartford </li>
+                    <li> Develop Skillset Further </li>
+                    <li> Obtain Java OCA Certification </li>
+                </ul>
+            </div>
+            <!-- input field for new todos  -->
+            <div class="centerAll" id="inputDiv">
+                <input type="text" name="newTodo" id="newTodo" value="Enter new todo item here" />
+                <input type="button" id="addTodo" value="Add Todo" onclick="AddLiOnClickFunc()" />
+                <!-- button to add todos-->
+            </div>
 
+        </div>
 
         <script src="js.js"></script>
     </body>

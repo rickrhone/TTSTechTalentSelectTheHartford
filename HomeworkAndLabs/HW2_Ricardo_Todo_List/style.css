@@ -1,3 +1,7 @@
+body {
+    background-color: lightgray;
+}
+
 .centerAll {
     display: flex;
     justify-content: center;
@@ -16,9 +20,22 @@ input {
 }
 
 ul {
-    background-color: steelblue;
-    width: 50vw;
+    background-color: white;
+    width: 35vw;
+    height: 30vh;
     font-size: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    box-shadow: 0px 0px 3px 1px gray;
+}
+
+#outerDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputDiv {
+    height: 60px;
 }
