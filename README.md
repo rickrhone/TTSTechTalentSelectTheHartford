@@ -4,7 +4,7 @@
 
 ## Homework and Labs
 ### HW1 - Pie Chart and Masthead [Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/HomeworkAndLabs/HW1_Ricardo_pieChart_And_Masthead/)
-- **Objective:** using HTML and CSS only - create [this]().  
+- **Objective:** using HTML and CSS only - create [this](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/HomeworkAndLabs/HW1_Ricardo_pieChart_And_Masthead/CSS%20Homework.pdf).  
 - **My Solution:** [Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW1_Ricardo_pieChart_And_Masthead) 
 
 ### HW2 - Todo List [Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/HomeworkAndLabs/HW2_Ricardo_Todo_List/)
