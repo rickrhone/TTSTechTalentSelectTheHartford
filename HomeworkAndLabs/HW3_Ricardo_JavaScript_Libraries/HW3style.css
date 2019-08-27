@@ -1,7 +1,21 @@
 #heading {
     display: flex;
     justify-content: center;
-    background-color: lightgray;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+#heading h1 {
+    margin: 0;
+    margin-top: 10px;
+}
+
+#heading p {
+    margin-bottom: 1px;
+    margin-top: 5px;
 }
 
 /* .centerCols {
@@ -11,4 +25,114 @@
 table.dataTable thead th,
 table.dataTable tfoot th {
     text-align: left;
+}
+
+.sectionHeading {
+    display: flex;
+    width: 100vw;
+    margin-left: -10px;
+    background-color: #636e72;
+    color: white;
+}
+
+/* Lodash Section */
+.HeadingDiv {
+    display: flex;
+    width: 100vw;
+    margin-left: -10px;
+    background-color: #b2bec3;
+}
+
+.Heading {
+    margin-left: 10px;
+}
+
+.Section {
+    display: flex;
+    width: 100vw;
+    margin-left: -10px;
+    align-items: center;
+    background-color: #dfe6e9;
+}
+
+.Img {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+#lodashImg {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.sectionHeadingH2 {
+    margin-left: 10px;
+}
+
+/* Moment Section */
+
+#momentImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+/* Mathjs Section */
+#mathImg {
+    width: 200px;
+    height: 100px;
+
+}
+
+/* Chart Section */
+#chartSection {
+    display: flex;
+    width: 100vw;
+    margin-left: -10px;
+    background-color: #b2bec3;
+}
+
+#barChart {
+    width: 45vw;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+#lineChart {
+    width: 45vw;
+}
+
+#barChart h2 {
+    margin-left: 10px;
+}
+
+/* React Section */
+
+#reactSection {
+    margin-top: 10px;
+}
+
+#root {
+    margin-top: 10px;
+}
+
+#reactOuterDiv {
+    display: flex;
+}
+
+/* Vue Section */
+
+#app {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-left: -10px;
+    background-color: #b2bec3;
+}
+
+#app h2 {
+    margin-left: 10px;
 }

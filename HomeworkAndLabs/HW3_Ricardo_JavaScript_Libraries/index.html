@@ -19,10 +19,79 @@
 
     <body>
         <div id="heading">
-            <h1> Lodash, Moment, Math, DataTable, Chart, React and Vue Libraries Homework</h1>
+            <h1> Homework 3 - JavaScript Libraries </h1>
+            <p> Lodash, Moment, Math, DataTable, Chart, and React Libraries and Vue Framework <p>
         </div>
 
-        <h1> DataTable 1 -pre-populated data</h1>
+        <!--  Language Libraries (lodash, Moment, Mathjs) Section -->
+        <div class="sectionHeading">
+            <h2 class="sectionHeadingH2"> Language Libraries (lodash, Moment, Mathjs) </h2>
+        </div>
+
+        <!-- Lodash Section -->
+        <div class="HeadingDiv">
+            <h3 class="Heading">Lodash Library Section</h3>
+        </div>
+        <div class="Section">
+            <div class="Img"> <img src="Lodash.PNG" alt="Lodash" id="lodashImg"></div>
+            <div>
+                <p> Methods used in this section: </p>
+                <ul>
+                    <li> _.range() </li>
+                    <li> _.chunk() </li>
+                    <li> _.filter() </li>
+                    <li> _.countBy() </li>
+                </ul>
+                <p> To view the results of this section open up the console by right clicking anywhere on this page,
+                    select inspect and then click on the console tab. Then, scroll to the Lodash section</p>
+            </div>
+        </div>
+
+        <!-- Moment Section -->
+        <div class="HeadingDiv">
+            <h3 class="Heading">Moment Library Section</h3>
+        </div>
+        <div class="Section">
+            <div class="Img"> <img src="moment.PNG" alt="Lodash" id="momentImg"> </div>
+            <div>
+                <p> Methods used in this section: </p>
+                <ul>
+                    <li> moment() </li>
+                    <li> format() </li>
+                </ul>
+                <p> To view the results of this section open up the console by right clicking anywhere on this page,
+                    select inspect and then click on the console tab. Then, scroll to the Moment section</p>
+            </div>
+        </div>
+
+        <!-- Mathjs Section -->
+        <div class="HeadingDiv">
+            <h3 class="Heading">Mathjs Library Section</h3>
+        </div>
+        <div class="Section">
+            <div class="Img"> <img src="Mathjs.PNG" alt="Lodash" id="mathImg"></div>
+            <div>
+                <p> Methods used in this section: </p>
+                <ul>
+                    <li> log10() </li>
+                    <li> log2() </li>
+                    <li> log() </li>
+                    <li> sqrt() </li>
+                    <li> simplify() </li>
+                    <li> cos() </li>
+                    <li> unit() </li>
+                </ul>
+                <p> To view the results of this section open up the console by right clicking anywhere on this page,
+                    select inspect and then click on the console tab. Then, scroll to the Mathjs section</p>
+            </div>
+        </div>
+
+        <!--  DataTable Section -->
+        <div class="sectionHeading">
+            <h2 class="sectionHeadingH2"> DataTable </h2>
+        </div>
+
+        <h2> DataTable 1 - using pre-populated data</h2>
         <div>
             <!-- DATA TABLE SECTION OF THE HOMEWORK -->
             <!-- In the body of the page, create the following table: -->
@@ -67,7 +136,7 @@
         </div>
 
         <!-- Create a new page with an empty table: -->
-        <h1> DataTable 2 - populated from simulated JSON data</h1>
+        <h2> DataTable 2 - populated from simulated JSON data</h2>
 
         <div>
             <table id="base_table">
@@ -81,24 +150,39 @@
         </div>
 
         <!-- CHART SECTION  -->
-
+        <div class="sectionHeading">
+            <h2 class="sectionHeadingH2"> Charts Area </h2>
+        </div>
         <!--  Create a canvas area in the body, then reference that area when creating a chart: -->
-        <h1> Chart Area </h1>
-        <canvas id="chartArea"></canvas>
-
+        <div id="chartSection">
+            <div id="barChart">
+                <h2> Bar Chart </h2>
+                <canvas id="barchartArea"></canvas>
+            </div>
+            <div id="lineChart">
+                <h2> Line Chart </h2>
+                <canvas id="chartArea"></canvas>
+            </div>
+        </div>
 
         <!-- REACT SECTION  -->
+        <div class="sectionHeading">
+            <h2 class="sectionHeadingH2"> React Section </h2>
+        </div>
 
         <!--   Inside of the <body> element, create a section with an id: -->
-        <h1> React Section </h1>
         <div id="root"></div>
-
         <!-- Create a text input area on the page and give it an id -->
-        <input type="text" name="" id="textInput">
+        <div id="reactSection">
+            <input type="text" name="" id="textInput">
+        </div>
+        <p>Enter Another Name and Click Change Name</p>
 
 
         <!-- VUE SECTION -->
-        <h1> Vue Section </h1>
+        <div class="sectionHeading">
+            <h2 class="sectionHeadingH2"> Vue Section </h2>
+        </div>
         <div id="app">
             <h2>Welcome to my first {{ frameName }} application</h2>
             <ul>
@@ -193,6 +277,22 @@
 
 
                 // CHART SECTION 
+                var ctx = $("#barchartArea"); // using jquery
+                var chart = new Chart(ctx, {
+                    //Reference the properties in the ChartJS documentation and change the display to a line graph. Also,
+                    type: 'bar',
+                    data: {
+                        labels: ['XX-Small', 'X-Small', 'Small', 'Medium', 'Large', 'X-Large'],
+                        datasets: [{
+                            label: 'Planning Poker Sizes',
+                            backgroundColor: 'rgb(255, 55, 128)',
+                            borderColor: 'rgb(255, 55, 128)',
+                            fill: false,
+                            data: [1, 2, 3, 5, 8, 13]
+                        }]
+                    },
+                    options: {}
+                });
                 var ctx = $("#chartArea"); // using jquery
                 var chart = new Chart(ctx, {
                     //Reference the properties in the ChartJS documentation and change the display to a line graph. Also,

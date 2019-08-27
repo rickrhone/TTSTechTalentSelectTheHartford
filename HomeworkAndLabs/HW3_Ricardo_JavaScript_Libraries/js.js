@@ -284,9 +284,9 @@ console.log("\nThe difference between the current and rfc dates in weeks: " + mo
 console.log("The difference between the current and rfc dates in months: " + momISO.diff(rfc, "months"));
 console.log("The difference between the current and rfc dates in years: " + momISO.diff(rfc, "years"));
 
-/* ***************************** Math Section ****************************** */
+/* ***************************** Mathjs Section ****************************** */
 
-console.log("\n*************** MATH SECTION ***************");
+console.log("\n*************** MATHJS SECTION ***************");
 // Using the correct math methods, calculate and display the following:
 console.log("Base 10 log of 1,000,000 = " + math.log10(1000000));
 console.log("Base 2 log of 64 = " + math.log2(64));
