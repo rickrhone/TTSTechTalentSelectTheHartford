@@ -75,5 +75,5 @@
     - **[Angular Testing and Animation](https://rickrhone.github.io/AngularAnimationAndTesting-Demo/docs)**
       - Reference the test specs located [HERE](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular/TestingAndAnimation/src/app/app.component.spec.ts) and [HERE](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular/TestingAndAnimation/src/app/hw7-service2.service.spec.ts) for the tests performed.
     - **[Angular Material](https://rickrhone.github.io/AngularMaterial-Demo/docs)**
-    - **[Angular PrimeNG]()**
+    - **[Angular PrimeNG](https://rickrhone.github.io/AngularPrimeNG-Demo/docs)**
       - Alot of the functionality from this library seems to have been depricated. What's displayed is what worked.
