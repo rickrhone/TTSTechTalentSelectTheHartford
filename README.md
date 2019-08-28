@@ -68,7 +68,7 @@
   - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular)**
   - **Live-Demos:**
     - **[TypeScript](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular)**
-    - **[Angular](https://rickrhone.github.io/BasicAngular-Demo/docs)**
+    - **[Angular](https://rickrhone.github.io/BasicAngular-Demo/)**
 
 ### HW6 - Angular Services LAB and Homework
 
@@ -77,8 +77,8 @@
 - **My Solution:**
   - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular/HW5_6_and7-AngularBasics)**
   - **Live-Demos:**
-    - **[Routing-ServicesAndDI-Observables](https://rickrhone.github.io/BasicAngular-Demo/docs)**
-    - **[Tour-of-Heroes](https://rickrhone.github.io/AngularTourOfHeroes-Demo/docs)**
+    - **[Routing-ServicesAndDI-Observables](https://rickrhone.github.io/BasicAngular-Demo/)**
+    - **[Tour-of-Heroes](https://rickrhone.github.io/AngularTourOfHeroes-Demo/)**
 
 ### HW7 - Angular LAB and Homework
 
@@ -87,11 +87,11 @@
 - **My Solution:**
   - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular)**
   - **Live-Demos:**
-    - **[Angular Forms](https://rickrhone.github.io/BasicAngular-Demo/docs)**
-    - **[Angular Testing and Animation](https://rickrhone.github.io/AngularAnimationAndTesting-Demo/docs)**
+    - **[Angular Forms](https://rickrhone.github.io/BasicAngular-Demo/)**
+    - **[Angular Testing and Animation](https://rickrhone.github.io/AngularAnimationAndTesting-Demo/)**
       - Reference the test specs located [HERE](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular/TestingAndAnimation/src/app/app.component.spec.ts) and [HERE](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular/TestingAndAnimation/src/app/hw7-service2.service.spec.ts) for the tests performed.
-    - **[Angular Material](https://rickrhone.github.io/AngularMaterial-Demo/docs)**
-    - **[Angular PrimeNG](https://rickrhone.github.io/AngularPrimeNG-Demo/docs)**
+    - **[Angular Material](https://rickrhone.github.io/AngularMaterial-Demo/)**
+    - **[Angular PrimeNG](https://rickrhone.github.io/AngularPrimeNG-Demo/)**
       - Alot of the functionality from this library seems to have been depricated. What's displayed is what worked.
 
 ## Classwork
