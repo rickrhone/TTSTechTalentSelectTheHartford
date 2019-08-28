@@ -1,9 +1,7 @@
-[Link](/README.md#hw2---todo-list)
-
 # TTS-TechTalentSelect-TheHartford
 
 > Repository for classwork, homework, labs and projects associated with the 12 week Bootcamp.
-> This repo also contains a play pen area which I use to play around with different things I am learning.
+> This repo also contains a a general play pen area which I use to play around with different things I am learning associated with the bootcamp.
 
 ## Table of Contents
 
