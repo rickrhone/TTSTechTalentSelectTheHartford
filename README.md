@@ -5,19 +5,19 @@
 
 ## Table of Contents
 
-- [Homeworks and Labs](/README.md#homework-and-labs)
+- [Homeworks and Labs](#homework-and-labs)
 
-  - [HW1 - Pie Chart and Masthead](/README.md#hw1---pie-chart-and-masthead)
-  - [HW2 - Todo List](/README.md#hw2---todo-list)
-  - [HW3 - JavaScript Libraries](/README.md#hw3---javascript-libraries)
-  - [HW4 - Bootstrap and jQuery](/README.md#hw4---bootstrap-and-jquery)
-  - [HW5 - Angular Basics - Lab and Homework](/README.md#hw5---angular-basics---lab-and-homework)
-  - [HW6 - Angular Services LAB and Homework](/README.md#hw6---angular-services-lab-and-homework)
-  - [HW7 - Angular LAB and Homework](/README.md#hw7---angular-lab-and-homework)
+  - [HW1 - Pie Chart and Masthead](#hw1---pie-chart-and-masthead)
+  - [HW2 - Todo List](#hw2---todo-list)
+  - [HW3 - JavaScript Libraries](#hw3---javascript-libraries)
+  - [HW4 - Bootstrap and jQuery](#hw4---bootstrap-and-jquery)
+  - [HW5 - Angular Basics - Lab and Homework](#hw5---angular-basics---lab-and-homework)
+  - [HW6 - Angular Services LAB and Homework](#hw6---angular-services-lab-and-homework)
+  - [HW7 - Angular LAB and Homework](#hw7---angular-lab-and-homework)
 
-- [Classwork](/README.md#classwork)
+- [Classwork](#classwork)
 
-- [Projects](/README.md#projects)
+- [Projects](#projects)
 
 ## Homeworks and Labs
 
