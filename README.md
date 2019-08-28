@@ -61,18 +61,18 @@
 - **My Solution:**
   - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular/HW5_6_and7-AngularBasics)**
   - **Live-Demos:**
-    - **[Angular Forms]()**
-    - **[Angular Testing]()**
+    - **[Routing-ServicesAndDI-Observables](https://rickrhone.github.io/BasicAngular-Demo/docs)**
+    - **[Tour-of-Heroes](https://rickrhone.github.io/AngularTourOfHeroes-Demo/docs)**
 
 ### HW7 - Angular LAB and Homework
 
 - **Objective:** to exercise several angular components in accordance with the instructions located [here](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular_Forms_Testing_Libraries_HW.pdf).
 
 - **My Solution:**
-  - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular/HW5_6_and7-AngularBasics)**
+  - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular)**
   - **Live-Demos:**
-    - **[Angular Forms]()**
-    - **[Angular Testing]()**
-    - **[Angular Animation]()**
-    - **[Angular Material]()**
+    - **[Angular Forms](https://rickrhone.github.io/BasicAngular-Demo/docs)**
+    - **[Angular Testing and Animation](https://rickrhone.github.io/AngularAnimationAndTesting-Demo/docs)**
+      - Reference the test specs located [HERE](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular/TestingAndAnimation/src/app/app.component.spec.ts) and [HERE](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/HomeworkAndLabs/HW5_6_and7_Ricardo_Angular/Angular/TestingAndAnimation/src/app/hw7-service2.service.spec.ts) for the test performed.
+    - **[Angular Material](https://rickrhone.github.io/AngularMaterial-Demo/docs)**
     - **[Angular PrimeNG]()**
