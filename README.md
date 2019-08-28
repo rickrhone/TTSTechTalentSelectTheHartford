@@ -1,9 +1,27 @@
+[Link](/README.md#hw2---todo-list)
+
 # TTS-TechTalentSelect-TheHartford
 
 > Repository for classwork, homework, labs and projects associated with the 12 week Bootcamp.
 > This repo also contains a play pen area which I use to play around with different things I am learning.
 
-## Homework and Labs
+## Table of Contents
+
+- [Homeworks and Labs](/README.md#homework-and-labs)
+
+  - [HW1 - Pie Chart and Masthead](/README.md#hw1---pie-chart-and-masthead)
+  - [HW2 - Todo List](/README.md#hw2---todo-list)
+  - [HW3 - JavaScript Libraries](/README.md#hw3---javascript-libraries)
+  - [HW4 - Bootstrap and jQuery](/README.md#hw4---bootstrap-and-jquery)
+  - [HW5 - Angular Basics - Lab and Homework](/README.md#hw5---angular-basics---lab-and-homework)
+  - [HW6 - Angular Services LAB and Homework](/README.md#hw6---angular-services-lab-and-homework)
+  - [HW7 - Angular LAB and Homework](/README.md#hw7---angular-lab-and-homework)
+
+- [Classwork](/README.md#classwork)
+
+- [Projects](/README.md#projects)
+
+## Homeworks and Labs
 
 ### HW1 - Pie Chart and Masthead
 
@@ -77,3 +95,11 @@
     - **[Angular Material](https://rickrhone.github.io/AngularMaterial-Demo/docs)**
     - **[Angular PrimeNG](https://rickrhone.github.io/AngularPrimeNG-Demo/docs)**
       - Alot of the functionality from this library seems to have been depricated. What's displayed is what worked.
+
+## Classwork
+
+TBD
+
+## Projects
+
+TBD
