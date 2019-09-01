@@ -18,7 +18,7 @@
 - [Classwork](#classwork)
 
   - [Fibonocci Sequence Generator](#fibonocci-sequence-generator)
-  - [The Ants Go Marching, Code Debuging and DOM Node Selection](#the-ants-go-marching,-code-debuging-and-dom-node-selection)
+  - [The Ants Go Marching, Code Debuging and DOM Node Selection](#the-ants-go-marching-code-debuging-and-dom-node-selection)
 
 - [Projects](#projects)
 
@@ -134,7 +134,7 @@
 
 - **Objective:** Using JavaScript and Chrome Developer Tools:
 
-  - Debug the code provide
+  - Debug the code provided
   - Print the ants go marching in the correct order
   - Select different nodes on the DOM
 
