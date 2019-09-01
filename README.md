@@ -19,7 +19,7 @@
 
 - [Projects](#projects)
 
-  - [PRJ1 - Mid Course Project - Vegas Dice Game (Java)](<#prj1---mid-course-project---vegas-dice-game-(java)>)
+  - [PRJ1 - Mid Course Project - Vegas Dice Game (Java)](#prj1---mid-course-project---vegas-dice-game-java)
 
 ## Homeworks and Labs
 
