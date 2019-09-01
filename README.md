@@ -18,6 +18,7 @@
 - [Classwork](#classwork)
 
   - [Fibonocci Sequence Generator](#fibonocci-sequence-generator)
+  - [The Ants Go Marching, Code Debuging and DOM Node Selection](#the-ants-go-marching,-code-debuging-and-dom-node-selection)
 
 - [Projects](#projects)
 
@@ -129,7 +130,7 @@
   - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/ClassWork/Fibonacci_Sequence_Generator)**
   - **[Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/ClassWork/Fibonacci_Sequence_Generator)**
 
-### The Ants Go Marching and Code Debuging
+### The Ants Go Marching, Code Debuging and DOM Node Selection
 
 - **Objective:** Using JavaScript and Chrome Developer Tools:
 
@@ -138,5 +139,5 @@
   - Select different nodes on the DOM
 
 - **My Solution:**
-  - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/ClassWork/The_Ants_Go_Marching)**
-  - **[Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/ClassWork/The_Ants_Go_Marching)**
+  - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/ClassWork/The_Ants_Go_Marching_Debugging_DOMNodesSelection)**
+  - **[Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/ClassWork/The_Ants_Go_Marching_Debugging_DOMNodesSelection)**
