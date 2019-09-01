@@ -1,7 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { MenuItem } from "../app/api";
-import { Car } from "./Car";
-import { CarService } from "./carservice";
+import { CarServiceService } from "./car-service.service";
 
 @Component({
   selector: "app-root",
@@ -10,27 +8,14 @@ import { CarService } from "./carservice";
 })
 export class AppComponent implements OnInit {
   title = "Prime-Test";
-  items: MenuItem[];
-  cars: Car[];
-  cols: any[];
+  rangeValues: number[] = [20, 80];
+  cities1: string[] = ["New York", "Rome"];
+  selectedCity1: string[] = ["New York", "Rome"];
 
-  constructor(private carService: CarService) {}
+  constructor(private carService: CarServiceService) {}
 
   ngOnInit() {
-    this.items = [
-      { label: "Stats", icon: "fa fa-fw fa-bar-chart" },
-      { label: "Calendar", icon: "fa fa-fw fa-calendar" },
-      { label: "Documentation", icon: "fa fa-fw fa-book" },
-      { label: "Support", icon: "fa fa-fw fa-support" },
-      { label: "Social", icon: "fa fa-fw fa-twitter" }
-    ];
-    this.carService.getCarsSmall().then(cars => (this.cars = cars));
-
-    this.cols = [
-      { field: "vin", header: "Vin" },
-      { field: "year", header: "Year" },
-      { field: "brand", header: "Brand" },
-      { field: "color", header: "Color" }
-    ];
+    this.carService.getCarsSmall();
+    //.then(cars => this.cars = cars);
   }
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tts.hr.HRTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-29T20:27:53" hostname="RicksLenovo" time="0.155">
+  <properties/>
+  <testcase name="payEverybody" classname="com.tts.hr.HRTest" time="0.155"/>
+  <system-out><![CDATA[Buffy, Salary = $104,000.00, pay = 4000.0
+Willow, rate = 100.0, hours = 80.0, pay = 8000.0
+12000.0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
