@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Fibonacci Sequence</title>
+        <style>
+            h1 {
+                text-align: center;
+            }
+
+            #outterDiv {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #FibSeq {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: lightgray;
+                height: 100px;
+                font-size: 25px;
+            }
+
+            #nthNum {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1> Fibonacci Sequence Generator </h1>
+
+
+        <div id="outterDiv">
+            <div>
+                <h2>Generated Fibonacci Sequence</h2>
+            </div>
+            <div id="FibSeq"> </div>
+            <div id="nthNum"> </div>
+        </div>
+
+        <Script src="../js/jquery-3.4.1.slim.js"></Script>
+        <script src="Aug52019.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#FibSeq").html(fibToString);
+                $("#nthNum").html(nthNumberMessage);
+            });
+        </script>
+    </body>
+
+</html>
