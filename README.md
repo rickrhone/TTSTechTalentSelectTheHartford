@@ -18,7 +18,7 @@
 - [Classwork](#classwork)
 
   - [Fibonocci Sequence Generator](#fibonocci-sequence-generator)
-  - [The Ants Go Marching, Code Debuging and DOM Node Selection](#the-ants-go-marching-code-debuging-and-dom-node-selection)
+  - [The Ants Go Marching, Code Debuging and DOM Node Selection](#the-ants-go-marching---code-debuging---dom-node-selection)
 
 - [Projects](#projects)
 
@@ -130,7 +130,7 @@
   - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/ClassWork/Fibonacci_Sequence_Generator)**
   - **[Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/ClassWork/Fibonacci_Sequence_Generator)**
 
-### The Ants Go Marching, Code Debuging and DOM Node Selection
+### The Ants Go Marching - Code Debuging - DOM Node Selection
 
 - **Objective:** Using JavaScript and Chrome Developer Tools:
 
