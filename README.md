@@ -17,10 +17,10 @@
 
 - [Classwork](#classwork)
 
-  - [Fibonocci Sequence Generator](#fibonocci-sequence-generator)
-  - [The Ants Go Marching, Code Debuging and DOM Node Selection](#the-ants-go-marching---code-debuging---dom-node-selection)
-  - [JavaScript Arrays, Objects, Functions and This Keyword](#javascript-arrays---objects---functions-and-this-keyword)
-  - [Chrome Debugging](#chrome-debugging)
+  - [Fibonocci Sequence Generator](#cw1---fibonocci-sequence-generator)
+  - [The Ants Go Marching, Code Debuging and DOM Node Selection](#cw2---the-ants-go-marching---code-debuging---dom-node-selection)
+  - [JavaScript Arrays, Objects, Functions and This Keyword](#cw3---javascript-arrays---objects---functions-and-this-keyword)
+  - [Chrome Debugging](#cw4---chrome-debugging)
 
 - [Projects](#projects)
 
@@ -120,7 +120,7 @@
 
 ## Classwork
 
-### Fibonocci Sequence Generator
+### CW1 - Fibonocci Sequence Generator
 
 - **Objective:** Using JavaScript:
 
@@ -132,7 +132,7 @@
   - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/ClassWork/Fibonacci_Sequence_Generator)**
   - **[Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/ClassWork/Fibonacci_Sequence_Generator)**
 
-### The Ants Go Marching - Code Debuging - DOM Node Selection
+### CW2 - The Ants Go Marching - Code Debuging - DOM Node Selection
 
 - **Objective:** Using JavaScript and Chrome Developer Tools:
 
@@ -144,7 +144,7 @@
   - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/ClassWork/The_Ants_Go_Marching_Debugging_DOMNodesSelection)**
   - **[Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/ClassWork/The_Ants_Go_Marching_Debugging_DOMNodesSelection)**
 
-### JavaScript Arrays - Objects - Functions and This Keyword
+### CW3 - JavaScript Arrays - Objects - Functions and This Keyword
 
 - **Objective:** Using JavaScript:
 
@@ -157,10 +157,10 @@
   - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/ClassWork/JavaScript_Arrays_Objects_Functions_and_This_Keyword)**
   - **[Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/ClassWork/JavaScript_Arrays_Objects_Functions_and_This_Keyword)**
 
-### Chrome Debugging
+### CW4 - Chrome Debugging
 
 - **Objective:** Using JavaScript and the Chrome developer tools debug a piece of code that is used to add two numbers
 
 * **My Solution:**
-  - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/ClassWork/JavaScript_Arrays_Objects_Functions_and_This_Keyword)**
-  - **[Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/ClassWork/JavaScript_Arrays_Objects_Functions_and_This_Keyword)**
+  - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/ClassWork/Chrome_Debugging)**
+  - **[Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/ClassWork/Chrome_Debugging)**
