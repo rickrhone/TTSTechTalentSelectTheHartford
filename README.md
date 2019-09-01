@@ -128,3 +128,15 @@
 - **My Solution:**
   - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/ClassWork/Fibonacci_Sequence_Generator)**
   - **[Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/ClassWork/Fibonacci_Sequence_Generator)**
+
+### The Ants Go Marching and Code Debuging
+
+- **Objective:** Using JavaScript and Chrome Developer Tools:
+
+  - Debug the code provide
+  - Print the ants go marching in the correct order
+  - Select different nodes on the DOM
+
+- **My Solution:**
+  - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/ClassWork/The_Ants_Go_Marching)**
+  - **[Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/ClassWork/The_Ants_Go_Marching)**
