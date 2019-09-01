@@ -20,6 +20,7 @@
   - [Fibonocci Sequence Generator](#fibonocci-sequence-generator)
   - [The Ants Go Marching, Code Debuging and DOM Node Selection](#the-ants-go-marching---code-debuging---dom-node-selection)
   - [JavaScript Arrays, Objects, Functions and This Keyword](#javascript-arrays---objects---functions-and-this-keyword)
+  - [Chrome Debugging](#chrome-debugging)
 
 - [Projects](#projects)
 
@@ -151,6 +152,14 @@
   - Retrieve items from a multidimensional object
   - Create and call functions
   - Create a single object named slideshow that represents the data and functionality of a picture slideshow (console output only).
+
+* **My Solution:**
+  - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/ClassWork/JavaScript_Arrays_Objects_Functions_and_This_Keyword)**
+  - **[Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/ClassWork/JavaScript_Arrays_Objects_Functions_and_This_Keyword)**
+
+### Chrome Debugging
+
+- **Objective:** Using JavaScript and the Chrome developer tools debug a piece of code that is used to add two numbers
 
 * **My Solution:**
   - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/ClassWork/JavaScript_Arrays_Objects_Functions_and_This_Keyword)**
