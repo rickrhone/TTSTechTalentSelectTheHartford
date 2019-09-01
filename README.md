@@ -1,6 +1,6 @@
 # TTS-TechTalentSelect-TheHartford
 
-> Repository for classwork, homework, labs and projects associated with the 12 week Bootcamp.
+> Repository for projects, homework, labs and classwork associated with the 12 week fullstack Bootcamp.
 > This repo also contains a a general play pen area which I use to play around with different things I am learning associated with the bootcamp.
 
 ## Table of Contents
@@ -16,6 +16,8 @@
   - [HW7 - Angular LAB and Homework](#hw7---angular-lab-and-homework)
 
 - [Classwork](#classwork)
+
+  - [Fibonocci Sequence Generator](#fibonocci-sequence-generator)
 
 - [Projects](#projects)
 
@@ -96,10 +98,6 @@
     - **[Angular PrimeNG](https://rickrhone.github.io/AngularPrimeNG-Demo/)**
       - Alot of the functionality from this library seems to have been depricated. What's displayed is what worked.
 
-## Classwork
-
-TBD
-
 ## Projects
 
 ### PRJ1 - Mid Course Project - Vegas Dice Game (Java)
@@ -116,3 +114,29 @@ TBD
 
 - **My Solution:**
   In process due 9/6/2019
+
+## Classwork
+
+### Fibonocci Sequence Generator
+
+- **Objective:** Using JavaScript:
+
+  - Prompt the user for size of the Fibonocci Sequence.
+  - Prompt the user for the position in the Fibonocci Sequence that they would like to know the value of.
+  - Bonus: Render this information on the HTML page.
+
+- **My Solution:**
+  - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/ClassWork/Fibonacci_Sequence_Generator)**
+  - **[Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/ClassWork/Fibonacci_Sequence_Generator)**
+
+### The Ants Go Marching and Code Debuging
+
+- **Objective:** Using JavaScript and Chrome Developer Tools:
+
+  - Debug the code provide
+  - Print the ants go marching in the correct order
+  - Select different nodes on the DOM
+
+- **My Solution:**
+  - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/ClassWork/The_Ants_Go_Marching)**
+  - **[Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/ClassWork/The_Ants_Go_Marching)**
