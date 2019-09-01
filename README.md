@@ -19,6 +19,8 @@
 
 - [Projects](#projects)
 
+  - [PRJ1 - Mid Course Project - Vegas Dice Game (Java)](<#prj1---mid-course-project---vegas-dice-game-(java)>)
+
 ## Homeworks and Labs
 
 ### HW1 - Pie Chart and Masthead
@@ -100,4 +102,17 @@ TBD
 
 ## Projects
 
-TBD
+### PRJ1 - Mid Course Project - Vegas Dice Game (Java)
+
+- **Objective:** Given the following rules for the game of dice, create a program that prints out whether you won or lost on each roll.
+
+  - The player rolls two 6-sided dice to generate a random number between 1 and 6.
+  - Rolling 7 or 11 on the first try is a WIN
+  - Rolling 2, 3 or 12 on the first try is a LOSE
+  - Any other roll on the first try becomes the player's POINT
+  - If a player rolled POINT, the player continues to roll until one of two things happens:
+    - If a player has POINT and rolls the POINT again, it is a WIN
+    - If a player has POINT and rolls 7, it is a LOST
+
+- **My Solution:**
+  In process due 9/6/2019
