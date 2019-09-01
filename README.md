@@ -18,6 +18,8 @@
 - [Classwork](#classwork)
 
   - [Fibonocci Sequence Generator](#fibonocci-sequence-generator)
+  - [The Ants Go Marching, Code Debuging and DOM Node Selection](#the-ants-go-marching---code-debuging---dom-node-selection)
+  - [JavaScript Arrays, Objects, Functions and This Keyword](#javascript-arrays---objects---functions-and-this-keyword)
 
 - [Projects](#projects)
 
@@ -129,14 +131,27 @@
   - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/ClassWork/Fibonacci_Sequence_Generator)**
   - **[Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/ClassWork/Fibonacci_Sequence_Generator)**
 
-### The Ants Go Marching and Code Debuging
+### The Ants Go Marching - Code Debuging - DOM Node Selection
 
 - **Objective:** Using JavaScript and Chrome Developer Tools:
 
-  - Debug the code provide
+  - Debug the code provided
   - Print the ants go marching in the correct order
   - Select different nodes on the DOM
 
 - **My Solution:**
-  - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/ClassWork/The_Ants_Go_Marching)**
-  - **[Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/ClassWork/The_Ants_Go_Marching)**
+  - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/ClassWork/The_Ants_Go_Marching_Debugging_DOMNodesSelection)**
+  - **[Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/ClassWork/The_Ants_Go_Marching_Debugging_DOMNodesSelection)**
+
+### JavaScript Arrays - Objects - Functions and This Keyword
+
+- **Objective:** Using JavaScript:
+
+  - Create and manipulate an array
+  - Retrieve items from a multidimensional object
+  - Create and call functions
+  - Create a single object named slideshow that represents the data and functionality of a picture slideshow (console output only).
+
+* **My Solution:**
+  - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/ClassWork/JavaScript_Arrays_Objects_Functions_and_This_Keyword)**
+  - **[Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/ClassWork/JavaScript_Arrays_Objects_Functions_and_This_Keyword)**
