@@ -17,10 +17,10 @@
 
 - [Classwork](#classwork)
 
-  - [Fibonocci Sequence Generator](#cw1---fibonocci-sequence-generator)
-  - [The Ants Go Marching, Code Debuging and DOM Node Selection](#cw2---the-ants-go-marching---code-debuging---dom-node-selection)
-  - [JavaScript Arrays, Objects, Functions and This Keyword](#cw3---javascript-arrays---objects---functions-and-this-keyword)
-  - [Chrome Debugging](#cw4---chrome-debugging)
+  - [CW1 - Fibonocci Sequence Generator](#cw1---fibonocci-sequence-generator)
+  - [CW2 - The Ants Go Marching, Code Debuging and DOM Node Selection](#cw2---the-ants-go-marching---code-debuging---dom-node-selection)
+  - [CW3 - JavaScript Arrays, Objects, Functions and This Keyword](#cw3---javascript-arrays---objects---functions-and-this-keyword)
+  - [CW4 - Chrome Debugging](#cw4---chrome-debugging)
 
 - [Projects](#projects)
 
