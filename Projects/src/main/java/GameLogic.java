@@ -1,6 +1,5 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+// Ricardo Rhone
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -61,20 +60,13 @@ public class GameLogic {
         return true;
     }
 
-//    // Method to ask the player if they would like to paly again
-//    // not included in the playAgain method because Scanner.next() is "blocking"
-//    public static void playAgainPrompt() {
-//        // Ask the player for input
-//        System.out.print("\nWould you like to play again (Y/N)? ");
-//    }
-
     // Method to start a new game
     public static String playAgain() {
+        // Ask the player for input
+        System.out.print("\nWould you like to play again (Y/N)? ");
         // Store the players input
         Scanner sc = new Scanner(System.in);
         String newGame = sc.nextLine();
-//        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
-//        String newGame = input.readLine();
         return newGame;
     }
 

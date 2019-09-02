@@ -1,3 +1,5 @@
+// Ricardo Rhone
+
 //Objective: Create a program that prints out whether you won or lost on each roll.
 
 // This class is solely for the execution of the program
@@ -47,14 +49,12 @@ public class Main {
                     GameLogic.youWon();
                     endOfGame = GameLogic.gameOver();
                     // Determine if the player would like to play again
-                    System.out.print("\nWould you like to play again (Y/N)? ");
                     playersChoice = GameLogic.playAgain();
                 } else if (firstTryLosingValues.contains(sumOfDieValues)) {
                     // Determine if the player loss the game on the first try and if so end the game
                     GameLogic.youLoss();
                     endOfGame = GameLogic.gameOver();
                     // Determine if the player would like to play again
-                    System.out.print("\nWould you like to play again (Y/N)? ");
                     playersChoice = GameLogic.playAgain();
                 } else {
                     // Store the point
@@ -72,14 +72,12 @@ public class Main {
                             GameLogic.youWon();
                             endOfGame = GameLogic.gameOver();
                             // Determine if the player would like to play again
-                            System.out.print("\nWould you like to play again (Y/N)? ");
                             playersChoice = GameLogic.playAgain();
                         } else if (sumOfDieValues == lossOnRoll2Plus) {
                             // determine if the player loss the game on subsequent tries and if so end the game
                             GameLogic.youLoss();
                             endOfGame = GameLogic.gameOver();
                             // Determine if the player would like to play again
-                            System.out.print("\nWould you like to play again (Y/N)? ");
                             playersChoice = GameLogic.playAgain();
                         } else {
                             currentTry++; // Move to the next try
