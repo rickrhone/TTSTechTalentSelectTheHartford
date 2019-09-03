@@ -29,7 +29,7 @@ public class Main {
 
             //Incrementing the game counter and printing the game number
             gameCount++;
-            System.out.println("\n************** NOW STARTING GAME " + gameCount + " ****************");
+            System.out.println("\n-------------- NOW STARTING GAME " + gameCount + " ----------------");
 
             // Declaring a variable to store the point
             int point = 0;
