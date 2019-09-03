@@ -116,7 +116,12 @@
     - If a player has POINT and rolls 7, it is a LOST
 
 - **My Solution:**
-  In process due 9/6/2019
+  - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/Projects/VegasDiceGame)**
+  - **[jar file](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/Projects/VegasDiceGame/out/artifacts/VegasDiceGame_jar/VegasDiceGame.jar)**
+  - To run on the command line
+    - Download the jar file [HERE](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/raw/master/Projects/VegasDiceGame/out/artifacts/VegasDiceGame_jar/VegasDiceGame.jar)
+    - In the Command Line/Terminal navigate to the folder containing the downloaded jar file
+    - Enter the following command to run the game: **java -jar VegasDiceGame.jar**
 
 ## Classwork
 
