@@ -63,11 +63,10 @@ public class GameLogic {
     // Method to start a new game
     public static String playAgain() {
         // Ask the player for input
-        System.out.print("\nWould you like to play again (Y/N)? ");
+        System.out.println("\nWould you like to play again (Y/N)? ");
         // Store the players input
         Scanner sc = new Scanner(System.in);
         String newGame = sc.nextLine();
         return newGame;
     }
-
 }

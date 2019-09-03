@@ -22,8 +22,14 @@ public class Main {
         // Declaring the variable to store the players choice for a new game
         String playersChoice = "Y";
 
+        // Declaring the variable to store the number of games played
+        int gameCount = 0;
         // Starting a new game
         do {
+
+            //Incrementing the game counter and printing the game number
+            gameCount++;
+            System.out.println("\n************** NOW STARTING GAME " + gameCount + " ****************");
 
             // Declaring a variable to store the point
             int point = 0;
