@@ -67,6 +67,18 @@ public class GameLogic {
         // Store the players input
         Scanner sc = new Scanner(System.in);
         String newGame = sc.nextLine();
-        return newGame;
+
+        if (newGame.equalsIgnoreCase("y") || newGame.equalsIgnoreCase("n")) {
+            return newGame;
+        } else {
+            // keep prompting player until a valid input is entered (Y or N)
+            do {
+                System.out.println("\nPlease enter a valid input - Would you like to play again (Y/N)? ");
+                Scanner sc2 = new Scanner(System.in);
+                newGame = sc2.nextLine();
+            } while (!(newGame.equalsIgnoreCase("y") || newGame.equalsIgnoreCase("n")));
+            return newGame;
+        }
+
     }
 }
