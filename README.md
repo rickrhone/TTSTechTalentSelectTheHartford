@@ -5,7 +5,7 @@
 
 ## Table of Contents
 
-- [Homeworks and Labs](#homework-and-labs)
+- [Homeworks and Labs](#homeworks--and-labs)
 
   - [HW1 - Pie Chart and Masthead](#hw1---pie-chart-and-masthead)
   - [HW2 - Todo List](#hw2---todo-list)
