@@ -117,8 +117,7 @@
 
 - **My Solution:**
   - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/Projects/VegasDiceGame/src/main/java)**
-  - **[jar file](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/Projects/VegasDiceGame/out/artifacts/VegasDiceGame_jar/VegasDiceGame.jar)**
-  - To run on the command line
+  - **To run the game on the command line**
     - Download the jar file [HERE](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/raw/master/Projects/VegasDiceGame/out/artifacts/VegasDiceGame_jar/VegasDiceGame.jar)
     - In the Command Line/Terminal navigate to the folder containing the downloaded jar file
     - Enter the following command to run the game: **java -jar VegasDiceGame.jar**
