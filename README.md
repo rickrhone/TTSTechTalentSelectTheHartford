@@ -5,7 +5,11 @@
 
 ## Table of Contents
 
-- [Homeworks and Labs](#homeworks-and-labs)
+- [Projects](#projects)
+
+  - [PRJ1 - Mid Course Project - Vegas Dice Game (Java)](#prj1---mid-course-project---vegas-dice-game-java)
+
+* [Homeworks and Labs](#homeworks-and-labs)
 
   - [HW1 - Pie Chart and Masthead](#hw1---pie-chart-and-masthead)
   - [HW2 - Todo List](#hw2---todo-list)
@@ -15,16 +19,33 @@
   - [HW6 - Angular Services LAB and Homework](#hw6---angular-services-lab-and-homework)
   - [HW7 - Angular LAB and Homework](#hw7---angular-lab-and-homework)
 
-- [Classwork](#classwork)
+* [Classwork](#classwork)
 
   - [CW1 - Fibonocci Sequence Generator](#cw1---fibonocci-sequence-generator)
   - [CW2 - The Ants Go Marching, Code Debuging and DOM Node Selection](#cw2---the-ants-go-marching---code-debuging---dom-node-selection)
   - [CW3 - JavaScript Arrays, Objects, Functions and This Keyword](#cw3---javascript-arrays---objects---functions-and-this-keyword)
   - [CW4 - Chrome Debugging](#cw4---chrome-debugging)
 
-- [Projects](#projects)
+## Projects
 
-  - [PRJ1 - Mid Course Project - Vegas Dice Game (Java)](#prj1---mid-course-project---vegas-dice-game-java)
+### PRJ1 - Mid Course Project - Vegas Dice Game (Java)
+
+- **Objective:** Given the following rules for the game of dice, create a program that prints out whether you won or lost on each roll.
+
+  - The player rolls two 6-sided dice to generate a random number between 1 and 6.
+  - Rolling 7 or 11 on the first try is a WIN
+  - Rolling 2, 3 or 12 on the first try is a LOSE
+  - Any other roll on the first try becomes the player's POINT
+  - If a player rolled POINT, the player continues to roll until one of two things happens:
+    - If a player has POINT and rolls the POINT again, it is a WIN
+    - If a player has POINT and rolls 7, it is a LOST
+
+- **My Solution:**
+  - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/Projects/VegasDiceGame/src/main/java)**
+  - **To run the game on the command line**
+    - Download the jar file [HERE](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/raw/master/Projects/VegasDiceGame/out/artifacts/VegasDiceGame_jar/VegasDiceGame.jar)
+    - In the Command Line/Terminal navigate to the folder containing the downloaded jar file
+    - Enter the following command to run the game: **java -jar VegasDiceGame.jar**
 
 ## Homeworks and Labs
 
@@ -100,27 +121,6 @@
     - **[Angular Material](https://rickrhone.github.io/AngularMaterial-Demo/)**
     - **[Angular PrimeNG](https://rickrhone.github.io/AngularPrimeNG-Demo/)**
       - Alot of the functionality from this library seems to have been depricated. What's displayed is what worked.
-
-## Projects
-
-### PRJ1 - Mid Course Project - Vegas Dice Game (Java)
-
-- **Objective:** Given the following rules for the game of dice, create a program that prints out whether you won or lost on each roll.
-
-  - The player rolls two 6-sided dice to generate a random number between 1 and 6.
-  - Rolling 7 or 11 on the first try is a WIN
-  - Rolling 2, 3 or 12 on the first try is a LOSE
-  - Any other roll on the first try becomes the player's POINT
-  - If a player rolled POINT, the player continues to roll until one of two things happens:
-    - If a player has POINT and rolls the POINT again, it is a WIN
-    - If a player has POINT and rolls 7, it is a LOST
-
-- **My Solution:**
-  - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/Projects/VegasDiceGame/src/main/java)**
-  - **To run the game on the command line**
-    - Download the jar file [HERE](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/raw/master/Projects/VegasDiceGame/out/artifacts/VegasDiceGame_jar/VegasDiceGame.jar)
-    - In the Command Line/Terminal navigate to the folder containing the downloaded jar file
-    - Enter the following command to run the game: **java -jar VegasDiceGame.jar**
 
 ## Classwork
 
