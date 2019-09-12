@@ -1,3 +1,5 @@
+.gitignore
+ClassWork/JavaAssessment/
 HomeworkAndLabs\JavaLabs\.idea/
 HomeworkAndLabs\JavaLabs\out/
 HomeworkAndLabs\JavaLabs\JavaLabs.iml
@@ -6,3 +8,11 @@ HomeworkAndLabs\JavaLabs\JavaLab1_TypesAndVariables\out/
 HomeworkAndLabs\JavaLabs\JavaLab1_TypesAndVariables\JavaLab1_TypesAndVariables.iml
 HomeworkAndLabs\JavaLabs\JavaLab2_ClassesAndInterfaces\.idea/
 HomeworkAndLabs\JavaLabs\JavaLab2_ClassesAndInterfaces\JavaLab2_ClassesAndInterfaces.iml
+Projects\VegasDiceGame\.gradle\
+Projects\VegasDiceGame\.idea\
+Projects\VegasDiceGame\build\
+Projects\VegasDiceGame\gradle\
+build.gradle
+gradlew
+gradlew.bat
+settings.gradle

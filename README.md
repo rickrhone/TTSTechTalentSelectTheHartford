@@ -1,6 +1,6 @@
 # TTS-TechTalentSelect-TheHartford
 
-> Repository for projects, homework, labs and classwork associated with the 12 week fullstack Bootcamp.
+> Repository for projects, homeworks, labs and classwork associated with the 12 week fullstack Bootcamp.
 > This repo also contains a a general play pen area which I use to play around with different things I am learning associated with the bootcamp.
 
 ## Table of Contents
