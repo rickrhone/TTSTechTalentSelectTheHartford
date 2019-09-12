@@ -41,6 +41,7 @@
     - If a player has POINT and rolls 7, it is a LOST
 
 - **My Solution:**
+  - ![gif of Vegas Dice Game](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/Projects/VegasDiceGame/TTSVegasDiceGame.gif)
   - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/Projects/VegasDiceGame/src/main/java)**
   - **To run the game on the command line**
     - Download the jar file [HERE](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/raw/master/Projects/VegasDiceGame/out/artifacts/VegasDiceGame_jar/VegasDiceGame.jar)

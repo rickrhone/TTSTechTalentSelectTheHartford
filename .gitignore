@@ -1,5 +1,5 @@
 .gitignore
-ClassWork/JavaAssessment/
+ClassWork\JavaAssessment/
 HomeworkAndLabs\JavaLabs\.idea/
 HomeworkAndLabs\JavaLabs\out/
 HomeworkAndLabs\JavaLabs\JavaLabs.iml
