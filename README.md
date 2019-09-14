@@ -1,15 +1,15 @@
 # TTS-TechTalentSelect-TheHartford
 
-> Repository for projects, homework, labs and classwork associated with the 12 week fullstack Bootcamp.
+> Repository for projects, homeworks, labs and classwork associated with the 12 week fullstack Bootcamp.
 > This repo also contains a a general play pen area which I use to play around with different things I am learning associated with the bootcamp.
 
 ## Table of Contents
 
-- [Projects](#projects)
+- [PROJECTS](#projects)
 
   - [PRJ1 - Mid Course Project - Vegas Dice Game (Java)](#prj1---mid-course-project---vegas-dice-game-java)
 
-* [Homeworks and Labs](#homeworks-and-labs)
+* [HOMEWORKS AND LABS](#homeworks-and-labs)
 
   - [HW1 - Pie Chart and Masthead](#hw1---pie-chart-and-masthead)
   - [HW2 - Todo List](#hw2---todo-list)
@@ -19,14 +19,14 @@
   - [HW6 - Angular Services LAB and Homework](#hw6---angular-services-lab-and-homework)
   - [HW7 - Angular LAB and Homework](#hw7---angular-lab-and-homework)
 
-* [Classwork](#classwork)
+* [CLASSWORK](#classwork)
 
   - [CW1 - Fibonocci Sequence Generator](#cw1---fibonocci-sequence-generator)
   - [CW2 - The Ants Go Marching, Code Debuging and DOM Node Selection](#cw2---the-ants-go-marching---code-debuging---dom-node-selection)
   - [CW3 - JavaScript Arrays, Objects, Functions and This Keyword](#cw3---javascript-arrays---objects---functions-and-this-keyword)
   - [CW4 - Chrome Debugging](#cw4---chrome-debugging)
 
-## Projects
+## PROJECTS
 
 ### PRJ1 - Mid Course Project - Vegas Dice Game (Java)
 
@@ -41,13 +41,14 @@
     - If a player has POINT and rolls 7, it is a LOST
 
 - **My Solution:**
+  - ![gif of Vegas Dice Game](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/blob/master/Projects/VegasDiceGame/TTSVegasDiceGame.gif)
   - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/Projects/VegasDiceGame/src/main/java)**
   - **To run the game on the command line**
     - Download the jar file [HERE](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/raw/master/Projects/VegasDiceGame/out/artifacts/VegasDiceGame_jar/VegasDiceGame.jar)
     - In the Command Line/Terminal navigate to the folder containing the downloaded jar file
     - Enter the following command to run the game: **java -jar VegasDiceGame.jar**
 
-## Homeworks and Labs
+## HOMEWORKS AND LABS
 
 ### HW1 - Pie Chart and Masthead
 
@@ -122,7 +123,7 @@
     - **[Angular PrimeNG](https://rickrhone.github.io/AngularPrimeNG-Demo/)**
       - Alot of the functionality from this library seems to have been depricated. What's displayed is what worked.
 
-## Classwork
+## CLASSWORK
 
 ### CW1 - Fibonocci Sequence Generator
 
