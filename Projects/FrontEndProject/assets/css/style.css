@@ -265,15 +265,129 @@ body {
 /* ========= SECTION 5 ================== */
 #section5 {
     width: 100vw;
+    background-color: #204a69;
+    padding: 8rem 7%;
 }
 
 #outerDivSec5 {
     display: flex;
+    /* flex-wrap: wrap; */
     flex-direction: row;
     justify-content: space-between;
-    background-color: #016087;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+#section5imgDiv {
+    padding-right: 138px;
+}
+
+#section5imgDiv img {
+    width: 336px;
+    height: 438px;
+}
+
+#section5text h3 {
+    /* order: 2;
+    padding-left: 6rem; */
+    display: flex;
+    flex-direction: column;
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: 0;
+    font-weight: 500;
+    font-family: Recoleta, Georgia, "Times New Roman", Times, serif;
+    color: #FFFFFF;
+}
+
+#section5PandA {
+    margin: 4rem 0 0 8rem;
+    color: #bbc9d5;
+}
+
+#section5text p {
+    margin: 0;
+    margin-top: 3rem;
+    padding: 0;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0;
+}
+
+#section5text a {
+    text-decoration: none;
+}
+
+/* +++++++ SECTION MEDIA QUERIES ++++++ */
+@media (max-width:782px) {
+    #outerDivSec5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    #section5imgDiv {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section5imgDiv img {
+        width: 168px;
+        height: 219px;
+    }
+
+    #section5text h3 {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 40px;
+        line-height: 55px;
+        letter-spacing: 0;
+        font-weight: 500;
+        font-family: Recoleta, Georgia, "Times New Roman", Times, serif;
+        color: #FFFFFF;
+    }
+
+    #section5PandA {
+        margin: 0;
+        color: #bbc9d5;
+    }
+
+}
+
+@media (max-width:960px) {
+
+    #section5imgDiv img {
+        width: 168px;
+        height: 219px;
+    }
+
+    #section5text h3 {
+        padding: 0;
+        margin: 0;
+        display: flex;
+
+        font-size: 40px;
+        line-height: 55px;
+        letter-spacing: 0;
+        font-weight: 500;
+        font-family: Recoleta, Georgia, "Times New Roman", Times, serif;
+        color: #FFFFFF;
+    }
+
+    #section5PandA {
+        margin: 0;
+        color: #bbc9d5;
+    }
+
+}
 
 
 /* ========= FOOTER ================== */
@@ -390,7 +504,7 @@ footer {
     display: inline-block;
 }
 
-/* FOOTER MEDIA QUERIES */
+/* +++++ FOOTER MEDIA QUERIES +++++ */
 @media (max-width:782px) {
     .footerLinks1 {
         text-align: center;
