@@ -56,7 +56,7 @@
   - When building your version of the site, don't worry about making it exactly the same to the pixel. Instead, focus on creating the same structure, sections, text/images, etc.
   - Don't forget to utilize quick tools available to you, like Bootstrap's components.
   - ** Bonus **
-    - I chose to also make the website mobile responsive and functional.
+    - On top of matching the layout I chose to also make the website mobile responsive and functional.
 
 - **My Solution:**
 
