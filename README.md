@@ -8,7 +8,7 @@
 - [PROJECTS](#projects)
 
   - [PRJ1 - Mid Course Project - Vegas Dice Game (Java)](#prj1---mid-course-project---vegas-dice-game-java)
-  - [PRJ2 - Front End Project - Recreate wordpress.com homepage)](#prj2---front-end-project---recreate-wordpress.com-homepage)
+  - [PRJ2 - Front End Project - Recreate wordpress.com homepage)](#prj2---front-end-project---recreate-wordpresscom-homepage)
 
 * [HOMEWORKS AND LABS](#homeworks-and-labs)
 
@@ -49,7 +49,7 @@
     - In the Command Line/Terminal navigate to the folder containing the downloaded jar file
     - Enter the following command to run the game: **java -jar VegasDiceGame.jar**
 
-### PRJ2 - Front End Project - Recreate wordpress.com homepage
+### PRJ2 - Front End Project - recreate wordpress.com homepage
 
 - **Objective:** Given the wordpress.com example site and what you've learned with HTML/CSS/JS and Bootstrap, mimic the example site you choose as closely as possible in the time alloted.
 
