@@ -55,13 +55,13 @@
 
   - When building your version of the site, don't worry about making it exactly the same to the pixel. Instead, focus on creating the same structure, sections, text/images, etc.
   - Don't forget to utilize quick tools available to you, like Bootstrap's components.
-  - ** Bonus **
+  - **Bonus**
     - On top of matching the layout I chose to also make the website mobile responsive and functional.
 
 - **My Solution:**
 
-  - **[Link to my Code](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/tree/master/Projects/FrontEndProject)**
-  - **[Live-Demo](https://rickrhone.github.io/TTSTechTalentSelectTheHartford/Projects/FrontEndProject)**
+  - **[LIVE-DEMO](https://rickrhone.github.io/TTS-FrontEndProject/)**
+  - **[Link to my Code](https://github.com/rickrhone/TTS-FrontEndProject)**
 
 ## HOMEWORKS AND LABS
 
