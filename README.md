@@ -8,6 +8,7 @@
 - [PROJECTS](#projects)
 
   - [PRJ1 - Mid Course Project - Vegas Dice Game (Java)](#prj1---mid-course-project---vegas-dice-game-java)
+  - [PRJ2 - Front End Project - Recreate wordpress.com homepage)](#prj2---front-end-project---recreate-wordpresscom-homepage)
 
 * [HOMEWORKS AND LABS](#homeworks-and-labs)
 
@@ -47,6 +48,20 @@
     - Download the jar file [HERE](https://github.com/rickrhone/TTSTechTalentSelectTheHartford/raw/master/Projects/VegasDiceGame/out/artifacts/VegasDiceGame_jar/VegasDiceGame.jar)
     - In the Command Line/Terminal navigate to the folder containing the downloaded jar file
     - Enter the following command to run the game: **java -jar VegasDiceGame.jar**
+
+### PRJ2 - Front End Project - recreate wordpress.com homepage
+
+- **Objective:** Given the wordpress.com example site and what you've learned with HTML/CSS/JS and Bootstrap, mimic the example site you choose as closely as possible in the time alloted.
+
+  - When building your version of the site, don't worry about making it exactly the same to the pixel. Instead, focus on creating the same structure, sections, text/images, etc.
+  - Don't forget to utilize quick tools available to you, like Bootstrap's components.
+  - **Bonus**
+    - On top of matching the layout I chose to also make the website mobile responsive and functional.
+
+- **My Solution:**
+
+  - **[LIVE-DEMO](https://rickrhone.github.io/TTS-FrontEndProject/)**
+  - **[Link to my Code](https://github.com/rickrhone/TTS-FrontEndProject)**
 
 ## HOMEWORKS AND LABS
 

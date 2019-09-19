@@ -1,0 +1,794 @@
+<!-- Ricardo Rhone  -->
+<!-- TTS Front End Project  - recreate the wordpress.com homepage -->
+<!-- September 16 - 18, 2019  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Google Font -->
+        <link rel="stylesheet" id="noto-sans-font-css"
+            href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,vietnamese&amp;display=swap"
+            media="all">
+
+        <!-- Font Awesome - Icon Kit -->
+        <script src="https://kit.fontawesome.com/f5bfef1e9b.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- Logo and Title -->
+        <link rel="icon" href="assets/img/wordpress-512.png">
+        <title>WordPress.com: Create a Free Website or Blog</title>
+    </head>
+
+    <body>
+
+        <!-- ******************* SECTION 1 ****************** -->
+        <section class="section1">
+            <!-- Nav Container -->
+            <div id="navContainer">
+                <!-- Left Nav -->
+                <div id="leftNav" class="hideOnSmall">
+                    <ul>
+                        <li class="noLeftPadding">
+                            <a role="menuitem" class="logoLink noLeftPadding menuItem" href="//wordpress.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 170 36" class="logo noLeftPadding">
+                                    <path
+                                        d="M47.57 10l-2.79 10.72L41.99 10h-2.81l.65 2.3-2.45 8.78L34.7 10H32l3.8 14h2.96l2.28-7.49L43.17 24h2.95l4-14h-2.55zm28.39 4.06a9 9 0 0 0-1.86-.23c-3.4 0-5.26 2.27-5.26 5.6 0 3.31 1.86 4.82 4.05 4.82a5.45 5.45 0 0 0 3.2-1.17V24h2.33V10h-2.46v4.06zm0 7.08c-.8.73-1.55 1.13-2.34 1.13-1.36 0-2.23-.9-2.23-3.01 0-2.28 1.08-3.47 2.96-3.47.55 0 1.1.11 1.6.31v5.04zM64.2 15.7h-.09v-1.64h-2.3V24h2.47v-5.92c.77-1.46 1.71-1.94 3.28-1.94h.25V14a6.67 6.67 0 0 0-.67-.04c-1.34 0-2.26.52-2.94 1.75zm83.14-1.89c-3.4 0-5.01 2.2-5.01 5.23 0 3.02 1.6 5.2 5.01 5.2s5.01-2.18 5.01-5.2c0-3.03-1.63-5.23-5.02-5.23h.01zm0 8.44c-1.6 0-2.46-1.04-2.46-3.21 0-2.18.85-3.22 2.46-3.22 1.6 0 2.44 1.04 2.44 3.22 0 2.17-.84 3.21-2.45 3.21h.01zm19.12-8.44c-1.06 0-2.28.58-3.38 1.32l-.3.19c-.51-1.11-1.56-1.5-2.71-1.5-1.06 0-2.27.54-3.38 1.27v-1.03h-2.34V24h2.48v-7.13a5.3 5.3 0 0 1 2.61-.98c.81 0 1.32.44 1.32 1.84V24h2.46v-7.1c.92-.6 1.9-1 2.6-1 .82 0 1.32.43 1.32 1.84V24h2.46v-6.86c0-1.92-1.14-3.32-3.15-3.32zm-111.64 0c-3.4 0-5 2.2-5 5.23 0 3.02 1.6 5.2 5 5.2s5.02-2.18 5.02-5.2c0-3.03-1.64-5.23-5.03-5.23h.01zm0 8.44c-1.6 0-2.46-1.04-2.46-3.21 0-2.18.86-3.22 2.47-3.22 1.6 0 2.44 1.04 2.44 3.22 0 2.17-.85 3.21-2.46 3.21h.01zm40.31-6.56h-.08v-1.63h-2.31V24h2.46v-5.92c.77-1.46 1.71-1.94 3.28-1.94h.25V14a6.67 6.67 0 0 0-.67-.04c-1.33 0-2.25.52-2.94 1.75h.01zM86.05 10h-4.58v14h2.64v-4.87h1.93c2.99 0 5.16-1.61 5.16-4.62 0-3-2.17-4.51-5.16-4.51zm.02 7.08h-1.96v-5.01h1.95c1.6 0 2.38.88 2.38 2.44 0 1.57-.73 2.57-2.38 2.57h.01zm36.02-.23c0-.75.82-1.04 1.7-1.04.93.01 1.86.16 2.75.43V14.2a10.14 10.14 0 0 0-2.95-.38c-2.38 0-4.05 1.13-4.05 2.97 0 3.57 4.92 2.65 4.92 4.39 0 .85-.77 1.08-1.9 1.08-.8 0-2.07-.3-2.99-.63v2.03a8.29 8.29 0 0 0 2.9.59c2.32 0 4.53-.69 4.53-3.17.03-3.45-4.9-2.56-4.9-4.23zm-17.5-3.03c-3.18 0-4.83 2.47-4.83 5.16 0 3.7 1.94 5.27 5.1 5.27a11.81 11.81 0 0 0 3.65-.57v-2.05c-1.03.38-1.97.61-2.97.61-1.84 0-3.07-.5-3.13-2.67h6.36c.06-.49.09-.98.08-1.46 0-2.1-1.11-4.29-4.27-4.29zm-2.16 4.12c.15-1.38.9-2.26 2.13-2.26 1.32 0 1.72 1.05 1.72 2.26h-3.85zm10.7-1.09c0-.75.81-1.04 1.69-1.04.93.01 1.86.16 2.75.43V14.2a10.14 10.14 0 0 0-2.94-.38c-2.38 0-4.06 1.13-4.06 2.97 0 3.57 4.93 2.65 4.93 4.39 0 .85-.78 1.08-1.9 1.08-.8 0-2.07-.3-3-.63v2.03a8.28 8.28 0 0 0 2.9.59c2.32 0 4.54-.69 4.54-3.17.02-3.45-4.91-2.56-4.91-4.23zm21.97 2.1c0-2.33 1.27-3.12 2.78-3.12.94.03 1.88.22 2.76.57v-2.1a8.11 8.11 0 0 0-2.8-.48c-3.28 0-5.31 2-5.31 5.25 0 3.07 1.46 5.18 5.16 5.18 1.17 0 2.08-.23 3.08-.57v-2.04c-1.13.43-2 .6-2.77.6-1.63 0-2.9-.75-2.9-3.3zM128.66 24h2.47v-2.55h-2.47V24zM1.72 16c0 4.47 2.6 8.32 6.36 10.15L2.7 11.41A11.24 11.24 0 0 0 1.72 16zM13 27.28c1.31 0 2.57-.23 3.75-.64l-.08-.15-3.47-9.5-3.38 9.83c1 .3 2.07.46 3.18.46zm1.55-16.57l4.08 12.13 1.13-3.76c.48-1.56.85-2.68.85-3.65 0-1.4-.5-2.36-.92-3.1-.58-.94-1.11-1.73-1.11-2.65 0-1.04.78-2 1.9-2h.14A11.24 11.24 0 0 0 13 4.72 11.27 11.27 0 0 0 3.58 9.8l.72.02c1.18 0 3-.15 3-.15.62-.03.69.86.08.93 0 0-.61.08-1.3.11l4.12 12.22 2.47-7.4-1.76-4.82a20.13 20.13 0 0 1-1.18-.1c-.61-.04-.54-.97.07-.94 0 0 1.86.15 2.97.15 1.18 0 3-.15 3-.15.61-.03.69.86.08.93 0 0-.61.07-1.3.11zm4.12 15.04A11.28 11.28 0 0 0 24.28 16c0-1.96-.5-3.8-1.38-5.41a10.65 10.65 0 0 1-.78 5.2l-3.45 9.96zM13 29a13 13 0 1 1 0-26 13 13 0 0 1 0 26z"
+                                        fill="inherit" fill-rule="nonzero" />
+                                    <title>WordPress.com icon &amp; logo.</title>
+                                </svg> </a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle menuItem" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Products
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item drpDwnItem"
+                                        href="https://wordpress.com/create-blog/">Blogs</a>
+                                    <a class="dropdown-item drpDwnItem"
+                                        href="https://wordpress.com/create-website/">Websites</a>
+                                    <a class="dropdown-item drpDwnItem"
+                                        href="https://wordpress.com/domains/">Domains</a>
+                                    <a class="dropdown-item drpDwnItem"
+                                        href="https://wordpress.com/ecommerce/">eCommerce</a>
+                                    <a class="dropdown-item drpDwnItem"
+                                        href="https://wordpress.com/com-vs-org/">Self-Hosted
+                                        Solutions</a>
+                                    <div id="dividerLine"> </div>
+                                    <a class="dropdown-item drpDwnItem itemWithLogo"
+                                        href="https://wpvip.com/?utm_source=WordPresscom&utm_medium=automattic_referral&utm_campaign=top_nav">Enterprise</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle menuItem" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Features
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item drpDwnItem"
+                                        href="https://wordpress.com/features/">Overview</a>
+                                    <div id="dividerLine"> </div>
+                                    <a class="dropdown-item drpDwnItem" href="https://wordpress.com/themes/">Themes</a>
+                                    <a class="dropdown-item drpDwnItem"
+                                        href="https://wordpress.com/install-plugins/">Plugins</a>
+                                    <a class="dropdown-item drpDwnItem" href="https://wordpress.com/google/">Google
+                                        Apps</a>
+                                </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle menuItem" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Resources
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item drpDwnItem"
+                                        href="https://en.support.wordpress.com/">Support</a>
+                                    <a class="dropdown-item drpDwnItem" href="https://en.blog.wordpress.com/">News</a>
+                                    <a class="dropdown-item drpDwnItem" href="https://wordpress.com/go/">Expert Tips</a>
+                                </div>
+                        </li>
+                        <li> <a class="menuItem" href="https://wordpress.com/pricing/">Plans & Pricing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Nav -->
+                <div id="rightNav" class="hideOnSmall">
+                    <ul>
+                        <li> <a class="menuItem"
+                                href="https://wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fwordpress.com%2F">log
+                                In</a></li>
+                        <li> <a id="menuItemGetStarted" href="https://wordpress.com/start/?ref=logged-out-homepage-lp">
+                                Get Started
+                            </a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+            <!-- Small Device Navigation -->
+            <div id="navContainer">
+                <!-- Left Nav -->
+                <div id="leftNav" class="hideOnLarge">
+                    <ul>
+                        <li class="noLeftPadding">
+                            <a role="menuitem" class="logoLink noLeftPadding menuItem" href="//wordpress.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 170 36" class="logo noLeftPadding">
+                                    <path
+                                        d="M47.57 10l-2.79 10.72L41.99 10h-2.81l.65 2.3-2.45 8.78L34.7 10H32l3.8 14h2.96l2.28-7.49L43.17 24h2.95l4-14h-2.55zm28.39 4.06a9 9 0 0 0-1.86-.23c-3.4 0-5.26 2.27-5.26 5.6 0 3.31 1.86 4.82 4.05 4.82a5.45 5.45 0 0 0 3.2-1.17V24h2.33V10h-2.46v4.06zm0 7.08c-.8.73-1.55 1.13-2.34 1.13-1.36 0-2.23-.9-2.23-3.01 0-2.28 1.08-3.47 2.96-3.47.55 0 1.1.11 1.6.31v5.04zM64.2 15.7h-.09v-1.64h-2.3V24h2.47v-5.92c.77-1.46 1.71-1.94 3.28-1.94h.25V14a6.67 6.67 0 0 0-.67-.04c-1.34 0-2.26.52-2.94 1.75zm83.14-1.89c-3.4 0-5.01 2.2-5.01 5.23 0 3.02 1.6 5.2 5.01 5.2s5.01-2.18 5.01-5.2c0-3.03-1.63-5.23-5.02-5.23h.01zm0 8.44c-1.6 0-2.46-1.04-2.46-3.21 0-2.18.85-3.22 2.46-3.22 1.6 0 2.44 1.04 2.44 3.22 0 2.17-.84 3.21-2.45 3.21h.01zm19.12-8.44c-1.06 0-2.28.58-3.38 1.32l-.3.19c-.51-1.11-1.56-1.5-2.71-1.5-1.06 0-2.27.54-3.38 1.27v-1.03h-2.34V24h2.48v-7.13a5.3 5.3 0 0 1 2.61-.98c.81 0 1.32.44 1.32 1.84V24h2.46v-7.1c.92-.6 1.9-1 2.6-1 .82 0 1.32.43 1.32 1.84V24h2.46v-6.86c0-1.92-1.14-3.32-3.15-3.32zm-111.64 0c-3.4 0-5 2.2-5 5.23 0 3.02 1.6 5.2 5 5.2s5.02-2.18 5.02-5.2c0-3.03-1.64-5.23-5.03-5.23h.01zm0 8.44c-1.6 0-2.46-1.04-2.46-3.21 0-2.18.86-3.22 2.47-3.22 1.6 0 2.44 1.04 2.44 3.22 0 2.17-.85 3.21-2.46 3.21h.01zm40.31-6.56h-.08v-1.63h-2.31V24h2.46v-5.92c.77-1.46 1.71-1.94 3.28-1.94h.25V14a6.67 6.67 0 0 0-.67-.04c-1.33 0-2.25.52-2.94 1.75h.01zM86.05 10h-4.58v14h2.64v-4.87h1.93c2.99 0 5.16-1.61 5.16-4.62 0-3-2.17-4.51-5.16-4.51zm.02 7.08h-1.96v-5.01h1.95c1.6 0 2.38.88 2.38 2.44 0 1.57-.73 2.57-2.38 2.57h.01zm36.02-.23c0-.75.82-1.04 1.7-1.04.93.01 1.86.16 2.75.43V14.2a10.14 10.14 0 0 0-2.95-.38c-2.38 0-4.05 1.13-4.05 2.97 0 3.57 4.92 2.65 4.92 4.39 0 .85-.77 1.08-1.9 1.08-.8 0-2.07-.3-2.99-.63v2.03a8.29 8.29 0 0 0 2.9.59c2.32 0 4.53-.69 4.53-3.17.03-3.45-4.9-2.56-4.9-4.23zm-17.5-3.03c-3.18 0-4.83 2.47-4.83 5.16 0 3.7 1.94 5.27 5.1 5.27a11.81 11.81 0 0 0 3.65-.57v-2.05c-1.03.38-1.97.61-2.97.61-1.84 0-3.07-.5-3.13-2.67h6.36c.06-.49.09-.98.08-1.46 0-2.1-1.11-4.29-4.27-4.29zm-2.16 4.12c.15-1.38.9-2.26 2.13-2.26 1.32 0 1.72 1.05 1.72 2.26h-3.85zm10.7-1.09c0-.75.81-1.04 1.69-1.04.93.01 1.86.16 2.75.43V14.2a10.14 10.14 0 0 0-2.94-.38c-2.38 0-4.06 1.13-4.06 2.97 0 3.57 4.93 2.65 4.93 4.39 0 .85-.78 1.08-1.9 1.08-.8 0-2.07-.3-3-.63v2.03a8.28 8.28 0 0 0 2.9.59c2.32 0 4.54-.69 4.54-3.17.02-3.45-4.91-2.56-4.91-4.23zm21.97 2.1c0-2.33 1.27-3.12 2.78-3.12.94.03 1.88.22 2.76.57v-2.1a8.11 8.11 0 0 0-2.8-.48c-3.28 0-5.31 2-5.31 5.25 0 3.07 1.46 5.18 5.16 5.18 1.17 0 2.08-.23 3.08-.57v-2.04c-1.13.43-2 .6-2.77.6-1.63 0-2.9-.75-2.9-3.3zM128.66 24h2.47v-2.55h-2.47V24zM1.72 16c0 4.47 2.6 8.32 6.36 10.15L2.7 11.41A11.24 11.24 0 0 0 1.72 16zM13 27.28c1.31 0 2.57-.23 3.75-.64l-.08-.15-3.47-9.5-3.38 9.83c1 .3 2.07.46 3.18.46zm1.55-16.57l4.08 12.13 1.13-3.76c.48-1.56.85-2.68.85-3.65 0-1.4-.5-2.36-.92-3.1-.58-.94-1.11-1.73-1.11-2.65 0-1.04.78-2 1.9-2h.14A11.24 11.24 0 0 0 13 4.72 11.27 11.27 0 0 0 3.58 9.8l.72.02c1.18 0 3-.15 3-.15.62-.03.69.86.08.93 0 0-.61.08-1.3.11l4.12 12.22 2.47-7.4-1.76-4.82a20.13 20.13 0 0 1-1.18-.1c-.61-.04-.54-.97.07-.94 0 0 1.86.15 2.97.15 1.18 0 3-.15 3-.15.61-.03.69.86.08.93 0 0-.61.07-1.3.11zm4.12 15.04A11.28 11.28 0 0 0 24.28 16c0-1.96-.5-3.8-1.38-5.41a10.65 10.65 0 0 1-.78 5.2l-3.45 9.96zM13 29a13 13 0 1 1 0-26 13 13 0 0 1 0 26z"
+                                        fill="inherit" fill-rule="nonzero" />
+                                    <title>WordPress.com icon &amp; logo.</title>
+                                </svg> </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- Right Nav -->
+                <div id="rightNav" class="hideOnLarge">
+
+                    <div class="dropdown">
+                        <a class="dropdown-toggle menuItem" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-bars"></i>
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <h5 class="mobileNavH5One">Get Started </h5>
+                            <div class="mobileNavFlexDisplay">
+                                <a class="dropdown-item drpDwnItem"
+                                    href="https://wordpress.com/start/user?ref=logged-out-homepage-lp">Sign Up</a>
+                                <a class="dropdown-item drpDwnItem"
+                                    href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fwordpress.com%2F">Log
+                                    In</a>
+                            </div>
+                            <div id="dividerLine"> </div>
+                            <a class="dropdown-item drpDwnItem" href="https://wordpress.com/pricing/">Plans &
+                                Pricing</a>
+                            <div id="dividerLine"> </div>
+
+                            <h5 class="mobileNavH5Two">Products </h5>
+                            <div class="mobileNavFlexDisplay">
+                                <div>
+                                    <a class="dropdown-item drpDwnItem mobileNavH5TextPurple"
+                                        href="https://wordpress.com/create-blog/">Blogs</a>
+                                    <a class="dropdown-item drpDwnItem mobileNavH5TextPurple"
+                                        href="https://wordpress.com/domains/">Domains</a>
+                                    <a class="dropdown-item drpDwnItem mobileNavH5TextPurple"
+                                        href="https://wordpress.com/com-vs-org/">Self-Hosted
+                                        Solutions</a>
+                                </div>
+                                <div>
+                                    <a class="dropdown-item drpDwnItem mobileNavH5TextPurple"
+                                        href="https://wordpress.com/create-website/">Websites</a>
+                                    <a class="dropdown-item drpDwnItem mobileNavH5TextPurple"
+                                        href="https://wordpress.com/ecommerce/">eCommerce</a>
+                                    <a class="dropdown-item drpDwnItem itemWithLogo mobileNavH5TextPurple"
+                                        href="https://wpvip.com/?utm_source=WordPresscom&utm_medium=automattic_referral&utm_campaign=top_nav">Enterprise</a>
+                                </div>
+                            </div>
+                            <div id="dividerLine"> </div>
+
+                            <h5 class="mobileNavH5Three">Features </h5>
+                            <div class="mobileNavFlexDisplay">
+                                <div>
+                                    <a class="dropdown-item drpDwnItem mobileNavH5TextRed"
+                                        href="https://wordpress.com/features/">Overview</a>
+                                    <a class="dropdown-item drpDwnItem mobileNavH5TextRed"
+                                        href="https://wordpress.com/themes/">Themes</a>
+                                </div>
+                                <div>
+                                    <a class="dropdown-item drpDwnItem mobileNavH5TextRed"
+                                        href="https://wordpress.com/google/">Google
+                                        Apps</a>
+                                    <a class="dropdown-item drpDwnItem mobileNavH5TextRed"
+                                        href="https://wordpress.com/install-plugins/">Plugins</a>
+                                </div>
+                            </div>
+
+                            <div id="dividerLine"> </div>
+
+                            <h5 class="mobileNavH5Four">Resources </h5>
+                            <div class="mobileNavFlexDisplay">
+                                <div>
+                                    <a class="dropdown-item drpDwnItem mobileNavH5TextGreen"
+                                        href="https://en.blog.wordpress.com/">News</a>
+                                    <a class="dropdown-item drpDwnItem mobileNavH5TextGreen"
+                                        href="https://wordpress.com/go/">Expert Tips</a>
+                                </div>
+                                <div>
+                                    <a class="dropdown-item drpDwnItem mobileNavH5TextGreen"
+                                        href="https://en.support.wordpress.com/">Support</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Small Devices Nav -->
+
+
+
+
+            <!-- Middle Section Container -->
+
+            <div class="midSection">
+                <!-- 34% of the Internet Div -->
+                <div id="Perc">
+                    <h1> <span> WordPress powers </span> <span> 34% of the internet. </span></h1>
+                    <p> <span> WordPress.com is the best way to experience it.</span>
+                        <span> Start building your website today. </span></p>
+                    <a href="https://wordpress.com/start/?ref=logged-out-homepage-lp" class="btn topContBtn">Start your
+                        website</a>
+                </div>
+                <!-- Wordpress Logo Div -->
+                <div id="wordPressLogo">
+                    <!-- image set in CSS -->
+
+                </div>
+                <!-- Picture Div -->
+                <div id="picture">
+                    <!-- image set in CSS -->
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- ******************* SECTION 2 ****************** -->
+        <section id="section2">
+
+            <!-- Background Images -->
+            <!-- <div id="bckgImgDiv">
+                <div id="leftBckgImg"></div>
+                <div id="rightBckgImg"></div>
+            </div> -->
+
+
+
+            <!-- Plans Div -->
+            <div id="plans">
+
+                <!-- Free to start Div -->
+                <div class="freeToStartDiv">
+                    <!-- first div -->
+                    <div id="firstDiv">
+                        <h1> <span> Free to start, </span> <span> with 4 ways to grow. </span></h1>
+                        <p> <span> Whether you want to share your ideas, start a</span>
+                            <span> business, or run a store, you can do it all on </span>
+                            <span> WordPress.com. </span>
+                        </p>
+                    </div>
+
+                    <!-- second div - Card Div -->
+                    <div class="card freePlan hideOnSmall">
+                        <div class="card-body freeCardBody">
+                            <div class="card-body">
+                                <h5 class="card-title">Free</h5>
+                                <p class="card-text">Best for Getting Started</p>
+                                <!-- <p class="card-text hideOnLarge">$0</p> -->
+                                <!-- <p class="card-text hideOnLarge">for life</p> -->
+                            </div>
+                            <a href="https://wordpress.com/start/?ref=logged-out-homepage-lp">Start with Free</a>
+                            <p class="card-text">Create a beautiful, simple website in minutes.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 5plans Div -->
+                <div id="plansDiv">
+
+                    <!-- Free Card -->
+                    <div class="card freePlanCard HideThisCard">
+                        <div class="card-body personalPlanCardBody">
+                            <div class="card-body">
+                                <h5 class="card-title freecardHeading">Free</h5>
+                                <p class="card-text freecardSubHeading">Best for Getting Started</p>
+                                <p class="card-text freecardPrice">$0</p>
+                                <p class="card-text freecardPriceText">for life</p>
+                            </div>
+                            <a id="freeButton" href="https://wordpress.com/start/?ref=logged-out-homepage-lp">Start with
+                                Free</a>
+                            <p class="card-text freecardBottomText">Create a beautiful, simple website in minutes.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Personal Card -->
+                    <div class="card personalPlanCard">
+                        <div class="card-body personalPlanCardBody">
+                            <div class="card-body">
+                                <h5 class="card-title cardHeading">Personal</h5>
+                                <p class="card-text cardSubHeading">Best for Personal Use</p>
+                                <p class="card-text cardPrice">$5</p>
+                                <p class="card-text cardPriceText">per month, billed yearly</p>
+                            </div>
+                            <a class="cardButton"
+                                href="https://wordpress.com/start/personal/?ref=logged-out-homepage-lp">Start with
+                                Personal</a>
+                            <p class="card-text cardBottomText">Add some personality to your website with a custom
+                                domain and access to
+                                24/7 support.</p>
+                        </div>
+                    </div>
+
+                    <!-- Premium -->
+                    <div class="card premiumPlanCard">
+                        <div class="card-body personalPlanCardBody">
+                            <div class="card-body">
+                                <div id="popularTag">popular</div>
+                                <h5 class="card-title cardHeading">Premium</h5>
+                                <p class="card-text cardSubHeading">Best for Freelancers</p>
+                                <p class="card-text cardPrice">$8</p>
+                                <p class="card-text cardPriceText">per month, billed yearly</p>
+                            </div>
+                            <a class="premiumcardButton"
+                                href="https://wordpress.com/start/premium/?ref=logged-out-homepage-lp">Start with
+                                Premium</a>
+                            <p class="card-text cardBottomText">Build a professional site with everything you need to
+                                design, edit, and control your content.</p>
+                        </div>
+                    </div>
+
+                    <!-- Business Card -->
+                    <div class="card businessPlanCard">
+                        <div class="card-body personalPlanCardBody">
+                            <div class="card-body">
+                                <h5 class="card-title cardHeading">Business</h5>
+                                <p class="card-text cardSubHeading">Best for Small Businesses</p>
+                                <p class="card-text cardPrice">$25</p>
+                                <p class="card-text cardPriceText">per month, billed yearly</p>
+                            </div>
+                            <a class="cardButton"
+                                href="https://wordpress.com/start/business/?ref=logged-out-homepage-lp">Start with
+                                Business</a>
+                            <p class="card-text cardBottomText">Power your business with a professional design, Google
+                                Analytics, and live support.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- eCommerce Card -->
+                    <div class="card eCommercePlanCard">
+                        <div class="card-body personalPlanCardBody">
+                            <div class="card-body">
+                                <h5 class="card-title cardHeading">eCommerce</h5>
+                                <p class="card-text cardSubHeading">Best for Online Stores</p>
+                                <p class="card-text cardPrice">$45</p>
+                                <p class="card-text cardPriceText">per month, billed yearly</p>
+                            </div>
+                            <a class="cardButton"
+                                href="https://wordpress.com/start/ecommerce/?ref=logged-out-homepage-lp">Start with
+                                eCommerce</a>
+                            <p class="card-text cardBottomText">Open your online store with a powerful, flexible
+                                platform designed to grow with you.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- compare our Plans Button Div -->
+            <div class="planCompareDiv">
+                <a id="planCompareBtn" href="https://wordpress.com/pricing/?ref=logged-out-homepage-lp">Compare our
+                    plans&nbsp;›</a>
+            </div>
+        </section>
+
+        <!-- ******************* SECTION 2B ****************** -->
+        <section id="section2B">
+            <div id="sec2BOuterDiv">
+                <div id="sec2BInnerDiv">
+
+                    <!-- What can you do on wordpress.com Div -->
+                    <h2 id="sec2BHeading">
+                        <span>What can you do on WordPress.com?</span>
+                    </h2>
+                    <h3 id="sec2BSubHeading">
+                        <span>WordPress.com gives you everything you need to create anything you want.</span>
+                        <span>It’s flexible, secure, and powerful, just like you want your business to be.</span>
+                    </h3>
+
+                    <!-- 4 things Div -->
+                    <div id="thingsYouCanDoOutterDiv">
+
+                        <!-- first 2 things-->
+                        <div id="first2Things">
+
+                            <!-- build a fan base -->
+                            <div class="leftThing">
+                                <svg class="fourThingsIcon" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <g>
+                                        <path
+                                            d="M16.5 3c-1.862 0-3.505.928-4.5 2.344C11.005 3.928 9.362 3 7.5 3 4.462 3 2 5.462 2 8.5c0 5.72 6.5 10.438 10 12.85 3.5-2.412 10-7.13 10-12.85C22 5.462 19.538 3 16.5 3z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <h5 class="fourThingsHeading">Build a fan&nbsp;base.</h5>
+                                <div class="fourThingsText">
+                                    Promote your products, use advanced statistics and SEO&nbsp;tools, and connect with
+                                    built-in audiences on social media to grow your business.
+                                </div>
+                            </div>
+
+                            <!-- open a store -->
+                            <div class="rightThing">
+                                <svg class="fourThingsIcon" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <g>
+                                        <path
+                                            d="M9 20c0 1.1-.9 2-2 2s-1.99-.9-1.99-2S5.9 18 7 18s2 .9 2 2zm8-2c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm.396-5c.937 0 1.75-.65 1.952-1.566L21 5H7V4c0-1.105-.895-2-2-2H3v2h2v11c0 1.105.895 2 2 2h12c0-1.105-.895-2-2-2H7v-2h10.396z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <h5 class="fourThingsHeading">Open a&nbsp;store.</h5>
+                                <div class="fourThingsText">
+                                    Process payments, configure taxes and shipping, build&nbsp;a&nbsp;marketing plan—you
+                                    make the widgets, we’ll make the&nbsp;website.</div>
+
+                            </div>
+                        </div>
+
+                        <!-- second 2 things -->
+                        <div id="second2Things">
+
+                            <!-- start a blog -->
+                            <div class="leftThing">
+                                <svg class="fourThingsIcon" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <g>
+                                        <path
+                                            d="M3 4v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4H3zm7 11H5v-1h5v1zm2-2H5v-1h7v1zm0-2H5v-1h7v1zm7 4h-5v-5h5v5zm0-7H5V6h14v2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <h5 class="fourThingsHeading">Start a&nbsp;blog.</h5>
+                                <div class="fourThingsText">
+                                    Everyone has a point of view. Make your mark online with the world’s greatest
+                                    blogging tool, and join a&nbsp;community millions strong that’s waiting to hear
+                                    what&nbsp;you have to say.</div>
+                            </div>
+
+                            <!-- design a portfolio -->
+                            <div class="rightThing">
+                                <svg class="fourThingsIcon" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <g>
+                                        <path
+                                            d="M8 20H5c-1.105 0-2-.895-2-2V6c0-1.105.895-2 2-2h3c1.105 0 2 .895 2 2v12c0 1.105-.895 2-2 2zm8-10h4c1.105 0 2-.895 2-2V5c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v3c0 1.105.895 2 2 2zm5 10v-6c0-1.105-.895-2-2-2h-5c-1.105 0-2 .895-2 2v6c0 1.105.895 2 2 2h5c1.105 0 2-.895 2-2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <h5 class="fourThingsHeading">Design a&nbsp;portfolio.</h5>
+                                <div class="fourThingsText">
+                                    Thousands of themes means there’s a layout that’s just right for you, while storage
+                                    and design options ensure you can upload anything you need to and give your work the
+                                    stage it&nbsp;deserves.</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- getting started is easy and button -->
+                    <div id="gettingStartedDiv">
+                        <h3>Getting started is easy.</h3>
+                        <a href="https://wordpress.com/start/?ref=logged-out-homepage-lp">Start your website</a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+        <!-- ******************* SECTION 3 ****************** -->
+        <section id="section3">
+            <!-- outer Div-->
+            <div id="sec3OuterDiv">
+                <!-- title and paragraph div -->
+                <div id="sec3titleDiv">
+                    <h3>
+                        <span>Engineering</span>
+                        <span>happiness.</span>
+                    </h3>
+                    <div>
+                        <p>Our 24/7 support is powered by actual people. We call them Happiness&nbsp;Engineers.</p>
+                        <p>From configuring settings to publishing pages to helping you pick the perfect design, they’re
+                            all ears, all smiles, and all human. Happiness Engineers also work all around the world—and
+                            around the clock, so there’s always someone there when you need&nbsp;them.</p>
+                    </div>
+                    <a href="https://wordpress.com/start/?ref=logged-out-homepage-lp" class="topContBtn"> Start your
+                        website</a>
+                </div>
+
+                <!-- Graphics Div -->
+                <div id="graphicsDiv">
+                    <!-- graphic 1 -->
+                    <div id="graphic1">
+                        <div id="borderDiv">
+                            <div>
+                                <span>MORE THAN</span>
+                                <span>300</span>
+                                <span>Humans</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- graphic 2 -->
+                    <div id="graphic2">
+                        <div id="borderDiv2">
+                            <div>
+                                <span>AVAILABLE</span>
+                                <span>24/7</span>
+                                <span>Instantly</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ******************* SECTION 4 ****************** -->
+        <section id="section4">
+
+
+            <!-- For Large Devices -->
+            <!-- Video an title Div -->
+            <div class="vidAndTitle hideOnSmall">
+                <!-- Video -->
+                <div class="videoOuterDiv hideOnSmall">
+                    <video class="sec4Video" poster="assets/img/nappstar-success-story.jpg" preload="none" controls>
+                        <source src="https://wpcom.files.wordpress.com/2019/01/nappstar-success-story-60s-wlogo.mp4"
+                            type="video/mp4">
+                    </video>
+                </div>
+
+
+                <!-- you're in good company -->
+                <div class="titleDiv hideOnSmall">
+                    <h3 class="hideOnSmall"> <span class="hideOnSmall">You're in</span> <span class="hideOnSmall">good
+                            company.</span></h3>
+                    <p class="hideOnSmall Para1">People all over the world are doing all sorts of&nbsp;amazing
+                        things on WordPress.</p>
+                    <div class="hideOnSmall">
+                        <svg class="playButtonImg hideOnSmall" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <g class="hideOnSmall">
+                                <path class="hideOnSmall"
+                                    d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-2 14.5v-9l6 4.5z"></path>
+                            </g>
+                        </svg>
+                        <a class="hideOnSmall" href="#"> Watch Annette’s story</a>
+                    </div>
+                    <p class="hideOnSmall para2">An innovative New York City hair&nbsp;salon.</p>
+                </div>
+            </div>
+
+
+
+            <!-- For Small Devices -->
+            <div class="VideoAndTitleDiv hideOnLarge">
+
+                <!-- Title and Text-->
+                <div class="sec4TitleDiv">
+                    <h3 class="sec4Title"><span>You’re in</span> <span>good&nbsp;company.</span></h3>
+                    <p class="sec4Para1"> People all over the world are doing all sorts of&nbsp;amazing things on
+                        WordPress.</p>
+                    <p class="sec4Para2">
+                        <a href="#">
+                            <svg class="sec4SVG" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24">
+                                <g>
+                                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-2 14.5v-9l6 4.5z"></path>
+                                </g>
+                            </svg>
+                            Watch Annette’s&nbsp;story
+                        </a>
+                    </p>
+                    <p class="sec4Para3">An innovative New York City hair&nbsp;salon.</p>
+                </div>
+
+                <!-- Video -->
+                <div class="sec4VideoDiv">
+                    <div class="sec4VideoInnerDiv">
+                        <video class="sec4VideoTag" poster="assets/img/nappstar-success-story.jpg" preload="none"
+                            style=" width:100%; height:100%;" controls>
+                            <source src="https://wpcom.files.wordpress.com/2019/01/nappstar-success-story-60s-wlogo.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Testimonial Div -->
+            <div id="sec4Testimonials">
+
+                <!-- first testimonial -->
+                <div class="testimonial1">
+                    <!-- quote -->
+                    <div>
+                        <div class="quote">WordPress.com works really well with Google for a
+                            great SEO ranking. I can also embed YouTube videos, Google Maps, and other content easily
+                            and without any coding&nbsp;ability."</div>
+                    </div>
+                    <!-- person -->
+                    <div class="image">
+                        <img src="assets/img/quintin-lake.png" alt="">
+                        <div>
+                            <p class="testName">Quintin Lake</p>
+                            <p class="testSite">theperimeter.uk</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second testimonial -->
+                <div class="testimonial2">
+                    <!-- quote -->
+                    <div>
+                        <div class="quote">It’s been a great privilege and a life‑changing experience. I’m grateful to
+                            WordPress.com for providing an affordable and user‑friendly platform for individuals to
+                            launch projects and be heard in this way."</div>
+                    </div>
+                    <!-- person -->
+                    <div class="image">
+                        <img src="assets/img/ann-morgan.png" alt="">
+                        <div>
+                            <p class="testName">Ann Morgan</p>
+                            <p class="testSite">ayearofreadingtheworld.com</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- ******************* SECTION 5 ****************** -->
+        <section id="section5">
+            <div id="outerDivSec5">
+                <!-- picture div -->
+                <div id="section5imgDiv">
+                    <img src="assets/img/man-with-shadow.jpg" alt="">
+                </div>
+
+                <!-- text and button div -->
+                <div id="section5text">
+                    <h3><span>You can. You will.</span> <span id="leftpadding">We'll help.</span></h3>
+                    <div id="section5PandA">
+                        <p>Invent the world’s greatest cat food, save a rainforest, start a needlepoint club. Whatever
+                            it is, it’s going to need a website — that’s where we come in.</p>
+                        <a href="https://wordpress.com/start/?ref=logged-out-homepage-lp" class="topContBtn"> Start your
+                            website</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ******************* FOOTER ****************** -->
+        <footer>
+            <div class="footerOuterDiv">
+                <div class="footerLinks1">
+                    <!-- Other worpress Solutions -->
+                    <div>
+                        <h6>other WordPress Solutions</h6>
+                        <ul>
+                            <li><a href="https://jetpack.com">Jetpack plugin</a></li>
+                            <li><a href="https://woocommerce.com">WooCommerce</a></li>
+                            <li><a
+                                    href="https://pressable.com/?utm_source=wordpresscom&utm_medium=referral&utm_campaign=footerlink">Pressable
+                                    (managed WordPress)</a></li>
+                            <li><a
+                                    href="https://wpvip.com/?utm_source=WordPresscom&utm_medium=automattic_referral&utm_campaign=footer">VIP
+                                    (enterprise WordPress)</a></li>
+                            <li><a href="https://developer.wordpress.com/">Developers</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Explore -->
+                    <div>
+                        <h6>Explore</h6>
+                        <ul>
+                            <li><a href="https://en.blog.wordpress.com">News</a></li>
+                            <li><a href="https://discover.wordpress.com">Discover</a></li>
+                            <li><a href="https://wordpress.com/go">Go: Growth Content</a></li>
+                            <li><a href="https://apps.wordpress.org/desktop">Desktop Apps</a></li>
+                            <li><a href="https://apps.wordpress.org/mobile">Mobile Apps</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- community -->
+                    <div>
+                        <h6>community</h6>
+                        <ul>
+                            <li><a href="https://en.support.wordpress.com/">Support</a></li>
+                            <li><a href="https://en.forums.wordpress.com/">Forums</a></li>
+                            <li><a href="https://central.wordcamp.org/">WordCamps</a></li>
+                            <li><a href="https://wordpress.org/">WordPress.org</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- company -->
+                    <div>
+                        <h6>company</h6>
+                        <ul>
+                            <li><a href="https://wordpress.com/about/">About Us</a></li>
+                            <li><a href="https://automattic.com/privacy/">Privacy</a></li>
+                            <li><a href="https://wordpress.com/tos/">Terms of Service</a></li>
+                            <li><a href="https://ma.tt">Matt Mullenweg</a></li>
+                            <li><a href="https://wordpress.com/partners/">Partner With Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="footerLinks2">
+                    <div class="footerLinks2b">
+                        <ul>
+                            <li class="noLeftPadding"> <a href="https://wordpress.com/themes/"
+                                    target="_blank">Themes</a> </li>
+                            <li> <a href="https://wordpress.com/features/" target="_blank">Features</a> </li>
+                            <li> <a href="https://en.blog.wordpress.com/" target="_blank">Blog</a> </li>
+                            <li> <a href="https://wordpress.com/activity/" target="_blank">Stats</a> </li>
+                            <li> <a href="https://wpvip.com/?utm_source=WordPresscom&utm_medium=automattic_referral&utm_campaign=footer"
+                                    target="_blank">VIP</a> </li>
+                            <li> <a href="https://wordpress.com/tos/" target="_blank">Terms of Service</a> </li>
+                            <li> <a href="https://automattic.com/privacy/" target="_blank">Privacy Policy</a> </li>
+                            <li> <a href="" target="_blank">Language: <span id="EN">EN</span></a> </li>
+                        </ul>
+                    </div>
+
+                    <div class="footerLinks2c">
+                        <p> an <span> <a href="https://automattic.com/" target="_blank" class="footerLogo"><img
+                                        src="assets/img/automattic-white.svg" alt=""></a></span>
+                            mambo
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+
+        <!-- *********************JavaScript *********************** -->
+        <script src="assets/js/jquery-3.4.1.slim.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+
+</html>
