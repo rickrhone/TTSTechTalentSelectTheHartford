@@ -33,12 +33,13 @@ body {
 .section1 {
     z-index: 1;
     padding: 0;
-    margin: 0;
+    padding-bottom: 100px;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #016087;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 #navContainer {
@@ -160,6 +161,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #016087;
+
     margin-left: 140px;
     margin-right: 140px;
     margin-top: 10%;
@@ -168,16 +170,19 @@ body {
 
 #Perc {
     width: 45%;
+    z-index: 1;
 }
 
 #Perc h1 {
     color: #FFFFFF;
-    font-size: 72px;
-    line-height: 80px;
+    font-size: 48px;
+    line-height: 56px;
     letter-spacing: 0;
     font-weight: 700;
     font-family: Recoleta, Georgia, "Times New Roman", Times, serif;
     text-align: left;
+    z-index: 1;
+    position: relative;
 }
 
 #Perc h1>span {
@@ -193,6 +198,7 @@ body {
     margin: 4rem 0 0;
     text-align: left;
     color: #bbc9d5;
+    z-index: 1;
 }
 
 #Perc p>span {
@@ -242,54 +248,64 @@ body {
 }
 
 #wordPressLogo {
-    width: 314px;
-    height: 314px;
-    background-image: url(/Projects/FrontEndProject/assets/img/wordpress/headline-w.svg);
-    transform: translate(calc(-100%), 0);
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzE0IDMxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAv%0D%0Ac3ZnIj48cGF0aCBkPSJNMjgwLjg2NCA4OS4yNzhjMTEuMDE4IDIwLjEwNCAxNy4yODggNDMuMTc2%0D%0AIDE3LjI4OCA2Ny43MTggMCA1Mi4wNzYtMjguMjIyIDk3LjU0MS03MC4xODcgMTIyLjAwOWw0My4x%0D%0AMTMtMTI0LjY1NGM4LjA1My0yMC4xMzggMTAuNzM0LTM2LjI0IDEwLjczNC01MC41NTggMC01LjE5%0D%0ANi0uMzQyLTEwLjAyLS45NDgtMTQuNTE1em0tMTA0LjQxMiAxLjUzN2M4LjQ5OC0uNDQ3IDE2LjE1%0D%0ANi0xLjM0MSAxNi4xNTYtMS4zNDEgNy42MDUtLjkgNi43MDgtMTIuMDc4LS45LTExLjYzMyAwIDAt%0D%0AMjIuODY1IDEuNzk0LTM3LjYyNSAxLjc5NC0xMy44NjkgMC0zNy4xNzUtMS43OTQtMzcuMTc1LTEu%0D%0ANzk0LTcuNjEyLS40NDUtOC41MDQgMTEuMTgzLS44OTUgMTEuNjMzIDAgMCA3LjIuODk0IDE0Ljgw%0D%0ANiAxLjM0bDIxLjk5IDYwLjI1Ny0zMC44OTUgOTIuNjQ0LTUxLjQtMTUyLjlhMjg2Ljc3NSAyODYu%0D%0ANzc1IDAgMCAwIDE2LjE1NC0xLjM0MWM3LjYtLjkgNi43MDMtMTIuMDc4LS45MDItMTEuNjMzIDAg%0D%0AMC0yMi44NiAxLjc5NC0zNy42MiAxLjc5NC0yLjY0OSAwLTUuNzctLjA2NS05LjA4NS0uMTcxIDI1%0D%0ALjI0LTM4LjMxOCA2OC42MjItNjMuNjIzIDExNy45MzgtNjMuNjIzIDM2Ljc0NyAwIDcwLjIwNyAx%0D%0ANC4wNSA5NS4zMTkgMzcuMDYtLjYwOC0uMDM2LTEuMjAxLS4xMTItMS44MjgtLjExMi0xMy44NjYg%0D%0AMC0yMy43MDQgMTIuMDc4LTIzLjcwNCAyNS4wNTIgMCAxMS42MzMgNi43MTIgMjEuNDc1IDEzLjg2%0D%0ANiAzMy4xMDYgNS4zNjcgOS40MDIgMTEuNjM4IDIxLjQ3OSAxMS42MzggMzguOTMgMCAxMi4wOC00%0D%0ALjY0NyAyNi4xLTEwLjc0MSA0NS42MzFsLTE0LjA4NCA0Ny4wNDItNTEuMDEzLTE1MS43MzV6TTE1%0D%0ANyAyOTguMTYyYTE0MS4xMDggMTQxLjEwOCAwIDAgMS0zOS44NzgtNS43NTJsNDIuMzU3LTEyMy4w%0D%0ANjcgNDMuMzg1IDExOC44N2MuMjg2LjY5OC42MzcgMS4zNDEgMS4wMSAxLjk0NkExNDAuODU4IDE0%0D%0AMC44NTggMCAwIDEgMTU3IDI5OC4xNjJ6TTE1Ljg0NSAxNTYuOTk2QTE0MC41OSAxNDAuNTkgMCAw%0D%0AIDEgMjguMDY3IDk5LjU1bDY3LjMzNSAxODQuNDg0Yy00Ny4wOTItMjIuODc4LTc5LjU1Ny03MS4x%0D%0ANjYtNzkuNTU3LTEyNy4wMzh6TTE1Ni45OTkgMEM3MC40MyAwIDAgNzAuNDI4IDAgMTU2Ljk5NmMw%0D%0AIDg2LjU3MSA3MC40MyAxNTcuMDA3IDE1NyAxNTcuMDA3IDg2LjU2NyAwIDE1Ny03MC40MzYgMTU3%0D%0ALTE1Ny4wMDdDMzE0IDcwLjQyOCAyNDMuNTY3IDAgMTU3IDB6IiBmaWxsPSIjMTA1NDc4IiBmaWxs%0D%0ALXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);
+    width: 332px;
+    height: 332px;
     background-repeat: no-repeat;
-    background-position: 50%;
+    margin-left: -100px;
+    z-index: 0;
 }
 
 #picture {
     top: -20px;
     width: 332px;
     height: 332px;
-    background-image: url(/Projects/FrontEndProject/assets/img/wordpress/headline-circle.jpg);
+    background-image: url(https://github.com/rickrhone/TTS-FrontEndProject/blob/master/assets/img/headline-circle.jpg?raw=true);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 /* +++++++ SECTION 1 MEDIA QUERIES ++++++ */
-
-@media (max-width: 1366px) {
-    #Perc h1 {
-        font-size: 56px;
-        line-height: 64px;
-    }
-}
-
 @media (max-width:1140px) {
+    #Perc h1 {
+        font-size: 36px;
+        line-height: 52px;
+    }
+
+    #wordPressLogo {
+        width: 200px;
+        height: 200px;
+        margin-right: 35px;
+    }
 
     #picture {
         width: 218px;
         height: 218px;
     }
+}
 
-    #Perc h1 {
-        font-size: 48px;
-        line-height: 56px;
+@media (max-width:960px) {
+    .section1 {
+        padding-bottom: 0;
     }
 
+    #Perc h1 {
+        font-size: 36px;
+        line-height: 52px;
 
+    }
 
+    #leftNav ul li {
+        margin-left: 10px;
+    }
 
 }
 
+@media (max-width:814px) {
+    .section1 {
+        padding-bottom: 0;
+    }
 
-
-
-
-@media (max-width:812px) {
     #leftNav ul {
         padding: 0;
     }
@@ -302,13 +318,17 @@ body {
         background-image: none;
     }
 
+    #wordPressLogo {
+        display: none;
+    }
+
     #picture {
         margin: 0;
         margin-top: 40px;
         padding: 0;
         width: 100%;
         /* height: 332px; */
-        background-image: url(/Projects/FrontEndProject/assets/img/wordpress/headline-rect.jpg);
+        background-image: url(https://github.com/rickrhone/TTS-FrontEndProject/blob/master/assets/img/headline-rect.jpg?raw=true);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -323,9 +343,6 @@ body {
         display: block;
         font-size: 36px;
         line-height: 52px;
-        letter-spacing: 0;
-        font-family: Georgia, "Times New Roman", Times, serif;
-        font-weight: 500;
     }
 
     #Perc p {
@@ -416,10 +433,6 @@ body {
 
 
 
-
-
-
-
 /* ========= SECTION 2 ================== */
 #section2 {
     padding: 96px 0;
@@ -439,7 +452,7 @@ body {
 
 #leftBckgImg {
     /* display: block; */
-    background: radial-gradient(closest-side, rgba(29, 35, 47, 0), #1d232f), url(/Projects/FrontEndProject/assets/img/wordpress/jan-2019-texture.jpg);
+    background: radial-gradient(closest-side, rgba(29, 35, 47, 0), #1d232f), url(https://github.com/rickrhone/TTS-FrontEndProject/blob/master/assets/img/jan-2019-texture.jpg?raw=true);
     /* background-size: 600px 600px; */
     background-size: cover;
     background-position: center center;
@@ -460,7 +473,7 @@ body {
 
 #rightBckgImg {
     /* display: block; */
-    background: radial-gradient(closest-side, rgba(29, 35, 47, 0), #1d232f), url(/Projects/FrontEndProject/assets/img/wordpress/jan-2019-texture.jpg);
+    background: radial-gradient(closest-side, rgba(29, 35, 47, 0), #1d232f), url(https://github.com/rickrhone/TTS-FrontEndProject/blob/master/assets/img/jan-2019-texture.jpg?raw=true);
     /* background-size: 600px 600px; */
     background-size: cover;
     background-position: center center;
@@ -645,6 +658,12 @@ body {
 
 }
 
+/* Free Plan Card for Small Devices */
+
+.HideThisCard {
+    display: none;
+}
+
 .freePlanCard {
     padding: 18px;
     color: #969ca1;
@@ -699,7 +718,6 @@ body {
 
 #freeButton {
     color: #f6f6f6;
-    border-color: #50575d;
     background-color: transparent;
     font-size: 14px;
     line-height: 22px;
@@ -746,6 +764,8 @@ body {
     letter-spacing: 0;
     color: #b0b5b8;
 }
+
+/* ----- End of -Free Plan Card for Small Devices --- */
 
 .personalPlanCard {
     padding: 18px;
@@ -1028,13 +1048,18 @@ body {
     }
 
     .hideOnLarge {
-        display: contents;
+        display: flex;
     }
 
     #plansDiv {
         display: flex;
         flex-direction: column;
     }
+
+    .HideThisCard {
+        display: flex;
+    }
+
 
     .freePlanCard {
         padding: 18px;
@@ -1048,7 +1073,6 @@ body {
     }
 
 
-
     .personalPlanCard {
         padding: 18px;
         color: #636d75;
@@ -1056,6 +1080,7 @@ body {
         border-radius: 4px;
         border-top: 9px solid #6795fe;
         margin: 10px 5px;
+        margin-top: 30px;
         width: 100%;
     }
 
@@ -1088,10 +1113,6 @@ body {
         margin: 10px 5px;
         width: 100%;
     }
-
-
-
-
 
 }
 
@@ -1359,27 +1380,7 @@ body {
 
     }
 
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ========= SECTION 3 ================== */
@@ -1540,8 +1541,8 @@ body {
 
 
 
-
 /* +++++++ SECTION 3 MEDIA QUERIES ++++++ */
+
 @media (max-width:812px) {
     #sec3titleDiv {
         width: 100%;
@@ -1597,13 +1598,66 @@ body {
     }
 
 
+}
+
+@media (max-width:960px) {
+    #sec3titleDiv {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    #sec3OuterDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+
+    #sec3titleDiv h3 {
+        font-size: 60px;
+        line-height: 55px;
+        letter-spacing: 0;
+    }
+
+    #sec3titleDiv div {
+        margin: 1rem 0 0 1rem;
+        color: #636d75;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0;
 
 
+    }
+
+    #sec3titleDiv a {
+        width: 300px;
+        margin: 0;
+        text-decoration: none;
+    }
+
+    #graphicsDiv {
+        display: flex;
+        width: 100%;
+    }
+
+    #graphic1 {
+        /* margin-right: 2rem; */
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #graphic2 {
+        /* margin-right: 2rem; */
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
 
 
 }
-
-
 
 
 
@@ -1644,7 +1698,7 @@ body {
     transform: translateY(calc((75vw*9/16 - 100vh)/-2));
 }
 
-.videoOuterDiv::before {
+/* .videoOuterDiv::before {
     cursor: pointer;
     top: 35%;
     left: 45%;
@@ -1655,8 +1709,8 @@ body {
     position: absolute;
     transition: opacity .25s;
     transform: translate(-50%, -50%);
-    content: url(/Projects/FrontEndProject/assets/img/wordpress/headline-play.svg);
-}
+    content: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNzQgNzQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2%0D%0AZyI+PHBhdGggZD0iTTM3IDFDMTcuMTE4IDEgMSAxNy4xMTggMSAzN3MxNi4xMTggMzYgMzYgMzYg%0D%0AMzYtMTYuMTE4IDM2LTM2QTM2IDM2IDAgMCAwIDM3IDF6bS04IDUyLjJWMjAuOEw1MC42IDM3IDI5%0D%0AIDUzLjJ6IiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIy%0D%0AIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91%0D%0AbmQiLz48L3N2Zz4=);
+} */
 
 .videoOuterDiv:hover::before {
     opacity: 1;
@@ -1746,7 +1800,7 @@ body {
     height: 40px;
     position: absolute;
     display: inline-block;
-    content: url(/Projects/FrontEndProject/assets/img/wordpress/quote.svg);
+    content: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTggMTQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2%0D%0AZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxwYXRo%0D%0AIGQ9Ik0xMS4xOTIgMTUuNzU3YzAtLjg4LS4yMy0xLjYxOC0uNjktMi4yMTctLjMyNi0uNDEyLS43%0D%0ANjgtLjY4My0xLjMyNy0uODEyLS41NS0uMTI4LTEuMDctLjEzNy0xLjU0LS4wMjgtLjE2LS45NS4x%0D%0ALTEuOTU2Ljc2LTMuMDIyLjY2LTEuMDY1IDEuNTE1LTEuODY3IDIuNTU4LTIuNDAzTDkuMzczIDVj%0D%0ALS44LjM5Ni0xLjU2Ljg5OC0yLjI2IDEuNTA1LS43MS42MDctMS4zNCAxLjMwNS0xLjkgMi4wOTRh%0D%0AOC4zIDguMyAwIDAgMC0xLjI1IDIuNjkgOC4wOTIgOC4wOTIgMCAwIDAtLjIxNyAzLjFjLjE2OCAx%0D%0ALjQuNjIgMi41MiAxLjM1NiAzLjM1LjczNS44NCAxLjY1MiAxLjI2IDIuNzQ4IDEuMjYuOTY1IDAg%0D%0AMS43NjYtLjI5IDIuNC0uODc4LjYyOC0uNTc2Ljk0LTEuMzY1Ljk0LTIuMzY4bC4wMDIuMDAzdi4w%0D%0AMDF6bTkuMTI0IDBjMC0uODgtLjIzLTEuNjE4LS42OS0yLjIxNy0uMzI2LS40Mi0uNzctLjY5Mi0x%0D%0ALjMyNy0uODE3LS41Ni0uMTI0LTEuMDc0LS4xMy0xLjU0LS4wMjItLjE2LS45NC4wOS0xLjk1Ljc1%0D%0ALTMuMDIuNjYtMS4wNiAxLjUxNC0xLjg2IDIuNTU3LTIuNEwxOC40OSA1Yy0uOC4zOTYtMS41NTUu%0D%0AODk4LTIuMjYgMS41MDVhMTEuMjkgMTEuMjkgMCAwIDAtMS44OTQgMi4wOTRjLS41NTYuNzktLjk3%0D%0AIDEuNjgtMS4yNCAyLjY5YTguMDQgOC4wNCAwIDAgMC0uMjE3IDMuMWMuMTY1IDEuNC42MTUgMi41%0D%0AMiAxLjM1IDMuMzUuNzMyLjgzMyAxLjY0NiAxLjI1IDIuNzQyIDEuMjUuOTY3IDAgMS43NjgtLjI5%0D%0AIDIuNDAyLS44NzYuNjI3LS41NzYuOTQyLTEuMzY1Ljk0Mi0yLjM2OHYuMDFsLjAwMS4wMDJ6IiBp%0D%0AZD0iYSIvPjwvZGVmcz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMyAtNSkiIGZpbGw9Im5vbmUi%0D%0AIGZpbGwtcnVsZT0iZXZlbm9kZCI+PG1hc2sgaWQ9ImIiIGZpbGw9IiNmZmYiPjx1c2UgeGxpbms6%0D%0AaHJlZj0iI2EiLz48L21hc2s+PGcgbWFzaz0idXJsKCNiKSIgZmlsbD0iI0Y1QkE4RiIgZmlsbC1y%0D%0AdWxlPSJub256ZXJvIj48cGF0aCBkPSJNMCAwaDI0djI0SDB6Ii8+PC9nPjwvZz48L3N2Zz4=);
 }
 
 .image {
@@ -1782,7 +1836,7 @@ body {
 
 
 /* +++++++ SECTION 4 MEDIA QUERIES ++++++ */
-@media (max-width:782px) {
+@media (max-width:812px) {
 
     #section4 {
         width: 100vw;
@@ -1862,7 +1916,7 @@ body {
 
     }
 
-    .sec4VideoInnerDiv::before {
+    /* .sec4VideoInnerDiv::before {
         box-sizing: inherit;
         top: 50%;
         left: 50%;
@@ -1873,8 +1927,8 @@ body {
         position: absolute;
         transition: opacity .25s;
         transform: translate(-50%, -50%);
-        content: url(/Projects/FrontEndProject/assets/img/wordpress/headline-play.svg);
-    }
+        content: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNzQgNzQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2%0D%0AZyI+PHBhdGggZD0iTTM3IDFDMTcuMTE4IDEgMSAxNy4xMTggMSAzN3MxNi4xMTggMzYgMzYgMzYg%0D%0AMzYtMTYuMTE4IDM2LTM2QTM2IDM2IDAgMCAwIDM3IDF6bS04IDUyLjJWMjAuOEw1MC42IDM3IDI5%0D%0AIDUzLjJ6IiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIy%0D%0AIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91%0D%0AbmQiLz48L3N2Zz4=);
+    } */
 
     .sec4VideoTag {
         width: 100%;
@@ -1882,13 +1936,7 @@ body {
         border-radius: 2%;
     }
 
-
-
-
-
-
-    /* ------------------------ */
-
+    /* End of layout for small devices */
 
 
     .hideOnSmall {
@@ -1896,7 +1944,7 @@ body {
     }
 
     .hideOnLarge {
-        display: contents;
+        display: flex;
     }
 
 
@@ -2077,6 +2125,10 @@ body {
 
 
 @media (max-width:960px) {
+
+    .hideOnSmall {
+        display: none;
+    }
 
     .vidAndTitle h3 {
         padding: 0;
