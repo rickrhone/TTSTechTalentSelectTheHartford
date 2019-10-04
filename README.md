@@ -8,7 +8,8 @@
 - [PROJECTS](#projects)
 
   - [PRJ1 - Mid Course Project - Vegas Dice Game (Java)](#prj1---mid-course-project---vegas-dice-game-java)
-  - [PRJ2 - Front End Project - Recreate wordpress.com homepage)](#prj2---front-end-project---recreate-wordpresscom-homepage)
+  - [PRJ2 - Front End Project - Recreate wordpress.com homepage](#prj2---front-end-project---recreate-wordpresscom-homepage)
+  - [PRJ3 - TTS-DashboardProject](#prj3---tts-dashboardproject)
 
 * [HOMEWORKS AND LABS](#homeworks-and-labs)
 
@@ -62,6 +63,27 @@
 
   - **[LIVE-DEMO](https://rickrhone.github.io/TTS-FrontEndProject/)**
   - **[Link to my Code](https://github.com/rickrhone/TTS-FrontEndProject)**
+  
+### PRJ3 - TTS-DashboardProject
+![gif of project in action](https://github.com/rickrhone/TTS-DashboardProject/blob/master/ProjectSpecifications/TTSDashboardProject.gif)
+
+- **OBJECTIVE:** Build a project dashboard that your company will used internally. 
+- **REQUIREMENTS:**
+  - Create a RESTful API service to add, update, retrieve, and delete product information.
+  - Uses Hibernate (JPA) to interact with a SQL database. 
+  - Utilizes Angular on the front-end.  
+- **MVP:**
+  - Perform basic CRUD functions - ***COMPLETE***
+  - Return a list of products by category - ***COMPLETE + MORE***
+  - Return a list of products by category and availability - ***COMPLETE + MORE***
+  - Sort products by full price, sale price, and the percentage of discount - ***COMPLETE + MORE***
+
+- **MY SOLUTION:**  
+    - **[Front-End Code](https://github.com/rickrhone/TTS-DashboardProject/tree/master/client/src)**
+      - Angular (Angular Material and Table), Bootstrap and Chart.js
+    - **[Back-End Code](https://github.com/rickrhone/TTS-DashboardProject/tree/master/ttsdashboardproject/src/main/java/com/tts/ttsdashboardproject)**
+      - Spring (Spring Boot, Spring Data), Hibernate (JPA), and MySQL
+     - ![App FLow](https://github.com/rickrhone/TTS-DashboardProject/blob/master/ProjectSpecifications/ProjectFlow.PNG)
 
 ## HOMEWORKS AND LABS
 
